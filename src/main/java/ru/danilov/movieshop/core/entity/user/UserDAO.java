@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceException;
+import java.util.List;
 
 /**
  * Created by Semyon on 05.09.2014.
@@ -23,6 +24,9 @@ public class UserDAO {
         transaction.commit();
     }
 
-
+    public User getByLogin(final String login) {
+        List<User> list = entityManager.createQuery("SELECT a FROM User a", User.class).getResultList();
+        return list.isEmpty() ? null : list.get(0);
+    }
 
 }

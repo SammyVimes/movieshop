@@ -19,13 +19,16 @@
     <div class="container">
         <div class="offset-3 login-panel width-4">
             Hello guyz
-            <div class="form-element">
-                <input id="login" placeholder="Логин" class="form-input" name="login" type="text">
-            </div>
-            <div class="form-element">
-                <input id="password" placeholder="Пароль" class="form-input" name="password" type="password">
-            </div>
-            <div class="btn btn-outline btn-success">Авторизация</div>
+            <c:set var="actionUrl"><c:url value="/web/auth/doAuth"/></c:set>
+            <form action="${actionUrl}">
+                <div class="form-element">
+                    <input id="login" placeholder="Логин" class="form-input" name="login" type="text">
+                </div>
+                <div class="form-element">
+                    <input id="password" placeholder="Пароль" class="form-input" name="password" type="password">
+                </div>
+                <button class="btn btn-outline btn-success" type="submit">Авторизация</button>
+            </form>
         </div>
     </div>
 </body>
