@@ -1,3 +1,54 @@
+/*main*/
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*forms*/
+
+.form-input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-element {
+    margin-bottom: 15px;
+}
+
 /*buttons*/
 
 .btn {
@@ -32,11 +83,6 @@
     border-radius: 6px;
 }
 
-.btn-outline {
-    color: inherit;
-    background-color: transparent;
-    transition: all .5s;
-}
 
 .btn-success {
     color: #fff;
@@ -52,4 +98,110 @@
     color: #fff;
     background-color: #449d44;
     border-color: #398439;
+}
+
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+/*offsets*/
+
+.offset-1 {
+    margin-left: 8%;
+}
+
+.offset-2 {
+    margin-left: 17%;
+}
+
+.offset-3 {
+    margin-left: 25%;
+}
+
+.offset-4 {
+    margin-left: 33.3%;
+}
+
+.offset-5 {
+    margin-left: 41.6%;
+}
+
+.offset-6 {
+    margin-left: 50%;
+}
+
+.offset-7 {
+    margin-left: 58%;
+}
+
+.offset-8 {
+    margin-left: 66%;
+}
+
+.offset-8 {
+    margin-left: 74%;
+}
+
+.offset-9 {
+    margin-left: 82%;
+}
+
+.offset-10 {
+    margin-left: 90%;
+}
+
+.width-1, .width-2, .width-3, .width-4,
+.width-4, .width-5, .width-6, .width-7,
+.width-8, .width-9, .width-10 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.width-1 {
+    width: 8%;
+}
+
+.width-2 {
+    width: 17%;
+}
+
+.width-3 {
+    width: 25%;
+}
+
+.width-4 {
+    width: 33.3%;
+}
+
+.width-5 {
+    width: 41.6%;
+}
+
+.width-6 {
+    width: 50%;
+}
+
+.width-7 {
+    width: 58%;
+}
+
+.width-8 {
+    width: 66%;
+}
+
+.width-8 {
+    width: 74%;
+}
+
+.width-9 {
+    width: 82%;
+}
+
+.width-10 {
+    width: 90%;
 }
