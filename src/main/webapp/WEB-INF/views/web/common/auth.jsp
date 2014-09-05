@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Semyon
@@ -9,9 +10,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Test Page</title>
+    <c:set var="cssMainLink"><c:url value="/css/main.css"/></c:set>
+    <link rel="stylesheet" href="${cssMainLink}">
+    <title>Авторизация</title>
 </head>
 <body>
-
+    <div class="btn btn-block btn-outline btn-success">Авторизация</div>
 </body>
 </html>
