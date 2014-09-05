@@ -18,6 +18,7 @@
 <body>
     <div class="container">
         <div class="offset-3 login-panel width-4">
+            Hello guyz
             <div class="form-element">
                 <input id="login" placeholder="Логин" class="form-input" name="login" type="text">
             </div>
