@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AD4LFP.iws" afterPath="$PROJECT_DIR$/AD4LFP.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/AuthController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/AuthController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/BaseController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/BaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/MainPageController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/MainPageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/adminmovies.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/adminmovies.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/items.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/items.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml" />
     </list>
     <ignored path="AD4LFP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,18 +86,42 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.93385214" vertical-offset="7408" max-vertical-offset="7990">
-              <caret line="464" column="1" selection-start-line="464" selection-start-column="1" selection-end-line="464" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.50715744" vertical-offset="2387" max-vertical-offset="7990">
+              <caret line="155" column="4" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/items.css">
+      <file leaf-file-name="AuthController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="366" max-vertical-offset="1343">
+              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="901">
+              <caret line="36" column="42" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AccessFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="884">
+              <caret line="42" column="9" selection-start-line="29" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -120,48 +137,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="646">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminmovies.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adminmovies.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moviesList.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="697">
-              <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="9" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="addMovie.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.961538" vertical-offset="404" max-vertical-offset="918">
-              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            <state vertical-scroll-proportion="-13.115385" vertical-offset="339" max-vertical-offset="935">
+              <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header-tile.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="714">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelAndView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,16 +174,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1632">
               <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tiles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="412" max-vertical-offset="1360">
-              <caret line="48" column="36" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -221,11 +214,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/sidebar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/catalog.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/MainPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/util/Cache.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/sidebar-tile.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java" />
@@ -235,7 +226,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tag/taglib.tld" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/money/MoneyTag.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error404.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserRole.java" />
@@ -257,6 +247,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
       </list>
     </option>
@@ -1411,7 +1404,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/AD4LFP.ipr" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Movie&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;main.cs&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;boo&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/bootstrap/css/bootstrap.css&#10;Movi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;web&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/web.xml&#10;main&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;Ba&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/impl/BasicTilesContainer.java&#10;Defini&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/dao/ResolvingLocaleUrlDefinitionDAO.java&#10;Cache&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/util/Cache.java&#10;Cac&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-extras/3.0.4/tiles-extras-3.0.4.jar!/org/apache/tiles/extras/complete/CompleteAutoloadTilesListener.class&#10;Def&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/DefinitionsFactory.java&#10;DefinitionsFactory&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/DefinitionsFactory.java&#10;Bas&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar!/org/apache/tiles/impl/BasicTilesContainer.class&#10;BasicTil&#9;PSI&#9;JAVA://org.apache.tiles.impl.BasicTilesContainer&#10;po&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml&#10;pom&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="ModelA&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.base.ModelAndView&#10;Movie&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;main.cs&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;boo&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/bootstrap/css/bootstrap.css&#10;Movi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;web&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/web.xml&#10;main&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;Ba&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/impl/BasicTilesContainer.java&#10;Defini&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/dao/ResolvingLocaleUrlDefinitionDAO.java&#10;Cache&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/util/Cache.java&#10;Cac&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-extras/3.0.4/tiles-extras-3.0.4.jar!/org/apache/tiles/extras/complete/CompleteAutoloadTilesListener.class&#10;Def&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/DefinitionsFactory.java&#10;DefinitionsFactory&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/DefinitionsFactory.java&#10;Bas&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar!/org/apache/tiles/impl/BasicTilesContainer.class&#10;BasicTil&#9;PSI&#9;JAVA://org.apache.tiles.impl.BasicTilesContainer&#10;po&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml&#10;pom&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
@@ -1926,7 +1919,7 @@
       <workItem from="1408532695272" duration="394000" />
       <workItem from="1409933202668" duration="15125000" />
       <workItem from="1409951509886" duration="5162000" />
-      <workItem from="1409983517025" duration="39263000" />
+      <workItem from="1409983517025" duration="39814000" />
     </task>
     <task id="LOCAL-00001" summary="Create Project">
       <created>1399384250122</created>
@@ -1936,7 +1929,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114857000" />
+    <option name="totallyTimeSpent" value="115408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2041,22 +2034,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1906542" vertical-offset="0" max-vertical-offset="535">
-          <caret line="6" column="97140" selection-start-line="6" selection-start-column="97140" selection-end-line="6" selection-end-column="97140" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/movie.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
@@ -2187,34 +2164,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="884">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="1989">
           <caret line="33" column="36" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AccessFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="952">
-          <caret line="24" column="86" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
-          <folding>
-            <element signature="e#1720#1721#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1867#1868#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2239,16 +2193,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1343">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2432,14 +2376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="901">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/items.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
@@ -2482,18 +2418,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="901">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="428" max-vertical-offset="1343">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AccessFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="884">
+          <caret line="42" column="9" selection-start-line="29" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="901">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.961538" vertical-offset="404" max-vertical-offset="918">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+        <state vertical-scroll-proportion="-13.115385" vertical-offset="339" max-vertical-offset="935">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="714">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93385214" vertical-offset="7408" max-vertical-offset="7990">
-          <caret line="464" column="1" selection-start-line="464" selection-start-column="1" selection-end-line="464" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.50715744" vertical-offset="2387" max-vertical-offset="7990">
+          <caret line="155" column="4" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="4" />
           <folding />
         </state>
       </provider>

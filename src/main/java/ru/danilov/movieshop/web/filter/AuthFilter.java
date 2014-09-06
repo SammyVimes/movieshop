@@ -34,6 +34,7 @@ public class AuthFilter extends BaseFilter {
             if (authData == null || authData.isExpired()) {
                 response.sendRedirect("/movieshop/web/auth");
             } else {
+                request.setAttribute("user", authData.getUser());
                 filterChain.doFilter(request, response);
             }
         }

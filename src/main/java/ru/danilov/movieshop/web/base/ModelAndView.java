@@ -1,5 +1,8 @@
 package ru.danilov.movieshop.web.base;
 
+import ru.danilov.movieshop.core.auth.AuthData;
+import ru.danilov.movieshop.web.util.AttributeNames;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

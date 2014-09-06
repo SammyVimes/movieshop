@@ -38,7 +38,8 @@
         </div>
         <div class="row">
             <div class="form-element width-12">
-                <select class="form-input width-6">
+                <label for="currency" class="width-2">Валюта</label>
+                <select class="form-input width-6" id="currency" name="currency">
                     <option value="RUS_RUBLES">Рубли</option>
                     <option value="US_DOLLARS">Доллары</option>
                 </select>
