@@ -28,4 +28,8 @@ public class MovieDAO {
         return list.isEmpty() ? null : list.get(0);
     }
 
+    public List<Movie> getAllMovies() {
+        return entityManager.createQuery("SELECT a FROM Movie a", Movie.class).getResultList();
+    }
+
 }

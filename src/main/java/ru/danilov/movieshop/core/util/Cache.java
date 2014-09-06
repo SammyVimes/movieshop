@@ -1,6 +1,7 @@
 package ru.danilov.movieshop.core.util;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  *
@@ -32,7 +33,7 @@ public class Cache<K, V> implements Map<K, V> {
     }
 
     public Cache(final long ttl, final long ttc) {
-        mMap = new HashMap<K, CacheValue<K, V>>();
+        mMap = new ConcurrentHashMap<>();
         this.ttl = ttl;
         this.ttc = ttc;
     }

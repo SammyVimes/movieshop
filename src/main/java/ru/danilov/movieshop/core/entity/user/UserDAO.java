@@ -25,7 +25,8 @@ public class UserDAO {
     }
 
     public User getByLogin(final String login) {
-        List<User> list = entityManager.createQuery("SELECT a FROM User a", User.class).getResultList();
+        List<User> list = entityManager.createQuery("SELECT a FROM User a WHERE  login = :login", User.class)
+                .setParameter("login", login).getResultList();
         return list.isEmpty() ? null : list.get(0);
     }
 
