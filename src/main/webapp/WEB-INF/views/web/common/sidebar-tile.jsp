@@ -11,7 +11,15 @@
         <ul class="nav" id="side-menu">
 
             <li>
-                <a class="menu-link" href="/energy/web/main/user/reports/" page-name="reports"><i class="fa fa-file-word-o fa-fw"></i> Отчёты</a>
+                <a class="menu-link" href="#" page-name="reports"><i class="fa fa-star fa-fw"></i> Популярное</a>
+            </li>
+
+            <li>
+                <a class="menu-link" href="#" page-name="reports"><i class="fa fa-flash fa-fw"></i> Новинки</a>
+            </li>
+
+            <li>
+                <a class="menu-link" href="#" page-name="reports"><i class="fa  fa-money fa-fw"></i> Скидки</a>
             </li>
 
         </ul>

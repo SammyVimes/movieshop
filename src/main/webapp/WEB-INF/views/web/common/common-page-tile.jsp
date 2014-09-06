@@ -13,15 +13,14 @@
     <head>
         <c:set var="cssBaseUrl"><c:url value="/css/"/></c:set>
         <link rel="stylesheet" href="${cssBaseUrl}main.css" type="text/css">
+        <link rel="stylesheet" href="${cssBaseUrl}items.css" type="text/css">
         <c:set var="libBaseUrl"><c:url value="/lib/"/></c:set>
         <link rel="stylesheet" href="${libBaseUrl}css/font-awesome.css" type="text/css">
     </head>
 
     <body>
         <tiles:insertAttribute name="header"/>
-        <div class="container">
-            <tiles:insertAttribute name="page-content"/>
-        </div>
+        <tiles:insertAttribute name="page-content"/>
     </body>
 
 </html>

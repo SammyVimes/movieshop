@@ -14,6 +14,10 @@
             Movie Shop
         </div>
         <div class="controls">
+            <c:set var="catalogLink"><c:url value="/web/app/catalog"/></c:set>
+            <a href="${catalogLink}" class="control">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
             <a href="#" class="control">
                 <i class="fa fa-user"></i>
             </a>

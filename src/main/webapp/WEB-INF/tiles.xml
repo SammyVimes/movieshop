@@ -8,10 +8,14 @@
     <definition name="common" template="/WEB-INF/views/web/common/common-page-tile.jsp">
         <put-attribute name="title" value="" type="string"/>
         <put-attribute name="header" type="definition" value="header"/>
-        <put-attribute name="sidebar" type="definition" value="sidebar"/>
         <put-attribute name="page-content" type="definition"/>
         <put-attribute name="footer" type="definition"/>
         <put-attribute name="body" type="definition"/>
+    </definition>
+
+
+    <definition name="user.main" extends="common">
+        <put-attribute name="page-content" type="definition" value="mainuserpage"/>
     </definition>
 
     <definition name="user.catalog" extends="common">
@@ -19,8 +23,12 @@
     </definition>
 
     <definition name="header" template="/WEB-INF/views/web/common/header-tile.jsp"/>
+    <definition name="mainuserpage" template="/WEB-INF/views/web/user/main.jsp"/>
     <definition name="sidebar" template="/WEB-INF/views/web/common/sidebar-tile.jsp"/>
-    <definition name="catalog" template="/WEB-INF/views/web/user/catalog.jsp"/>
+
+    <definition name="catalog" template="/WEB-INF/views/web/user/catalog.jsp">
+        <put-attribute name="sidebar" type="definition" value="sidebar"/>
+    </definition>
 
     <!--<definition name="admin-header" template="/WEB-INF/views/web/admin/header.jsp"/>-->
     <!--<definition name="admin-footer" template="/WEB-INF/views/web/admin/footer.jsp"/>-->

@@ -36,6 +36,7 @@ a:visited {
 }
 
 body {
+    background-color: #F0F0F0;
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -72,6 +73,14 @@ body {
     border-color: #e7e7e7;
 }
 
+
+.jumbotron {
+    background-color: #7DEBF5;
+    border-top: 1px solid #4fc6f5;
+    border-bottom: 1px solid #5bcef5;
+    margin-bottom: 0;
+    padding: 50px 0 40px;
+}
 
 /*header*/
 
@@ -211,6 +220,22 @@ body {
     border-color: #398439;
 }
 
+.btn-normal {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.btn-normal.btn-outline {
+    color: #428bca;
+}
+
+.btn-normal:hover, .btn-normal:focus, .btn-normal:active, .btn-normal.active, .open > .dropdown-toggle.btn-normal {
+    color: #fff;
+    background-color: #3071a9;
+    border-color: #285e8e;
+}
+
 .btn-outline {
     color: inherit;
     background-color: transparent;
@@ -286,7 +311,7 @@ body {
 }
 
 .width-4 {
-    width: 33.3%;
+    width: 32%;
 }
 
 .width-5 {

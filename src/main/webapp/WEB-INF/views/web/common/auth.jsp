@@ -18,7 +18,7 @@
 <body>
     <div class="container">
         <div class="offset-3 login-panel width-4">
-            Hello guyz
+            <h3>Авторизация</h3>
             <c:set var="actionUrl"><c:url value="/web/auth/doAuth"/></c:set>
             <form action="${actionUrl}">
                 <div class="form-element">
@@ -28,6 +28,8 @@
                     <input id="password" placeholder="Пароль" class="form-input" name="password" type="password">
                 </div>
                 <button class="btn btn-outline btn-success" type="submit">Авторизация</button>
+                <c:set var="registerLink"><c:url value="#"/></c:set>
+                <a class="btn btn-outline btn-normal" href="${registerLink}">Регистрация</a>
             </form>
         </div>
     </div>
