@@ -4,6 +4,7 @@ import ru.danilov.movieshop.core.entity.user.UserDAO;
 import ru.danilov.movieshop.core.entity.user.UserManager;
 import ru.danilov.movieshop.web.controller.AuthController;
 import ru.danilov.movieshop.web.controller.BaseController;
+import ru.danilov.movieshop.web.user.MainPageController;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -24,6 +25,8 @@ public class ApplicationMainServlet extends BaseServlet {
     public void init() throws ServletException {
         AuthController authController = new AuthController();
         controllerMap.put("/auth", authController);
+        MainPageController mainPageController= new MainPageController();
+        controllerMap.put("/app/main", mainPageController);
         super.init();
     }
 

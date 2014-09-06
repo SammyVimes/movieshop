@@ -15,6 +15,16 @@
         <listener-class>ru.danilov.movieshop.web.service.ServiceInitListener</listener-class>
     </listener>
 
+    <filter>
+        <filter-name>authFilter</filter-name>
+        <filter-class>ru.danilov.movieshop.web.filter.AuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>authFilter</filter-name>
+        <url-pattern>/app/*</url-pattern>
+    </filter-mapping>
+
     <servlet>
         <servlet-name>mainServlet</servlet-name>
         <servlet-class>ru.danilov.movieshop.web.servlet.ApplicationMainServlet</servlet-class>
@@ -42,5 +52,36 @@
         <filter-name>CharacterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+    <servlet>
+        <servlet-name>tiles</servlet-name>
+        <servlet-class>org.apache.tiles.web.startup.TilesServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>tiles</servlet-name>
+        <url-pattern>/nothingtodohere</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Tiles Dispatch Servlet</servlet-name>
+        <servlet-class>org.apache.tiles.web.util.TilesDispatchServlet</servlet-class>
+        <init-param>
+            <param-name>
+                org.apache.tiles.definition.DefinitionsFactory.DEFINITIONS_CONFIG
+            </param-name>
+            <param-value>
+                /WEB-INF/tiles.xml,/org/apache/tiles/classpath-defs.xml
+            </param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Tiles Dispatch Servlet</servlet-name>
+        <url-pattern>*.tiles</url-pattern>
+    </servlet-mapping>
+
+
     
 </web-app>

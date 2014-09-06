@@ -55,4 +55,9 @@ public class AuthData {
     public void setUser(final User user) {
         this.user = user;
     }
+
+    public boolean isExpired() {
+        return (new Date()).after(expirationTimestamp);
+    }
+
 }

@@ -212,10 +212,30 @@
             <element id="library" level="project" name="Maven: commons-digester:commons-digester:2.0" />
             <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
             <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.5.8" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-extras:3.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-servlet-wildcard:1.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-servlet:1.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-api:1.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-mustache:1.0.4" />
+            <element id="library" level="project" name="Maven: com.github.spullara.mustache.java:compiler:0.8.4" />
+            <element id="library" level="project" name="Maven: com.google.guava:guava:12.0.1" />
+            <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
             <element id="library" level="project" name="Maven: org.apache.tiles:tiles-jsp:2.2.2" />
             <element id="library" level="project" name="Maven: org.apache.tiles:tiles-servlet:2.2.2" />
             <element id="library" level="project" name="Maven: org.apache.tiles:tiles-template:2.2.2" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-freemarker:3.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-freemarker:1.0.4" />
+            <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.15" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-velocity:3.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.velocity:velocity-tools:2.0" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-velocity:1.0.4" />
             <element id="library" level="project" name="Maven: org.apache.tiles:tiles-el:2.2.2" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-mvel:3.0.4" />
+            <element id="library" level="project" name="Maven: org.mvel:mvel2:2.0.11" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-ognl:3.0.4" />
+            <element id="library" level="project" name="Maven: ognl:ognl:2.7.3" />
+            <element id="library" level="project" name="Maven: jboss:javassist:3.7.ga" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-compat:3.0.4" />
             <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1" />
             <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.7.2" />
             <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.8.3" />
@@ -604,6 +624,39 @@
         <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/0.9.18/logback-core-0.9.18-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.github.spullara.mustache.java:compiler:0.8.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/spullara/mustache/java/compiler/0.8.4/compiler-0.8.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/spullara/mustache/java/compiler/0.8.4/compiler-0.8.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/spullara/mustache/java/compiler/0.8.4/compiler-0.8.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.code.findbugs:jsr305:1.3.9">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.google.guava:guava:12.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/12.0.1/guava-12.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/12.0.1/guava-12.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/12.0.1/guava-12.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.googlecode.json-simple:json-simple:1.1">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar!/" />
@@ -945,6 +998,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: jboss:javassist:3.7.ga">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jboss/javassist/3.7.ga/javassist-3.7.ga.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jboss/javassist/3.7.ga/javassist-3.7.ga-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jboss/javassist/3.7.ga/javassist-3.7.ga-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: junit:junit:4.4">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/" />
@@ -976,6 +1040,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/htmlcleaner/htmlcleaner/2.2/htmlcleaner-2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: ognl:ognl:2.7.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/2.7.3/ognl-2.7.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/2.7.3/ognl-2.7.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/2.7.3/ognl-2.7.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.httpcomponents:httpclient:4.0.1">
@@ -1033,6 +1108,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-api/2.2.2/tiles-api-2.2.2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.apache.tiles:tiles-compat:3.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-compat/3.0.4/tiles-compat-3.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-compat/3.0.4/tiles-compat-3.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-compat/3.0.4/tiles-compat-3.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.apache.tiles:tiles-core:2.2.2">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar!/" />
@@ -1055,6 +1141,28 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-el/2.2.2/tiles-el-2.2.2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.apache.tiles:tiles-extras:3.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-extras/3.0.4/tiles-extras-3.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-extras/3.0.4/tiles-extras-3.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-extras/3.0.4/tiles-extras-3.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-freemarker:3.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-freemarker/3.0.4/tiles-freemarker-3.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-freemarker/3.0.4/tiles-freemarker-3.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-freemarker/3.0.4/tiles-freemarker-3.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.apache.tiles:tiles-jsp:2.2.2">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2.jar!/" />
@@ -1064,6 +1172,94 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-jsp/2.2.2/tiles-jsp-2.2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-mvel:3.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-mvel/3.0.4/tiles-mvel-3.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-mvel/3.0.4/tiles-mvel-3.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-mvel/3.0.4/tiles-mvel-3.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-ognl:3.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-ognl/3.0.4/tiles-ognl-3.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-ognl/3.0.4/tiles-ognl-3.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-ognl/3.0.4/tiles-ognl-3.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-request-api:1.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-api/1.0.4/tiles-request-api-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-api/1.0.4/tiles-request-api-1.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-api/1.0.4/tiles-request-api-1.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-request-freemarker:1.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-freemarker/1.0.4/tiles-request-freemarker-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-freemarker/1.0.4/tiles-request-freemarker-1.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-freemarker/1.0.4/tiles-request-freemarker-1.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-request-mustache:1.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-mustache/1.0.4/tiles-request-mustache-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-mustache/1.0.4/tiles-request-mustache-1.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-mustache/1.0.4/tiles-request-mustache-1.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-request-servlet-wildcard:1.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-servlet-wildcard/1.0.4/tiles-request-servlet-wildcard-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-servlet-wildcard/1.0.4/tiles-request-servlet-wildcard-1.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-servlet-wildcard/1.0.4/tiles-request-servlet-wildcard-1.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-request-servlet:1.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-servlet/1.0.4/tiles-request-servlet-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-servlet/1.0.4/tiles-request-servlet-1.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-servlet/1.0.4/tiles-request-servlet-1.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-request-velocity:1.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-velocity/1.0.4/tiles-request-velocity-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-velocity/1.0.4/tiles-request-velocity-1.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-request-velocity/1.0.4/tiles-request-velocity-1.0.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.tiles:tiles-servlet:2.2.2">
@@ -1086,6 +1282,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-template/2.2.2/tiles-template-2.2.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tiles:tiles-velocity:3.0.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-velocity/3.0.4/tiles-velocity-3.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-velocity/3.0.4/tiles-velocity-3.0.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tiles/tiles-velocity/3.0.4/tiles-velocity-3.0.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.tomcat:dbcp:6.0.18">
@@ -1141,6 +1348,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-servlet-api/8.0.12/tomcat-servlet-api-8.0.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.velocity:velocity-tools:2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.velocity:velocity:1.6">
@@ -1275,6 +1493,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.8.3/jackson-mapper-asl-1.8.3-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.freemarker:freemarker:2.3.15">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.15/freemarker-2.3.15.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.15/freemarker-2.3.15-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.15/freemarker-2.3.15-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.0.Final">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar!/" />
@@ -1383,6 +1612,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.6.0/jaxb2-basics-runtime-0.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mvel:mvel2:2.0.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mvel/mvel2/2.0.11/mvel2-2.0.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mvel/mvel2/2.0.11/mvel2-2.0.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mvel/mvel2/2.0.11/mvel2-2.0.11-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.slf4j:jcl-over-slf4j:1.5.8">

@@ -1,5 +1,6 @@
 package ru.danilov.movieshop.web.service;
 
+import ru.danilov.movieshop.core.auth.AuthManager;
 import ru.danilov.movieshop.core.entity.user.UserDAO;
 import ru.danilov.movieshop.core.entity.user.UserManager;
 import ru.danilov.movieshop.web.util.ServiceContainer;
@@ -18,6 +19,8 @@ public class ServiceInitListener implements ServletContextListener {
         ServiceContainer.putService(userDAO);
         UserManager userManager = new UserManager();
         ServiceContainer.putService(userManager);
+        AuthManager authManager = new AuthManager();
+        ServiceContainer.putService(authManager);
     }
 
     @Override
