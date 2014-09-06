@@ -26,6 +26,10 @@
         <put-attribute name="page-content" type="definition" value="popular"/>
     </definition>
 
+    <definition name="user.catalog.movie" extends="common">
+        <put-attribute name="page-content" type="definition" value="movie"/>
+    </definition>
+
     <definition name="header" template="/WEB-INF/views/web/common/header-tile.jsp"/>
     <definition name="mainuserpage" template="/WEB-INF/views/web/user/main.jsp"/>
     <definition name="sidebar" template="/WEB-INF/views/web/common/sidebar-tile.jsp"/>
@@ -37,6 +41,8 @@
     <definition name="popular" template="/WEB-INF/views/web/user/popular.jsp">
         <put-attribute name="sidebar" type="definition" value="sidebar"/>
     </definition>
+
+    <definition name="movie" template="/WEB-INF/views/web/user/movie.jsp"/>
 
     <!--<definition name="admin-header" template="/WEB-INF/views/web/admin/header.jsp"/>-->
     <!--<definition name="admin-footer" template="/WEB-INF/views/web/admin/footer.jsp"/>-->

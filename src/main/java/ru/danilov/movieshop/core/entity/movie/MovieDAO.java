@@ -23,9 +23,14 @@ public class MovieDAO {
         transaction.commit();
     }
 
-    public Movie search(final String query) {
-        List<Movie> list = entityManager.createQuery("SELECT a FROM Movie a WHERE title LIKE :query", Movie.class)
+    public List<Movie> search(final String query) {
+        return entityManager.createQuery("SELECT a FROM Movie a WHERE title LIKE :query", Movie.class)
                 .setParameter("query", query).getResultList();
+    }
+
+    public Movie getById(final Long id) {
+        List<Movie> list = entityManager.createQuery("SELECT a FROM Movie a WHERE id = :id", Movie.class)
+                .setParameter("id", id).getResultList();
         return list.isEmpty() ? null : list.get(0);
     }
 

@@ -15,16 +15,16 @@ public class MovieManager {
 
     }
 
-    private List<Movie> search(final String query) {
+    public List<Movie> search(final String query) {
+        return movieDAO.search(query);
+    }
+
+    public List<Movie> getAllMovies() {
         return null;
     }
 
-    private List<Movie> getAllMovies() {
-        return null;
-    }
-
-    private Movie getMovieById() {
-        return null;
+    public Movie getMovieById(final Long movieId) {
+        return movieDAO.getById(movieId);
     }
 
     private void removeMovie(final Movie movie) {

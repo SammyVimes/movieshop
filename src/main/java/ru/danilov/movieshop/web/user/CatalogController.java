@@ -23,6 +23,8 @@ public class CatalogController extends BaseController {
     public void handleRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         if (request.getRequestURI().contains("/catalog/popular")) {
             popularMovies(request, response);
+        } else if(request.getRequestURI().contains("/catalog/movie")) {
+            showMovie(request, response);
         } else {
             catalogView(request, response);
         }
@@ -36,6 +38,15 @@ public class CatalogController extends BaseController {
         ModelAndView mav = new ModelAndView("/user.catalog.popular.tiles");
         List<Movie> popularMovies = movieManager.getPopularMovies();
         mav.putObject("popular", popularMovies);
+        mav.process(request, response);
+    }
+
+    public void showMovie(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        String movieIdString = request.getParameter("id");
+        Long movieId = Long.valueOf(movieIdString);
+        ModelAndView mav = new ModelAndView("/user.catalog.movie.tiles");
+        Movie movie = movieManager.getMovieById(movieId);
+        mav.putObject("movie", movie);
         mav.process(request, response);
     }
 

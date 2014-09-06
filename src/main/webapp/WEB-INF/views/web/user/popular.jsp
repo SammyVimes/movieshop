@@ -24,7 +24,8 @@
         <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
         <c:forEach items="${popular}" var="movie">
 
-            <a href="/item/27">
+            <c:set var="movieLink"><c:url value="/web/app/catalog/movie?id=${movie.id}"/></c:set>
+            <a href="${movieLink}">
                 <div class="item width-4 news">
                     <img src="${movie.coverUri}">
 
