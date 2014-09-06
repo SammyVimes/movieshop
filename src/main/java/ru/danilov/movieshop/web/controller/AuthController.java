@@ -26,7 +26,7 @@ public class AuthController extends BaseController {
     private AuthManager authManager= ServiceContainer.getService(AuthManager.class);
 
     @Override
-    public void handleRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String url = request.getRequestURI();
         if (url.contains("doAuth")) {
             auth(request, response);

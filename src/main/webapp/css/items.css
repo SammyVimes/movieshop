@@ -20,6 +20,12 @@
     margin-bottom: 5px;
 }
 
+.item:hover {
+    transition: all .5s;
+    transform: translateY(-20px) scale(1, 1);
+    -webkit-transform: translateY(-20px) scale(1, 1);
+}
+
 .item a {
     display: block;
     width: 100%;
@@ -36,7 +42,6 @@
 
 .item img:hover {
     box-shadow: 0 0px 18px rgba(0,0,0,0.4);
-    transform: translateY(-20px) scale(1, 1);
     z-index: 10;
     cursor: pointer;
 }

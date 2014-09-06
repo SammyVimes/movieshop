@@ -45,6 +45,11 @@
         </put-list-attribute>
     </definition>
 
+
+    <definition name="admin.addMovie" extends="common">
+        <put-attribute name="page-content" type="definition" value="addMovie"/>
+    </definition>
+
     <definition name="header" template="/WEB-INF/views/web/common/header-tile.jsp"/>
     <definition name="mainuserpage" template="/WEB-INF/views/web/user/main.jsp"/>
     <definition name="sidebar" template="/WEB-INF/views/web/common/sidebar-tile.jsp"/>
@@ -59,6 +64,7 @@
 
     <definition name="movie" template="/WEB-INF/views/web/user/movie.jsp"/>
     <definition name="moviesList" template="/WEB-INF/views/web/admin/moviesList.jsp"/>
+    <definition name="addMovie" template="/WEB-INF/views/web/admin/addMovie.jsp"/>
 
     <definition name="errorNotFound" template="/WEB-INF/views/web/common/error404.jsp"/>
 

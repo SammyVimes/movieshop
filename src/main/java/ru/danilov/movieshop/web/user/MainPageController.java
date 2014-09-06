@@ -19,7 +19,7 @@ public class MainPageController extends BaseController {
     private AuthManager authManager = ServiceContainer.getService(AuthManager.class);
 
     @Override
-    public void handleRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         if (request.getRequestURI().contains("logout")) {
             logout(request, response);
         } else {

@@ -22,10 +22,17 @@ public class MoviesController extends BaseController {
     private MovieManager movieManager = ServiceContainer.getService(MovieManager.class);
 
     @Override
-    public void handleRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         if (request.getRequestURI().contains("search")) {
             searchForMovie(request, response);
-        } else {
+        } else if (request.getRequestURI().contains("addMovie")) {
+            if (request.getMethod().equalsIgnoreCase("get")) {
+                addMovieGetView(request, response);
+            } else {
+
+            }
+            searchForMovie(request, response);
+        }else {
             mainView(request, response);
         }
     }
@@ -51,6 +58,11 @@ public class MoviesController extends BaseController {
             }
         }
         sendJSONResponse(jsonObject, request, response);
+    }
+
+    public void addMovieGetView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        ModelAndView modelAndView = new ModelAndView("/admin.addMovie.tiles");
+        modelAndView.process(request, response);
     }
 
 }

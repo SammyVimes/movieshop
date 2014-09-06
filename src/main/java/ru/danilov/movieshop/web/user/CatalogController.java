@@ -20,7 +20,7 @@ public class CatalogController extends BaseController {
     private MovieManager movieManager = ServiceContainer.getService(MovieManager.class);
 
     @Override
-    public void handleRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         if (request.getRequestURI().contains("/catalog/popular")) {
             popularMovies(request, response);
         } else if(request.getRequestURI().contains("/catalog/movie")) {

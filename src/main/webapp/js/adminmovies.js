@@ -4,16 +4,31 @@
 
 $(document).ready(function() {
 
+    var $searchResults = $("#search-results");
+
     $("#search_btn").click(function() {
        var query = $("#search").val();
         $.ajax({
             url: "/movieshop/web/app/admin/movies/search?query=" + query,
             dataType : "json"
         }).done(function(data) {
-           alert(data);
+           showResults(data["movies"]);
         }).fail(function(message) {
             alert(data);
         });
     });
+
+    function showResults(movies) {
+        $searchResults.empty();
+        for (var i = 0; i < movies.length; i++) {
+            var movie = movies[i];
+            var clone = $("#template").clone();
+            clone.removeClass("hidden");
+            clone.removeAttr("id");
+            clone.find(".search-cover").attr("src", movie.coverUri);
+            clone.find(".title").text(movie.title);
+            $searchResults.append(clone);
+        }
+    }
 
 });

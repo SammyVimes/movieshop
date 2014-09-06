@@ -11,12 +11,25 @@
 
 <div class="container">
 
-    <div class="form-element input-group" style="padding: 10px;">
-        <input class="form-input" id="search">
-        <span class="input-addon btn btn-normal btn-outline" id="search_btn"><i class="fa fa-search"></i></span>
+    <div class="row">
+        <div class="width-12 form-element input-group" style="padding: 10px;">
+            <input class="form-input" id="search">
+            <span class="input-addon btn btn-normal btn-outline" id="search_btn"><i class="fa fa-search"></i></span>
+        </div>
     </div>
 
+    <div id="search-results">
+
+    </div>
 
 </div>
 
-<div class="hidden" id="template"
+<div class="hidden row" id="template">
+    <div class="width-2">
+        <img class="search-cover">
+    </div>
+    <div class="width-3">
+        <div class="title"></div>
+    </div>
+    <div class="width-3"></div>
+</div>
