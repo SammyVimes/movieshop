@@ -17,6 +17,13 @@
         <link rel="stylesheet" href="${cssBaseUrl}movie.css" type="text/css">
         <c:set var="libBaseUrl"><c:url value="/lib/"/></c:set>
         <link rel="stylesheet" href="${libBaseUrl}css/font-awesome.css" type="text/css">
+
+        <tiles:useAttribute id="jsList" name="jsList" classname="java.util.List" />
+        <c:forEach items="${jsList}" var="jsRawLink">
+            <c:set var="jsLink"><c:url value="${jsRawLink}"/></c:set>
+            <script src="${jsLink}">javascript:void(0)</script>
+        </c:forEach>
+
     </head>
 
     <body>

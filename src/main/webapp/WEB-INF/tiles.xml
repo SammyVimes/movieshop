@@ -11,6 +11,9 @@
         <put-attribute name="page-content" type="definition"/>
         <put-attribute name="footer" type="definition"/>
         <put-attribute name="body" type="definition"/>
+        <put-list-attribute name="jsList">
+            <add-attribute value="/js/jquery.js"/>
+        </put-list-attribute>
     </definition>
 
 
@@ -37,6 +40,9 @@
 
     <definition name="admin.moviesList" extends="common">
         <put-attribute name="page-content" type="definition" value="moviesList"/>
+        <put-list-attribute name="jsList" inherit="true">
+            <add-attribute value="/js/adminmovies.js"/>
+        </put-list-attribute>
     </definition>
 
     <definition name="header" template="/WEB-INF/views/web/common/header-tile.jsp"/>

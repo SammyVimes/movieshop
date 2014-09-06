@@ -13,7 +13,10 @@
 
     <div class="form-element input-group" style="padding: 10px;">
         <input class="form-input" id="search">
-        <span class="input-addon btn btn-normal btn-outline"><i class="fa fa-search"></i></span>
+        <span class="input-addon btn btn-normal btn-outline" id="search_btn"><i class="fa fa-search"></i></span>
     </div>
 
+
 </div>
+
+<div class="hidden" id="template"

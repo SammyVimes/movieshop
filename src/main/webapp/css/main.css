@@ -28,6 +28,11 @@ a:visited {
     }
 }
 
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
 @media (max-width: 960px) {
     .container {
         width: 650px;

@@ -24,8 +24,7 @@ public class MovieDAO {
     }
 
     public List<Movie> search(final String query) {
-        return entityManager.createQuery("SELECT a FROM Movie a WHERE title LIKE :query", Movie.class)
-                .setParameter("query", query).getResultList();
+        return entityManager.createQuery("SELECT a FROM Movie a WHERE title LIKE '%" + query + "%'", Movie.class).getResultList();
     }
 
     public Movie getById(final Long id) {
