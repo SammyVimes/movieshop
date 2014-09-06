@@ -38,16 +38,19 @@
                         </h2>
                     </div>
                 </div>
+                <c:if test="${movie.trailerUri ne null}">
 
-                <div class="row">
-                    <div class=width-12">
+                    <div class="row">
+                        <div class=width-12">
 
-                        <iframe id="ytplayer" type="text/html" width="450" height="300"
-                                src="https://www.youtube.com/embed/M7lc1UVf-VE"
-                                frameborder="0"></iframe>
+                            <iframe id="ytplayer" type="text/html" width="450" height="300"
+                                    src="${movie.trailerUri}?controls=0&theme=light"
+                                    frameborder="0"></iframe>
+                        </div>
+
                     </div>
 
-                </div>
+                </c:if>
 
                 <div class="row row-skip">
                     <div class="width-12 description row-skip">

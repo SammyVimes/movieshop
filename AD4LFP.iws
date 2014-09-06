@@ -4,7 +4,6 @@
     <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AD4LFP.iws" afterPath="$PROJECT_DIR$/AD4LFP.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp" />
     </list>
     <ignored path="AD4LFP.iws" />
@@ -69,21 +68,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9588235" vertical-offset="7076" max-vertical-offset="7667">
+            <state vertical-scroll-proportion="-19.56" vertical-offset="7076" max-vertical-offset="7667">
               <caret line="445" column="1" selection-start-line="445" selection-start-column="1" selection-end-line="445" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="movie.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.846154" vertical-offset="396" max-vertical-offset="1292">
-              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.64176244" vertical-offset="447" max-vertical-offset="1343">
+              <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -92,17 +91,18 @@
       <file leaf-file-name="Movie.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="914" max-vertical-offset="1836">
-              <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="1836">
+              <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1739#1740#0" expanded="true" />
-                <element signature="e#1767#1768#0" expanded="true" />
-                <element signature="e#2549#2550#0" expanded="true" />
-                <element signature="e#2589#2590#0" expanded="true" />
-                <element signature="e#2673#2674#0" expanded="true" />
-                <element signature="e#2741#2742#0" expanded="true" />
-                <element signature="e#2785#2786#0" expanded="true" />
+                <element signature="e#1757#1758#0" expanded="true" />
+                <element signature="e#1785#1786#0" expanded="true" />
+                <element signature="e#2567#2568#0" expanded="true" />
+                <element signature="e#2607#2608#0" expanded="true" />
+                <element signature="e#2658#2659#0" expanded="true" />
+                <element signature="e#2691#2692#0" expanded="true" />
+                <element signature="e#2759#2760#0" expanded="true" />
+                <element signature="e#2803#2804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,7 +113,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
               <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-              <folding />
+              <folding>
+                <marker date="1410018840232" expanded="true" signature="124:128" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,16 +151,6 @@
                 <element signature="e#469#470#0" expanded="true" />
                 <element signature="e#502#503#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1093" max-vertical-offset="1683">
-              <caret line="87" column="39" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -258,9 +250,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/money/Currency.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tag/taglib.tld" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/money/MoneyTag.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
       </list>
     </option>
   </component>
@@ -1921,7 +1913,7 @@
       <workItem from="1408532695272" duration="394000" />
       <workItem from="1409933202668" duration="15125000" />
       <workItem from="1409951509886" duration="5162000" />
-      <workItem from="1409983517025" duration="28150000" />
+      <workItem from="1409983517025" duration="28619000" />
     </task>
     <task id="LOCAL-00001" summary="Create Project">
       <created>1399384250122</created>
@@ -1931,7 +1923,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103744000" />
+    <option name="totallyTimeSpent" value="104213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2152,14 +2144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/net/DualStackPlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33206832" vertical-offset="4143" max-vertical-offset="4726">
-          <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -2397,7 +2381,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
           <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1410018840232" expanded="true" signature="124:128" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2456,23 +2442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="914" max-vertical-offset="1836">
-          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1739#1740#0" expanded="true" />
-            <element signature="e#1767#1768#0" expanded="true" />
-            <element signature="e#2549#2550#0" expanded="true" />
-            <element signature="e#2589#2590#0" expanded="true" />
-            <element signature="e#2673#2674#0" expanded="true" />
-            <element signature="e#2741#2742#0" expanded="true" />
-            <element signature="e#2785#2786#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="26064" max-vertical-offset="98447">
@@ -2481,18 +2450,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.846154" vertical-offset="396" max-vertical-offset="1292">
-          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state vertical-scroll-proportion="-19.56" vertical-offset="7076" max-vertical-offset="7667">
+          <caret line="445" column="1" selection-start-line="445" selection-start-column="1" selection-end-line="445" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9588235" vertical-offset="7076" max-vertical-offset="7667">
-          <caret line="445" column="1" selection-start-line="445" selection-start-column="1" selection-end-line="445" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="1836">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1757#1758#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2658#2659#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+            <element signature="e#2759#2760#0" expanded="true" />
+            <element signature="e#2803#2804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/net/DualStackPlainSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8355932" vertical-offset="3825" max-vertical-offset="4726">
+          <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64176244" vertical-offset="447" max-vertical-offset="1343">
+          <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
           <folding />
         </state>
       </provider>

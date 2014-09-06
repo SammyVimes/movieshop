@@ -26,7 +26,7 @@ public class Movie {
     private String trailerUri;
 
     @NotNull
-    @Column(name = "title")
+    @Column(name = "title", nullable = false)
     private String title;
 
     @Nullable
