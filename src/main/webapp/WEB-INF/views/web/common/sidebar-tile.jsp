@@ -12,6 +12,13 @@
         <ul class="nav" id="side-menu">
 
             <li>
+                <div class="form-element input-group" style="padding: 10px;">
+                    <input class="form-input" id="search">
+                    <span class="input-addon btn btn-normal btn-outline"><i class="fa fa-search"></i></span>
+                </div>
+            </li>
+
+            <li>
                 <c:set var="popular"><c:url value="/web/app/catalog/popular"/></c:set>
                 <a class="menu-link" href="${popular}"><i class="fa fa-star fa-fw"></i> Популярное</a>
             </li>

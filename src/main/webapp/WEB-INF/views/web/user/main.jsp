@@ -16,14 +16,15 @@
 
 <div class="container">
 
-    <div class="item width-4 news">
-        <img src="http://amediatv.ru/media/cache/default_22/default/0001/01/37569090005a6a383f4ae9c66c16161402651d24.jpeg">
-        <a href="/item/27"></a>
-        <div class="newstextblock">
-            <span>Silicon Valley</span>
-            впервые оффлайн
+    <a href="/item/27">
+        <div class="item width-4 news">
+            <img src="http://amediatv.ru/media/cache/default_22/default/0001/01/37569090005a6a383f4ae9c66c16161402651d24.jpeg">
+            <div class="newstextblock">
+                <span>Silicon Valley</span>
+                впервые оффлайн
+            </div>
         </div>
-    </div>
+    </a>
 
     <div class="item width-4  news">
         <img src="http://amediatv.ru/media/cache/default_22/default/0001/01/579af97506bed6a8881a9d620108226d3525d2c0.jpeg">

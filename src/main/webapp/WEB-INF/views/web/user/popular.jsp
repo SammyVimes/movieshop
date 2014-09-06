@@ -18,20 +18,21 @@
 
 <tiles:insertAttribute name="sidebar"/>
 <div class="sidebar-helper">
-    <div class="container">
 
+    <div class="container">
         <%--@elvariable id="popular" type="java.util.List"--%>
         <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
         <c:forEach items="${popular}" var="movie">
 
-            <div class="item width-4 news">
-                <img src="${movie.coverUri}">
-                <a href="/item/27"></a>
-                <div class="newstextblock">
-                    <span>${movie.title}</span>
-                    впервые оффлайн
+            <a href="/item/27">
+                <div class="item width-4 news">
+                    <img src="${movie.coverUri}">
+
+                    <div class="newstextblock">
+                        <span>${movie.title}</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
         </c:forEach>
 
