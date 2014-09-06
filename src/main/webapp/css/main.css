@@ -1,5 +1,10 @@
 /*main*/
 
+.light-text {
+    color: #B6B6B6;
+    font-style: italic;
+    font-weight: normal;
+}
 
 a {
     color: inherit;
@@ -91,6 +96,13 @@ body {
     background-color: #F57D7D;
     border-top: 1px solid #f5716a;
     border-bottom: 1px solid #f5716a;
+}
+
+.jumbotron.jumbotron-green {
+    color: #ffffff;
+    background-color: #1fa67a;
+    border-top: 1px solid #34a782;
+    border-bottom: 1px solid #1b926c;
 }
 
 /*header*/
@@ -354,7 +366,6 @@ body {
 .width-1, .width-2, .width-3, .width-4,
 .width-4, .width-5, .width-6, .width-7,
 .width-8, .width-9, .width-10 {
-    float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -403,4 +414,18 @@ body {
 
 .width-10 {
     width: 90%;
+}
+
+.width-11 {
+    width: 95%;
+}
+
+.width-12 {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .width-1, .width-2, .width-3, .width-4, .width-5, .width-6, .width-7, .width-8, .width-9, .width-10, .width-11, .width-12 {
+        float: left;
+    }
 }
