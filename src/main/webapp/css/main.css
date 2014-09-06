@@ -25,7 +25,7 @@ a:visited {
 
 @media (max-width: 960px) {
     .container {
-        width: 760px;
+        width: 650px;
     }
 }
 
@@ -43,11 +43,11 @@ body {
 
 /*sidebar*/
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .sidebar {
         z-index: 1;
         position: absolute;
-        width: 230px;
+        width: 230px!important;
     }
 }
 
@@ -71,8 +71,13 @@ body {
 .sidebar {
     background-color: #f8f8f8;
     border-color: #e7e7e7;
+    width: 100%;
+    left: 0;
 }
 
+.sidebar-helper {
+    padding-left: 230px
+}
 
 .jumbotron {
     background-color: #7DEBF5;
@@ -80,6 +85,12 @@ body {
     border-bottom: 1px solid #5bcef5;
     margin-bottom: 0;
     padding: 50px 0 40px;
+}
+
+.jumbotron.jumbotron-red {
+    background-color: #F57D7D;
+    border-top: 1px solid #f5716a;
+    border-bottom: 1px solid #f5716a;
 }
 
 /*header*/

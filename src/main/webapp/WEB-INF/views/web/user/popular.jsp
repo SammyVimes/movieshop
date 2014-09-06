@@ -9,23 +9,31 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+
+<div class="jumbotron jumbotron-red jumbotron-ad hidden-print">
+    <div class="container">
+        <h1><i class="fa fa-star"></i>&nbsp; Самое популярное</h1>
+    </div>
+</div>
+
 <tiles:insertAttribute name="sidebar"/>
+<div class="sidebar-helper">
+    <div class="container">
 
-<div class="container">
+        <%--@elvariable id="popular" type="java.util.List"--%>
+        <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
+        <c:forEach items="${popular}" var="movie">
 
-    <%--@elvariable id="popular" type="java.util.List"--%>
-    <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
-    <c:forEach items="${popular}" var="movie">
-
-        <div class="item width-4 news">
-            <img src="${movie.coverUri}">
-            <a href="/item/27"></a>
-            <div class="newstextblock">
-                <span>${movie.title}</span>
-                впервые оффлайн
+            <div class="item width-4 news">
+                <img src="${movie.coverUri}">
+                <a href="/item/27"></a>
+                <div class="newstextblock">
+                    <span>${movie.title}</span>
+                    впервые оффлайн
+                </div>
             </div>
-        </div>
 
-    </c:forEach>
+        </c:forEach>
 
+    </div>
 </div>
