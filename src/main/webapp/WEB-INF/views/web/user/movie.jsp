@@ -30,7 +30,7 @@
             <div class="width-5">
                 <div class="row">
                     <div class="width-12">
-                        <h2>
+                        <h2 style="margin-top: -4px;">
                             <b>${movie.title}</b>
                             <c:if test="${movie.localizedTitle ne null}">
                                 <div class="light-text">${movie.localizedTitle}</div>

@@ -44,6 +44,8 @@
 
     <definition name="movie" template="/WEB-INF/views/web/user/movie.jsp"/>
 
+    <definition name="errorNotFound" template="/WEB-INF/views/web/common/error404.jsp"/>
+
     <!--<definition name="admin-header" template="/WEB-INF/views/web/admin/header.jsp"/>-->
     <!--<definition name="admin-footer" template="/WEB-INF/views/web/admin/footer.jsp"/>-->
 </tiles-definitions>
