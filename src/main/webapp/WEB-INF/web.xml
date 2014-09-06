@@ -25,6 +25,24 @@
         <url-pattern>/web/app/*</url-pattern>
     </filter-mapping>
 
+
+
+    <filter>
+        <filter-name>adminFilter</filter-name>
+        <filter-class>ru.danilov.movieshop.web.filter.AccessFilter</filter-class>
+        <init-param>
+            <param-name>requiredRole</param-name>
+            <param-value>ADMIN</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>adminFilter</filter-name>
+        <url-pattern>/web/app/admin/*</url-pattern>
+    </filter-mapping>
+
+
+
     <servlet>
         <servlet-name>mainServlet</servlet-name>
         <servlet-class>ru.danilov.movieshop.web.servlet.ApplicationMainServlet</servlet-class>

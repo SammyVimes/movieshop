@@ -4,7 +4,9 @@ import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
 import ru.danilov.movieshop.core.entity.user.User;
 import ru.danilov.movieshop.core.entity.user.UserManager;
+import ru.danilov.movieshop.core.entity.user.UserRole;
 import ru.danilov.movieshop.core.util.Util;
+import ru.danilov.movieshop.web.base.ModelAndView;
 import ru.danilov.movieshop.web.util.AttributeNames;
 import ru.danilov.movieshop.web.util.ServiceContainer;
 
@@ -51,12 +53,20 @@ public class AuthController extends BaseController {
                 HttpSession session = request.getSession();
                 authManager.putAuthData(authData);
                 session.setAttribute(AttributeNames.AUTH_DATA_KEY, authData.getKey());
-                response.sendRedirect("/movieshop/web/app/main");
+                if (user.getUserRole() == UserRole.ADMIN) {
+                    response.sendRedirect("/movieshop/web/app/admin/movies");
+                } else {
+                    response.sendRedirect("/movieshop/web/app/main");
+                }
             } else {
-
+                ModelAndView modelAndView = new ModelAndView("/auth.tiles");
+                modelAndView.putObject("error", "Неверный пароль");
+                modelAndView.process(request, response);
             }
         } else {
-
+            ModelAndView modelAndView = new ModelAndView("/auth.tiles");
+            modelAndView.putObject("error", "Пользователь с таким ником не найден");
+            modelAndView.process(request, response);
         }
     }
 

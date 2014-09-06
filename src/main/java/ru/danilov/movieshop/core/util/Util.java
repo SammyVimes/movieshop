@@ -1,5 +1,7 @@
 package ru.danilov.movieshop.core.util;
 
+import sun.misc.BASE64Encoder;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
@@ -10,24 +12,20 @@ import java.util.Random;
 public final class Util {
 
     public static String getMD5Hash(final String str) {
-        StringBuffer hexString = new StringBuffer();
-        MessageDigest md = null;
+        MessageDigest digest = null;
         try {
-            md = MessageDigest.getInstance("MD5");
+            digest = MessageDigest.getInstance("MD5");
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        byte[] hash = md.digest();
-
-        for (int i = 0; i < hash.length; i++) {
-            if ((0xff & hash[i]) < 0x10) {
-                hexString.append("0"
-                        + Integer.toHexString((0xFF & hash[i])));
-            } else {
-                hexString.append(Integer.toHexString(0xFF & hash[i]));
-            }
+        try {
+            digest.update(str.getBytes("UTF-8"));
+        } catch (java.io.UnsupportedEncodingException ex) {
+            ex.printStackTrace();
         }
-        return hexString.toString();
+        byte[] rawData = digest.digest();
+        BASE64Encoder bencoder = new BASE64Encoder();
+        return bencoder.encode(rawData);
     }
 
     private static String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

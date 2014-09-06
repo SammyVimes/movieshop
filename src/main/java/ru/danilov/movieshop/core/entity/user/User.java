@@ -23,6 +23,11 @@ public class User {
     @Column(name = "password_hash", unique = false, nullable = false)
     private String passwordHash;
 
+    @NotNull
+    @Column(name = "user_role", nullable = false)
+    @Enumerated(EnumType.STRING)
+    private UserRole userRole;
+
     public long getId() {
         return id;
     }
@@ -47,6 +52,15 @@ public class User {
 
     public void setPasswordHash(@NotNull final String passwordHash) {
         this.passwordHash = passwordHash;
+    }
+
+    @NotNull
+    public UserRole getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(@NotNull final UserRole userRole) {
+        this.userRole = userRole;
     }
 
 }

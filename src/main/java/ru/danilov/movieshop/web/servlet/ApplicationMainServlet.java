@@ -2,6 +2,7 @@ package ru.danilov.movieshop.web.servlet;
 
 import ru.danilov.movieshop.core.entity.user.UserDAO;
 import ru.danilov.movieshop.core.entity.user.UserManager;
+import ru.danilov.movieshop.web.admin.MoviesController;
 import ru.danilov.movieshop.web.base.ModelAndView;
 import ru.danilov.movieshop.web.controller.AuthController;
 import ru.danilov.movieshop.web.controller.BaseController;
@@ -31,6 +32,8 @@ public class ApplicationMainServlet extends BaseServlet {
         controllerMap.put("/app/main", mainPageController);
         CatalogController catalogController = new CatalogController();
         controllerMap.put("/app/catalog", catalogController);
+        MoviesController moviesController = new MoviesController();
+        controllerMap.put("/app/admin/movies", moviesController);
         super.init();
     }
 

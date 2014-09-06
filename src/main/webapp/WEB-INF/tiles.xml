@@ -14,6 +14,8 @@
     </definition>
 
 
+    <definition name="auth" template="/WEB-INF/views/web/common/auth.jsp"/>
+
     <definition name="user.main" extends="common">
         <put-attribute name="page-content" type="definition" value="mainuserpage"/>
     </definition>
@@ -26,8 +28,15 @@
         <put-attribute name="page-content" type="definition" value="popular"/>
     </definition>
 
+
     <definition name="user.catalog.movie" extends="common">
         <put-attribute name="page-content" type="definition" value="movie"/>
+    </definition>
+
+    <!--admin views-->
+
+    <definition name="admin.moviesList" extends="common">
+        <put-attribute name="page-content" type="definition" value="moviesList"/>
     </definition>
 
     <definition name="header" template="/WEB-INF/views/web/common/header-tile.jsp"/>
@@ -43,8 +52,10 @@
     </definition>
 
     <definition name="movie" template="/WEB-INF/views/web/user/movie.jsp"/>
+    <definition name="moviesList" template="/WEB-INF/views/web/admin/moviesList.jsp"/>
 
     <definition name="errorNotFound" template="/WEB-INF/views/web/common/error404.jsp"/>
+
 
     <!--<definition name="admin-header" template="/WEB-INF/views/web/admin/header.jsp"/>-->
     <!--<definition name="admin-footer" template="/WEB-INF/views/web/admin/footer.jsp"/>-->

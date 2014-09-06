@@ -19,6 +19,10 @@
     <div class="container">
         <div class="offset-3 login-panel width-4">
             <h3>Авторизация</h3>
+            <%--@elvariable id="error" type="java.lang.String"--%>
+            <c:if test="${error ne null}">
+                <div class="" style="color: red">${error}</div>
+            </c:if>
             <c:set var="actionUrl"><c:url value="/web/auth/doAuth"/></c:set>
             <form action="${actionUrl}">
                 <div class="form-element">
