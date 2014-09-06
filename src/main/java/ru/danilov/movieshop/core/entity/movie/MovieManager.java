@@ -31,4 +31,8 @@ public class MovieManager {
 
     }
 
+    public List<Movie> getPopularMovies() {
+        return movieDAO.getPopularMovies();
+    }
+
 }

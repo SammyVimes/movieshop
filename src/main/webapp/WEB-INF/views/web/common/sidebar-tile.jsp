@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Semyon
@@ -11,15 +12,16 @@
         <ul class="nav" id="side-menu">
 
             <li>
-                <a class="menu-link" href="#" page-name="reports"><i class="fa fa-star fa-fw"></i> Популярное</a>
+                <c:set var="popular"><c:url value="/web/app/catalog/popular"/></c:set>
+                <a class="menu-link" href="${popular}"><i class="fa fa-star fa-fw"></i> Популярное</a>
             </li>
 
             <li>
-                <a class="menu-link" href="#" page-name="reports"><i class="fa fa-flash fa-fw"></i> Новинки</a>
+                <a class="menu-link" href="#" ><i class="fa fa-flash fa-fw"></i> Новинки</a>
             </li>
 
             <li>
-                <a class="menu-link" href="#" page-name="reports"><i class="fa  fa-money fa-fw"></i> Скидки</a>
+                <a class="menu-link" href="#" ><i class="fa  fa-money fa-fw"></i> Скидки</a>
             </li>
 
         </ul>

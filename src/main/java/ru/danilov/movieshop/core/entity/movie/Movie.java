@@ -18,6 +18,10 @@ public class Movie {
     private long id;
 
     @NotNull
+    @Column(name = "cover_uri", nullable = false)
+    private String coverUri;
+
+    @NotNull
     @Column(name = "title")
     private String title;
 
@@ -37,6 +41,10 @@ public class Movie {
     @Column(name = "currency", nullable = false)
     @Enumerated(EnumType.STRING)
     private Currency currency;
+
+    @NotNull
+    @Column(name = "is_popular", nullable = false)
+    private boolean isPopular;
 
     public long getId() {
         return id;
@@ -90,4 +98,21 @@ public class Movie {
         this.currency = currency;
     }
 
+    @NotNull
+    public boolean isPopular() {
+        return isPopular;
+    }
+
+    public void setPopular(@NotNull final boolean isPopular) {
+        this.isPopular = isPopular;
+    }
+
+    @NotNull
+    public String getCoverUri() {
+        return coverUri;
+    }
+
+    public void setCoverUri(@NotNull final String coverUri) {
+        this.coverUri = coverUri;
+    }
 }

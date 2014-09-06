@@ -22,11 +22,19 @@
         <put-attribute name="page-content" type="definition" value="catalog"/>
     </definition>
 
+    <definition name="user.catalog.popular" extends="common">
+        <put-attribute name="page-content" type="definition" value="popular"/>
+    </definition>
+
     <definition name="header" template="/WEB-INF/views/web/common/header-tile.jsp"/>
     <definition name="mainuserpage" template="/WEB-INF/views/web/user/main.jsp"/>
     <definition name="sidebar" template="/WEB-INF/views/web/common/sidebar-tile.jsp"/>
 
     <definition name="catalog" template="/WEB-INF/views/web/user/catalog.jsp">
+        <put-attribute name="sidebar" type="definition" value="sidebar"/>
+    </definition>
+
+    <definition name="popular" template="/WEB-INF/views/web/user/popular.jsp">
         <put-attribute name="sidebar" type="definition" value="sidebar"/>
     </definition>
 

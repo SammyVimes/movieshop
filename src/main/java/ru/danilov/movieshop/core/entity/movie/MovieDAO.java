@@ -24,7 +24,8 @@ public class MovieDAO {
     }
 
     public Movie search(final String query) {
-        List<Movie> list = entityManager.createQuery("SELECT a FROM Movie a", Movie.class).getResultList();
+        List<Movie> list = entityManager.createQuery("SELECT a FROM Movie a WHERE title LIKE :query", Movie.class)
+                .setParameter("query", query).getResultList();
         return list.isEmpty() ? null : list.get(0);
     }
 
@@ -32,4 +33,7 @@ public class MovieDAO {
         return entityManager.createQuery("SELECT a FROM Movie a", Movie.class).getResultList();
     }
 
+    public List<Movie> getPopularMovies() {
+        return entityManager.createQuery("SELECT a FROM Movie a WHERE isPopular IS TRUE", Movie.class).getResultList();
+    }
 }
