@@ -38,6 +38,17 @@
                         </h2>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class=width-12">
+
+                        <iframe id="ytplayer" type="text/html" width="450" height="300"
+                                src="https://www.youtube.com/embed/M7lc1UVf-VE"
+                                frameborder="0"></iframe>
+                    </div>
+
+                </div>
+
                 <div class="row row-skip">
                     <div class="width-12 description row-skip">
                         <b>Описание: </b>${movie.description}

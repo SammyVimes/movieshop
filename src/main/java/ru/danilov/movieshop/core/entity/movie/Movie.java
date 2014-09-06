@@ -21,6 +21,10 @@ public class Movie {
     @Column(name = "cover_uri", nullable = false)
     private String coverUri;
 
+    @Nullable
+    @Column(name = "trailer_uri", nullable = true)
+    private String trailerUri;
+
     @NotNull
     @Column(name = "title")
     private String title;
@@ -114,5 +118,14 @@ public class Movie {
 
     public void setCoverUri(@NotNull final String coverUri) {
         this.coverUri = coverUri;
+    }
+
+    @Nullable
+    public String getTrailerUri() {
+        return trailerUri;
+    }
+
+    public void setTrailerUri(@Nullable final String trailerUri) {
+        this.trailerUri = trailerUri;
     }
 }
