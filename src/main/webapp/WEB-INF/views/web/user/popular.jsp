@@ -15,7 +15,7 @@
 
     <%--@elvariable id="popular" type="java.util.List"--%>
     <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
-    <c:forEach items="popular" var="movie">
+    <c:forEach items="${popular}" var="movie">
 
         <div class="item width-4 news">
             <img src="${movie.coverUri}">
