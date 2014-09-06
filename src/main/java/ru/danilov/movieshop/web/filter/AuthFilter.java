@@ -27,11 +27,15 @@ public class AuthFilter extends BaseFilter {
     @Override
     public void doFilter(final HttpServletRequest request, final HttpServletResponse response, final FilterChain filterChain) throws IOException, ServletException {
         String key = (String) request.getSession().getAttribute(AttributeNames.AUTH_DATA_KEY);
-        AuthData authData = authManager.getAuthData(key);
-        if (authData == null || authData.isExpired()) {
+        if (key == null) {
             response.sendRedirect("/movieshop/web/auth");
         } else {
-            filterChain.doFilter(request, response);
+            AuthData authData = authManager.getAuthData(key);
+            if (authData == null || authData.isExpired()) {
+                response.sendRedirect("/movieshop/web/auth");
+            } else {
+                filterChain.doFilter(request, response);
+            }
         }
     }
 
