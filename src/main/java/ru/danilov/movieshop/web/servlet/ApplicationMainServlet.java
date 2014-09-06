@@ -4,6 +4,7 @@ import ru.danilov.movieshop.core.entity.user.UserDAO;
 import ru.danilov.movieshop.core.entity.user.UserManager;
 import ru.danilov.movieshop.web.controller.AuthController;
 import ru.danilov.movieshop.web.controller.BaseController;
+import ru.danilov.movieshop.web.user.CatalogController;
 import ru.danilov.movieshop.web.user.MainPageController;
 
 import javax.inject.Inject;
@@ -27,6 +28,8 @@ public class ApplicationMainServlet extends BaseServlet {
         controllerMap.put("/auth", authController);
         MainPageController mainPageController= new MainPageController();
         controllerMap.put("/app/main", mainPageController);
+        CatalogController catalogController = new CatalogController();
+        controllerMap.put("/app/catalog", catalogController);
         super.init();
     }
 

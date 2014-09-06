@@ -8,4 +8,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-asdqwe
+<div class="page-header">
+    <div class="container">
+        <div class="brand movieshop-brand">
+            Movie Shop
+        </div>
+        <div class="controls">
+            <a href="#" class="control">
+                <i class="fa fa-user"></i>
+            </a>
+            <c:set var="logoutLink"><c:url value="/web/app/main/logout"/></c:set>
+            <a href="${logoutLink}" class="control">
+                <i class="fa fa-power-off"></i>
+            </a>
+        </div>
+    </div>
+</div>

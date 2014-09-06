@@ -1,5 +1,15 @@
 /*main*/
 
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -13,6 +23,12 @@
     }
 }
 
+@media (max-width: 960px) {
+    .container {
+        width: 760px;
+    }
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -20,7 +36,102 @@
 }
 
 body {
+    margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*sidebar*/
+
+@media (min-width: 768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width: 230px;
+    }
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0px;
+    list-style: none;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+
+/*header*/
+
+.page-header {
+    color: #fff;
+    min-height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #080808;
+
+    background-image: -moz-linear-gradient(top,#080808,#080808);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#080808),to(#080808));
+    background-image: -webkit-linear-gradient(top,#080808,#080808);
+    background-image: -o-linear-gradient(top,#080808,#080808);
+
+    background-image: linear-gradient(to bottom,#080808,#080808);
+    background-repeat: repeat-x;
+    border: 1px solid transparent;
+    -webkit-border-radius: 0;
+    /*для старых мозилл*/
+    -moz-border-radius: 0;
+    border-radius: 0;
+    /*directx*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff080808',endColorstr='#ff080808',GradientType=0);
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+}
+
+.page-header .controls {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
+    padding: 10px 15px;
+}
+
+.page-header .controls .control {
+    padding: 15px;
+    min-height: 50px;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.page-header .controls .control:hover {
+    text-decoration: none;
+    background-color: #6BA7DA;
+    color: #fff;
+}
+
+.brand {
+    display: block;
+    float: left;
+    padding: 10px 20px 10px;
+    margin-left: -20px;
+    font-size: 26px;
+    font-weight: 200;
+    color: #fff;
+    text-shadow: 0 1px 0 #080808;
+    font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
 }
 
 

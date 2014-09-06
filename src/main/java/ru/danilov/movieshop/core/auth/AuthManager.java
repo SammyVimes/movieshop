@@ -24,4 +24,8 @@ public class AuthManager {
         return authSessions.get(key);
     }
 
+    public void logout(final String key) {
+        authSessions.remove(key);
+    }
+
 }

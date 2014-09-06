@@ -37,7 +37,7 @@ public class AuthController extends BaseController {
         request.getRequestDispatcher("/WEB-INF/views/web/common/auth.jsp").forward(request, response);
     }
 
-    public void auth(final HttpServletRequest request, final HttpServletResponse response) {
+    public void auth(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         User user = userManager.getUserByLogin(login);
@@ -51,6 +51,7 @@ public class AuthController extends BaseController {
                 HttpSession session = request.getSession();
                 authManager.putAuthData(authData);
                 session.setAttribute(AttributeNames.AUTH_DATA_KEY, authData.getKey());
+                response.sendRedirect("/movieshop/web/app/main");
             } else {
 
             }
