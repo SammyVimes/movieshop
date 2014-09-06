@@ -17,5 +17,11 @@ public enum Currency {
         this.shortTitle = shortTitle;
     }
 
+    public String getTitle() {
+        return title;
+    }
 
+    public String getShortTitle() {
+        return shortTitle;
+    }
 }

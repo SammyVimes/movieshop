@@ -1,0 +1,22 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Money Tag for movieshop</short-name>
+    <tag>
+        <name>money</name>
+        <tag-class>ru.danilov.movieshop.core.money.MoneyTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>amount</name>
+            <type>java.lang.Double</type>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>currency</name>
+            <type>ru.danilov.movieshop.core.money.Currency</type>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

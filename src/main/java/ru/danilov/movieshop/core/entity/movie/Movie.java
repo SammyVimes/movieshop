@@ -31,7 +31,7 @@ public class Movie {
 
     @NotNull
     @Column(name = "price", nullable = false)
-    private int price;
+    private Double price;
 
     @NotNull
     @Column(name = "description", nullable = false, columnDefinition = "TEXT")
@@ -73,11 +73,11 @@ public class Movie {
     }
 
     @NotNull
-    public int getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(@NotNull final int price) {
+    public void setPrice(@NotNull final Double price) {
         this.price = price;
     }
 

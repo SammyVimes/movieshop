@@ -82,6 +82,12 @@
         <url-pattern>*.tiles</url-pattern>
     </servlet-mapping>
 
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://www.danilov.ru/moneytaglib</taglib-uri>
+            <taglib-location>/WEB-INF/tag/taglib.tld</taglib-location>
+        </taglib>
+    </jsp-config>
 
     
 </web-app>

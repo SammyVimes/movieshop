@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Semyon
@@ -7,7 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ taglib prefix="m" uri="http://www.danilov.ru/moneytaglib" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
 
@@ -38,15 +38,19 @@
                         </h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="width-12 description">
+                <div class="row row-skip">
+                    <div class="width-12 description row-skip">
                         <b>Описание: </b>${movie.description}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="width-12 price">
-                        <b>Цена: </b>${movie.price}
+                    <div class="width-12 price row-skip">
+                        <b>Цена: </b><m:money amount="${movie.price}" currency="${movie.currency}"/>
                     </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <a href="#" class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> Купить</a>
                 </div>
             </div>
         </div>
