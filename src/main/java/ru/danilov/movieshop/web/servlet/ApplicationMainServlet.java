@@ -5,6 +5,7 @@ import ru.danilov.movieshop.web.admin.MoviesController;
 import ru.danilov.movieshop.web.base.ModelAndView;
 import ru.danilov.movieshop.web.controller.AuthController;
 import ru.danilov.movieshop.web.controller.BaseController;
+import ru.danilov.movieshop.web.controller.RegisterController;
 import ru.danilov.movieshop.web.user.CatalogController;
 import ru.danilov.movieshop.web.user.MainPageController;
 import ru.danilov.movieshop.web.user.ShoppingController;
@@ -33,6 +34,8 @@ public class ApplicationMainServlet extends BaseServlet {
         controllerMap.put("/app/personal/admin/movies", moviesController);
         ShoppingController shoppingController = new ShoppingController();
         controllerMap.put("/app/personal/user/shop", shoppingController);
+        RegisterController registerController = new RegisterController();
+        controllerMap.put("register", registerController);
         super.init();
     }
 

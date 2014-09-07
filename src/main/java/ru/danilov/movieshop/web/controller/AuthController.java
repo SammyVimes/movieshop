@@ -23,6 +23,7 @@ import java.util.Date;
 public class AuthController extends BaseController {
 
     private UserManager userManager = ServiceContainer.getService(UserManager.class);
+
     private AuthManager authManager= ServiceContainer.getService(AuthManager.class);
 
     @Override

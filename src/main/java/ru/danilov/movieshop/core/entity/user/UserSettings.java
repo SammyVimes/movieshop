@@ -21,7 +21,7 @@ public class UserSettings {
     @Column(name = "money", nullable = false)
     private Double money;
 
-    @OneToMany(orphanRemoval = true)
+    @ManyToMany
     private List<Movie> movies;
 
     @NotNull

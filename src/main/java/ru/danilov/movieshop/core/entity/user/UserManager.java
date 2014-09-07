@@ -16,8 +16,24 @@ public class UserManager {
 
     private UserSettingsDAO userSettingsDAO = ServiceContainer.getService(UserSettingsDAO.class);
 
-    public void createUser(final User user) {
+    private void validate(final User user) throws UserManagerException {
+        String login = user.getLogin();
+        if (login == null || login.isEmpty()) {
+            throw new UserManagerException("Логин не задан");
+        }
+        String hashedString = user.getPasswordHash();
+        if (hashedString == null || hashedString.isEmpty()) {
+            throw new UserManagerException("Пароль не задан");
+        }
+        UserRole userRole = user.getUserRole();
+        if (userRole == null) {
+            throw new UserManagerException("Роль не задана");
+        }
+    }
 
+    public void createUser(final User user) throws UserManagerException {
+        validate(user);
+        userDAO.persist(user);
     }
 
     public User getUserByLogin(final String login) {

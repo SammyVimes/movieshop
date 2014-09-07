@@ -13,6 +13,7 @@
     <c:set var="cssBaseUrl"><c:url value="/css/"/></c:set>
     <link rel="stylesheet" href="${cssBaseUrl}main.css" type="text/css">
     <link rel="stylesheet" href="${cssBaseUrl}login.css" type="text/css">
+    <link rel="stylesheet" href="${cssBaseUrl}panels.css" type="text/css">
     <title>Авторизация</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
             <h3>Авторизация</h3>
             <%--@elvariable id="error" type="java.lang.String"--%>
             <c:if test="${error ne null}">
-                <div class="" style="color: red">${error}</div>
+                <div class="easy-panel error">${error}</div>
             </c:if>
             <c:set var="actionUrl"><c:url value="/web/auth/doAuth"/></c:set>
             <form action="${actionUrl}">
@@ -32,7 +33,7 @@
                     <input id="password" placeholder="Пароль" class="form-input" name="password" type="password">
                 </div>
                 <button class="btn btn-outline btn-success" type="submit">Авторизация</button>
-                <c:set var="registerLink"><c:url value="#"/></c:set>
+                <c:set var="registerLink"><c:url value="/web/register"/></c:set>
                 <a class="btn btn-outline btn-normal" href="${registerLink}">Регистрация</a>
             </form>
         </div>
