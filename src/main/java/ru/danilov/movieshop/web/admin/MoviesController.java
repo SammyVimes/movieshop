@@ -37,6 +37,11 @@ public class MoviesController extends BaseController {
         }
     }
 
+    @Override
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+
+    }
+
     public void mainView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         ModelAndView modelAndView = new ModelAndView("/admin.moviesList.tiles");
         modelAndView.process(request, response);

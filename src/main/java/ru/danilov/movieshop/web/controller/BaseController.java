@@ -15,6 +15,8 @@ public abstract class BaseController {
 
     public abstract void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException;
 
+    public abstract void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException;
+
     public void sendJSONResponse(final JSONObject jsonObject, final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");
         PrintWriter out = response.getWriter();

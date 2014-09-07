@@ -35,6 +35,11 @@ public class AuthController extends BaseController {
         }
     }
 
+    @Override
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+
+    }
+
     public void mainView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/WEB-INF/views/web/common/auth.jsp").forward(request, response);
     }

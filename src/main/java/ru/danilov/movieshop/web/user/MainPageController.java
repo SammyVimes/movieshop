@@ -27,6 +27,11 @@ public class MainPageController extends BaseController {
         }
     }
 
+    @Override
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+
+    }
+
     public void mainView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/user.main.tiles").forward(request, response);
     }

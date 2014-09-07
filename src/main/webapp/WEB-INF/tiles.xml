@@ -14,6 +14,9 @@
         <put-list-attribute name="jsList">
             <add-attribute value="/js/jquery.js"/>
         </put-list-attribute>
+        <put-list-attribute name="cssList">
+            <add-attribute value="/css/main.css"/>
+        </put-list-attribute>
     </definition>
 
 
@@ -48,6 +51,9 @@
 
     <definition name="admin.addMovie" extends="common">
         <put-attribute name="page-content" type="definition" value="addMovie"/>
+        <put-list-attribute name="cssList" inherit="true">
+            <add-attribute value="/css/panels.css"/>
+        </put-list-attribute>
     </definition>
 
     <definition name="header" template="/WEB-INF/views/web/common/header-tile.jsp"/>

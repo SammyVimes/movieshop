@@ -30,6 +30,11 @@ public class CatalogController extends BaseController {
         }
     }
 
+    @Override
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+
+    }
+
     public void catalogView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/user.catalog.tiles").forward(request, response);
     }

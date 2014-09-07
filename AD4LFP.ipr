@@ -325,8 +325,6 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext-tiles.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/applicationContext.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/logback.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/web-mvc-config.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/views.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" charset="UTF-8" />
   </component>
   <component name="EntryPointsManager">

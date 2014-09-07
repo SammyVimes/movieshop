@@ -43,4 +43,16 @@ public class ApplicationMainServlet extends BaseServlet {
             modelAndView.process(req, resp);
         }
     }
+
+    @Override
+    protected void doPost(final HttpServletRequest req, final HttpServletResponse resp) throws ServletException, IOException {
+        BaseController controller = findMatchingController(req.getRequestURI());
+        if (controller != null) {
+            controller.handlePostRequest(req, resp);
+        } else {
+            ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
+            modelAndView.process(req, resp);
+        }
+    }
+
 }
