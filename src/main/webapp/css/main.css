@@ -94,9 +94,10 @@ body {
     width: 100%;
     left: 0;
 }
-
-.sidebar-helper {
-    padding-left: 230px
+@media (min-width: 900px) {
+    .sidebar-helper {
+        padding-left: 230px
+    }
 }
 
 .jumbotron {

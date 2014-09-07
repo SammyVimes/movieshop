@@ -16,15 +16,10 @@
 .item {
     position: relative;
     float: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    text-align: center;
+    margin: 5px 15px 5px 15px;
 }
 
-.item:hover {
-    transition: all .5s;
-    transform: translateY(-20px) scale(1, 1);
-    -webkit-transform: translateY(-20px) scale(1, 1);
-}
 
 .item a {
     display: block;
@@ -35,7 +30,8 @@
 }
 
 .item img {
-    width:100%;
+    max-width:100%;
+    max-height: 372px;
     border-radius: 5px 5px 5px 5px;
     transition: all .5s;
 }
@@ -44,12 +40,18 @@
     box-shadow: 0 0px 18px rgba(0,0,0,0.4);
     z-index: 10;
     cursor: pointer;
+    transform: translateY(-20px) scale(1, 1);
+    -webkit-transform: translateY(-20px) scale(1, 1);
+}
+
+.item-width {
+    width: 22%;
 }
 
 .newstextblock {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    bottom: 4px;
+    width: 100%;
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.54);
 }

@@ -19,14 +19,14 @@
 <tiles:insertAttribute name="sidebar"/>
 <div class="sidebar-helper">
 
-    <div class="container">
+    <div class="">
         <%--@elvariable id="popular" type="java.util.List"--%>
         <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
         <c:forEach items="${popular}" var="movie">
 
             <c:set var="movieLink"><c:url value="/web/app/catalog/movie?id=${movie.id}"/></c:set>
             <a href="${movieLink}">
-                <div class="item width-4 news">
+                <div class="item item-width news">
                     <img src="${movie.coverUri}">
 
                     <div class="newstextblock">

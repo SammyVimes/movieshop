@@ -16,7 +16,7 @@
         <div class="controls">
             <%--@elvariable id="user" type="ru.danilov.movieshop.core.entity.user.User"--%>
             <c:if test="${user.userRole eq 'ADMIN'}">
-                <c:set var="addNew"><c:url value="/web/app/admin/movies/addMovie"/></c:set>
+                <c:set var="addNew"><c:url value="/web/app/personal/admin/movies/addMovie"/></c:set>
                 <a href="${addNew}" class="control">
                     <i class="fa fa-plus"></i>
                 </a>
@@ -25,12 +25,12 @@
             <a href="${catalogLink}" class="control">
                 <i class="fa fa-shopping-cart"></i>
             </a>
-            <a href="#" class="control">
-                <i class="fa fa-user"></i>
-            </a>
 
             <c:choose>
                 <c:when test="${user ne null}">
+                    <a href="#" class="control">
+                        <i class="fa fa-user"></i>
+                    </a>
                     <c:set var="logoutLink"><c:url value="/web/app/main/logout"/></c:set>
                     <a href="${logoutLink}" class="control">
                         <i class="fa fa-power-off"></i>
