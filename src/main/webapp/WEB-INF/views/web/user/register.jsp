@@ -40,14 +40,14 @@
             <div class="row">
                 <div class="form-element width-12">
                     <label for="password" class="width-2">Пароль</label>
-                    <input id="password" class="form-input width-6" type="text" name="password">
+                    <input id="password" class="form-input width-6" type="password" name="password">
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-element width-12">
                     <label for="repeat-password" class="width-2">Повторить пароль</label>
-                    <input id="repeat-password" class="form-input width-6" type="text" name="repeat-password">
+                    <input id="repeat-password" class="form-input width-6" type="password" name="repeat-password">
                 </div>
             </div>
 

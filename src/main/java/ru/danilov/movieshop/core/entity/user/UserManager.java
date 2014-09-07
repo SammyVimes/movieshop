@@ -21,6 +21,10 @@ public class UserManager {
         if (login == null || login.isEmpty()) {
             throw new UserManagerException("Логин не задан");
         }
+        User existed = userDAO.getByLogin(login);
+        if (existed != null) {
+            throw new UserManagerException("Пользователь с таким ником уже существует");
+        }
         String hashedString = user.getPasswordHash();
         if (hashedString == null || hashedString.isEmpty()) {
             throw new UserManagerException("Пароль не задан");

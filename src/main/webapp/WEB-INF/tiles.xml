@@ -24,6 +24,9 @@
 
     <definition name="register" extends="common">
         <put-attribute name="page-content" type="definition" value="reg"/>
+        <put-list-attribute name="cssList" inherit="true">
+            <add-attribute value="/css/panels.css"/>
+        </put-list-attribute>
     </definition>
 
     <definition name="user.main" extends="common">
