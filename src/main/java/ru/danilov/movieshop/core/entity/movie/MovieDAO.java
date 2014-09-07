@@ -23,6 +23,14 @@ public class MovieDAO {
         transaction.commit();
     }
 
+    public Movie update(final Movie movie) {
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        Movie _movie = entityManager.merge(movie);
+        transaction.commit();
+        return _movie;
+    }
+
     public List<Movie> search(final String query) {
         return entityManager.createQuery("SELECT a FROM Movie a WHERE title LIKE '%" + query + "%'", Movie.class).getResultList();
     }

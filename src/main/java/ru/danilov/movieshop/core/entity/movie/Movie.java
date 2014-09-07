@@ -128,4 +128,19 @@ public class Movie {
     public void setTrailerUri(@Nullable final String trailerUri) {
         this.trailerUri = trailerUri;
     }
+
+    public Movie getClone() {
+        Movie movie = new Movie();
+        movie.setTitle(title);
+        movie.setDescription(description);
+        movie.setPopular(isPopular);
+        movie.setPrice(price);
+        movie.setCoverUri(coverUri);
+        movie.setCurrency(currency);
+        movie.setLocalizedTitle(localizedTitle);
+        movie.setTrailerUri(trailerUri);
+        movie.setId(id);
+        return movie;
+    }
+
 }

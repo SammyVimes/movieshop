@@ -25,7 +25,6 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
         <datasource-mapping>
-          <factory-entry name="entityManagerFactory" value="dataSource" />
           <factory-entry name="persistenceUnit" value="209ff53a-5674-4996-91c5-cccf0f8b0f3c" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />

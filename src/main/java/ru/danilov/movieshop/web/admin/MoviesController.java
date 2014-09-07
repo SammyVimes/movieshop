@@ -32,13 +32,10 @@ public class MoviesController extends BaseController {
         if (request.getRequestURI().contains("search")) {
             searchForMovie(request, response);
         } else if (request.getRequestURI().contains("addMovie")) {
-            if (request.getMethod().equalsIgnoreCase("get")) {
-                addMovieGetView(request, response);
-            } else {
-
-            }
-            searchForMovie(request, response);
-        }else {
+            addMovieGetView(request, response);
+        } else if (request.getRequestURI().contains("editMovie")) {
+            editMovieGetView(request, response);
+        } else {
             mainView(request, response);
         }
     }
@@ -49,7 +46,7 @@ public class MoviesController extends BaseController {
         if (requestURI.contains("addMovie")) {
             addMoviePost(request, response);
         } else if (requestURI.contains("editMovie")) {
-
+            editMoviePost(request, response);
         } else {
 
         }
@@ -80,6 +77,15 @@ public class MoviesController extends BaseController {
 
     public void addMovieGetView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         ModelAndView modelAndView = new ModelAndView("/admin.addMovie.tiles");
+        modelAndView.process(request, response);
+    }
+
+    public void editMovieGetView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        ModelAndView modelAndView = new ModelAndView("/admin.editMovie.tiles");
+        String idString = request.getParameter("id");
+        Long id = Long.valueOf(idString);
+        Movie movie = movieManager.getMovieById(id);
+        modelAndView.putObject("movie", movie);
         modelAndView.process(request, response);
     }
 
@@ -135,7 +141,66 @@ public class MoviesController extends BaseController {
             modelAndView.putObject("error", e.getMessage());
             modelAndView.process(request, response);
         }
-        movie.getId();
+        response.sendRedirect("/movieshop/web/app/personal/admin/movies/editMovie?id=" + movie.getId());
+    }
+
+    public void editMoviePost(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        String title = request.getParameter("title");
+        String idString = request.getParameter("id");
+        String localizedTitle = request.getParameter("localizedTitle");
+        String coverURL = request.getParameter("coverURL");
+        String trailerURL = request.getParameter("trailerURL");
+        String priceString = request.getParameter("price");
+        String popularString = request.getParameter("popular");
+        String currencyString = request.getParameter("currency");
+        String description = request.getParameter("description");
+        Double price = null;
+        if (!priceString.isEmpty()) {
+            try {
+                price = Double.valueOf(priceString);
+            } catch (NumberFormatException e) {
+                LOGGER.error("Failed to parse price: " + e.getMessage());
+            }
+        }
+
+        Currency currency = null;
+        if (!currencyString.isEmpty()) {
+            try {
+                currency = Currency.valueOf(currencyString);
+            } catch (IllegalArgumentException e) {
+                LOGGER.error("Failed to parse currency: " + e.getMessage());
+            }
+        }
+
+        Long id = Long.valueOf(idString);
+        Movie movie = movieManager.getMovieById(id);
+        Movie clone = movie.getClone();
+        clone.setTitle(title);
+        clone.setDescription(description);
+        if (!localizedTitle.isEmpty()) {
+            clone.setLocalizedTitle(localizedTitle);
+        }
+        clone.setCoverUri(coverURL);
+        if (!trailerURL.isEmpty()) {
+            clone.setTrailerUri(trailerURL);
+        }
+        if (popularString != null && popularString.equals("on")) {
+            clone.setPopular(true);
+        } else {
+            clone.setPopular(false);
+        }
+        clone.setPrice(price);
+        clone.setCurrency(currency);
+        ModelAndView modelAndView = new ModelAndView("/admin.editMovie.tiles");
+        modelAndView.putObject("movie", clone);
+        try {
+            movieManager.updateMovie(clone);
+            modelAndView.putObject("success", "Информация обновлена");
+        } catch (MovieManagerException e) {
+            LOGGER.error("Failed to update movie: " + e.getMessage());
+            modelAndView.putObject("error", e.getMessage());
+        }
+        modelAndView.process(request, response);
     }
 
 }

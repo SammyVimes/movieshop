@@ -49,6 +49,16 @@ public class MovieManager {
         }
     }
 
+    public Movie updateMovie(final Movie movie) throws MovieManagerException {
+        validate(movie);
+        try {
+            return movieDAO.update(movie);
+        } catch (Exception e) {
+            LOGGER.error("Failed to update movie: " + e.getMessage());
+            throw new MovieManagerException("Не удалось обновить фильм", e);
+        }
+    }
+
     public List<Movie> getMovies(final int quantity) {
         return movieDAO.getMovies(quantity);
     }

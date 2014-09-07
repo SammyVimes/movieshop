@@ -25,6 +25,15 @@
         <url-pattern>/web/app/personal/*</url-pattern>
     </filter-mapping>
 
+    <filter>
+        <filter-name>everyRequestFilter</filter-name>
+        <filter-class>ru.danilov.movieshop.web.filter.EveryRequestFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>everyRequestFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
 
     <filter>
@@ -40,8 +49,6 @@
         <filter-name>adminFilter</filter-name>
         <url-pattern>/web/app/personal/admin/*</url-pattern>
     </filter-mapping>
-
-
 
     <servlet>
         <servlet-name>mainServlet</servlet-name>
