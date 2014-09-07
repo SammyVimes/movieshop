@@ -59,7 +59,7 @@ public class AuthController extends BaseController {
                 authManager.putAuthData(authData);
                 session.setAttribute(AttributeNames.AUTH_DATA_KEY, authData.getKey());
                 if (user.getUserRole() == UserRole.ADMIN) {
-                    response.sendRedirect("/movieshop/web/app/admin/movies");
+                    response.sendRedirect("/movieshop/web/app/personal/admin/movies");
                 } else {
                     response.sendRedirect("/movieshop/web/app/main");
                 }

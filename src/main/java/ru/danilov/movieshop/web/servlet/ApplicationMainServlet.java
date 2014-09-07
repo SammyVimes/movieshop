@@ -29,7 +29,7 @@ public class ApplicationMainServlet extends BaseServlet {
         CatalogController catalogController = new CatalogController();
         controllerMap.put("/app/catalog", catalogController);
         MoviesController moviesController = new MoviesController();
-        controllerMap.put("/app/admin/movies", moviesController);
+        controllerMap.put("/app/personal/admin/movies", moviesController);
         super.init();
     }
 

@@ -17,6 +17,11 @@
     </div>
 </div>
 
+<%--@elvariable id="error" type="java.lang.String"--%>
+<c:if test="${error ne null}">
+    ${error}
+</c:if>
+
 <div class="page-wrapper">
     <div class="container">
 
@@ -27,7 +32,7 @@
                 </div>
             </div>
             <div class="panel-body">
-                <c:set var="formLink"><c:url value="/web/app/admin/movies/addMovie"/></c:set>
+                <c:set var="formLink"><c:url value="/web/app/personal/admin/movies/addMovie"/></c:set>
                 <form action="${formLink}" method="post">
                     <div class="row">
                         <div class="form-element width-12">
@@ -72,6 +77,12 @@
                                 <option value="RUS_RUBLES">Рубли</option>
                                 <option value="US_DOLLARS">Доллары</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-element width-12">
+                            <label for="description" class="width-2">Описание</label>
+                            <textarea id="description" rows="10" cols="45" class="form-input width-6" name="description"></textarea>
                         </div>
                     </div>
                     <div class="row">

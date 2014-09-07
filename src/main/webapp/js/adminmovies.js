@@ -9,7 +9,7 @@ $(document).ready(function() {
     $("#search_btn").click(function() {
        var query = $("#search").val();
         $.ajax({
-            url: "/movieshop/web/app/admin/movies/search?query=" + query,
+            url: "/movieshop/web/app/personal/admin/movies/search?query=" + query,
             dataType : "json"
         }).done(function(data) {
            showResults(data["movies"]);

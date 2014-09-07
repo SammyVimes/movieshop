@@ -28,10 +28,21 @@
             <a href="#" class="control">
                 <i class="fa fa-user"></i>
             </a>
-            <c:set var="logoutLink"><c:url value="/web/app/main/logout"/></c:set>
-            <a href="${logoutLink}" class="control">
-                <i class="fa fa-power-off"></i>
-            </a>
+
+            <c:choose>
+                <c:when test="${user ne null}">
+                    <c:set var="logoutLink"><c:url value="/web/app/main/logout"/></c:set>
+                    <a href="${logoutLink}" class="control">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </c:when>
+                <c:otherwise>
+                    <c:set var="loginLink"><c:url value="/web/auth"/></c:set>
+                    <a href="${loginLink}" class="control">
+                        <i class="fa fa-plug"></i>
+                    </a>
+                </c:otherwise>
+            </c:choose>
         </div>
     </div>
 </div>

@@ -22,7 +22,7 @@
 
     <filter-mapping>
         <filter-name>authFilter</filter-name>
-        <url-pattern>/web/app/*</url-pattern>
+        <url-pattern>/web/app/personal/*</url-pattern>
     </filter-mapping>
 
 
@@ -38,7 +38,7 @@
 
     <filter-mapping>
         <filter-name>adminFilter</filter-name>
-        <url-pattern>/web/app/admin/*</url-pattern>
+        <url-pattern>/web/app/personal/admin/*</url-pattern>
     </filter-mapping>
 
 

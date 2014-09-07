@@ -39,7 +39,7 @@ public class MovieManager {
         }
     }
 
-    private void createMovie(final Movie movie) throws MovieManagerException {
+    public void createMovie(final Movie movie) throws MovieManagerException {
         validate(movie);
         try {
             movieDAO.persist(movie);
