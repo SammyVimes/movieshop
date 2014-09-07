@@ -40,4 +40,9 @@ public class MovieDAO {
     public List<Movie> getPopularMovies() {
         return entityManager.createQuery("SELECT a FROM Movie a WHERE isPopular IS TRUE", Movie.class).getResultList();
     }
+
+    public List<Movie> getMovies(final int quantity) {
+        return entityManager.createQuery("SELECT a FROM Movie a", Movie.class).setMaxResults(quantity).getResultList();
+    }
+
 }

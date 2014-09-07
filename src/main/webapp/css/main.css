@@ -170,6 +170,14 @@ body {
     color: #fff;
 }
 
+
+.brand:hover {
+    text-decoration: none;
+    color: #6BA7DA;
+    text-shadow: 0 1px 0 rgba(255, 197, 88,.1), 0 0 30px rgba(255, 197, 88,.4);
+}
+
+
 .brand {
     display: block;
     float: left;
@@ -180,6 +188,11 @@ body {
     color: #fff;
     text-shadow: 0 1px 0 #080808;
     font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 
@@ -474,4 +487,8 @@ textarea.form-input {
 
 .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-footer:after {
     clear: both;
+}
+
+.movie-cover {
+    width: 100%;
 }

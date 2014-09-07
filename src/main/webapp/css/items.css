@@ -48,6 +48,14 @@
     width: 22%;
 }
 
+.container .item-width {
+    width: 30%;
+}
+
+.container .item img {
+    max-height: 344px;
+}
+
 .newstextblock {
     position: absolute;
     bottom: 4px;

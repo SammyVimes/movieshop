@@ -49,6 +49,10 @@ public class MovieManager {
         }
     }
 
+    public List<Movie> getMovies(final int quantity) {
+        return movieDAO.getMovies(quantity);
+    }
+
     public List<Movie> search(final String query) {
         return movieDAO.search(query);
     }

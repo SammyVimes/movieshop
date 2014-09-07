@@ -10,9 +10,10 @@
 
 <div class="page-header">
     <div class="container">
-        <div class="brand movieshop-brand">
+        <c:set var="brandLink"><c:url value="/web/app/main"/></c:set>
+        <a href="${brandLink}" class="brand movieshop-brand">
             Movie Shop
-        </div>
+        </a>
         <div class="controls">
             <%--@elvariable id="user" type="ru.danilov.movieshop.core.entity.user.User"--%>
             <c:if test="${user.userRole eq 'ADMIN'}">

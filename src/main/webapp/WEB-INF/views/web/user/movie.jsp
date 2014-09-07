@@ -24,8 +24,8 @@
     <div class="movie-container">
 
         <div class="row">
-            <div class="width-6">
-                <img src="${movie.coverUri}">
+            <div class="width-5">
+                <img class="movie-cover" src="${movie.coverUri}">
             </div>
             <div class="width-5">
                 <div class="row">

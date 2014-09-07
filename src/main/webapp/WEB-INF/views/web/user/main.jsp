@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Semyon
@@ -16,33 +17,24 @@
 
 <div class="container">
 
-    <a href="/item/27">
-        <div class="item width-4 news">
-            <img src="http://amediatv.ru/media/cache/default_22/default/0001/01/37569090005a6a383f4ae9c66c16161402651d24.jpeg">
-            <div class="newstextblock">
-                <span>Silicon Valley</span>
-                впервые оффлайн
-            </div>
-        </div>
-    </a>
+    <div class="">
+        <%--@elvariable id="movies" type="java.util.List"--%>
+        <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
+        <c:forEach items="${movies}" var="movie">
 
-    <div class="item width-4  news">
-        <img src="http://amediatv.ru/media/cache/default_22/default/0001/01/579af97506bed6a8881a9d620108226d3525d2c0.jpeg">
-        <a href="/item/27"></a>
-        <div class="newstextblock">
-            <span>10/10: "IGN"</span>
-            Подпольная империя
+            <c:set var="movieLink"><c:url value="/web/app/catalog/movie?id=${movie.id}"/></c:set>
+            <a href="${movieLink}">
+                <div class="item item-width news">
+                    <img src="${movie.coverUri}">
 
-        </div>
-    </div>
+                    <div class="newstextblock">
+                        <span>${movie.title}</span>
+                    </div>
+                </div>
+            </a>
 
-    <div class="item width-4 news">
-        <img src="http://amediatv.ru/media/cache/default_22/default/0001/01/f01007a9ae14ffe985ba1aa0087412b3b1e973c6.jpeg">
-        <a href="/item/27"></a>
-        <div class="newstextblock">
-            <span>Предпремьерный показ</span>
-            «Больница Никербокер»
-        </div>
+        </c:forEach>
+
     </div>
 
 </div>

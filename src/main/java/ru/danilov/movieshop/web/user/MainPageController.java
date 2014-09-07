@@ -1,6 +1,8 @@
 package ru.danilov.movieshop.web.user;
 
 import ru.danilov.movieshop.core.auth.AuthManager;
+import ru.danilov.movieshop.core.entity.movie.MovieManager;
+import ru.danilov.movieshop.web.base.ModelAndView;
 import ru.danilov.movieshop.web.controller.BaseController;
 import ru.danilov.movieshop.web.util.AttributeNames;
 import ru.danilov.movieshop.web.util.ServiceContainer;
@@ -17,6 +19,7 @@ import java.io.IOException;
 public class MainPageController extends BaseController {
 
     private AuthManager authManager = ServiceContainer.getService(AuthManager.class);
+    private MovieManager movieManager = ServiceContainer.getService(MovieManager.class);
 
     @Override
     public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
@@ -33,7 +36,9 @@ public class MainPageController extends BaseController {
     }
 
     public void mainView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/user.main.tiles").forward(request, response);
+        ModelAndView modelAndView = new ModelAndView("/user.main.tiles");
+        modelAndView.putObject("movies", movieManager.getMovies(3));
+        modelAndView.process(request, response);
     }
 
     public void logout(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
