@@ -5,6 +5,7 @@ import ru.danilov.movieshop.core.entity.movie.MovieDAO;
 import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.user.UserDAO;
 import ru.danilov.movieshop.core.entity.user.UserManager;
+import ru.danilov.movieshop.core.entity.user.UserSettingsDAO;
 import ru.danilov.movieshop.web.util.ServiceContainer;
 
 import javax.servlet.ServletContextEvent;
@@ -21,12 +22,14 @@ public class ServiceInitListener implements ServletContextListener {
         MovieDAO movieDAO = new MovieDAO();
         ServiceContainer.putService(userDAO);
         ServiceContainer.putService(movieDAO);
-        UserManager userManager = new UserManager();
-        ServiceContainer.putService(userManager);
         AuthManager authManager = new AuthManager();
         ServiceContainer.putService(authManager);
         MovieManager movieManager = new MovieManager();
         ServiceContainer.putService(movieManager);
+        UserSettingsDAO userSettingsDAO = new UserSettingsDAO();
+        ServiceContainer.putService(userSettingsDAO);
+        UserManager userManager = new UserManager();
+        ServiceContainer.putService(userManager);
     }
 
     @Override

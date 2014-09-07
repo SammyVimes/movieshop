@@ -14,6 +14,8 @@ public class UserManager {
 
     private UserDAO userDAO = ServiceContainer.getService(UserDAO.class);
 
+    private UserSettingsDAO userSettingsDAO = ServiceContainer.getService(UserSettingsDAO.class);
+
     public void createUser(final User user) {
 
     }
@@ -22,5 +24,16 @@ public class UserManager {
         return userDAO.getByLogin(login);
     }
 
+    public void createSettings(final UserSettings userSettings) {
+        userSettingsDAO.persist(userSettings);
+    }
+
+    public UserSettings update(final UserSettings userSettings) {
+        return userSettingsDAO.update(userSettings);
+    }
+
+    public UserSettings getUserSettings(final User user) {
+        return userSettingsDAO.getUserSettings(user);
+    }
 
 }

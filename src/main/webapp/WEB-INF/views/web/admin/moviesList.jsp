@@ -24,12 +24,16 @@
 
 </div>
 
-<div class="hidden row" id="template">
+<div class="hidden row row-skip" id="template">
     <div class="width-2">
         <img class="search-cover">
     </div>
     <div class="width-3">
         <div class="title"></div>
     </div>
-    <div class="width-3"></div>
+    <div class="width-3">
+        <c:set var="editLink"><c:url value="/web/app/personal/admin/movies/editMovie?id="/></c:set>
+        <a class="btn btn-outline btn-normal edit-link" href="${editLink}">Редактировать</a>
+        <a href="" class="btn btn-outline btn-red">Удалить</a>
+    </div>
 </div>

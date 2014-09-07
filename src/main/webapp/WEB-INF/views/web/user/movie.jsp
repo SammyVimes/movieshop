@@ -27,7 +27,7 @@
             <div class="width-5">
                 <img class="movie-cover" src="${movie.coverUri}">
             </div>
-            <div class="width-5">
+            <div class="offset-1 width-6">
                 <div class="row">
                     <div class="width-12">
                         <h2 style="margin-top: -4px;">
@@ -64,7 +64,8 @@
                 </div>
                 <br/>
                 <div class="row">
-                    <a href="#" class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> Купить</a>
+                    <c:set var="buyLink"><c:url value="/web/app/personal/user/shop/buy?id=${movie.id}"/></c:set>
+                    <a href="${buyLink}" class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> Купить</a>
                 </div>
             </div>
         </div>

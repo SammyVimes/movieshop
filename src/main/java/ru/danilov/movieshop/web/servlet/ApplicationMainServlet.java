@@ -7,6 +7,7 @@ import ru.danilov.movieshop.web.controller.AuthController;
 import ru.danilov.movieshop.web.controller.BaseController;
 import ru.danilov.movieshop.web.user.CatalogController;
 import ru.danilov.movieshop.web.user.MainPageController;
+import ru.danilov.movieshop.web.user.ShoppingController;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -30,6 +31,8 @@ public class ApplicationMainServlet extends BaseServlet {
         controllerMap.put("/app/catalog", catalogController);
         MoviesController moviesController = new MoviesController();
         controllerMap.put("/app/personal/admin/movies", moviesController);
+        ShoppingController shoppingController = new ShoppingController();
+        controllerMap.put("/app/personal/user/shop", shoppingController);
         super.init();
     }
 

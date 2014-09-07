@@ -280,10 +280,10 @@ textarea.form-input {
 }
 
 .btn-normal {
-    color: #fff;
-    background-color: #428bca;
-    border-color: #357ebd;
-}
+     color: #fff;
+     background-color: #428bca;
+     border-color: #357ebd;
+ }
 
 .btn-normal.btn-outline {
     color: #428bca;
@@ -293,6 +293,22 @@ textarea.form-input {
     color: #fff;
     background-color: #3071a9;
     border-color: #285e8e;
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #ca0e18;
+    border-color: #bd000d;
+}
+
+.btn-red.btn-outline {
+    color: #ca0813;
+}
+
+.btn-red:hover, .btn-red:focus, .btn-red:active, .btn-red.active, .open > .dropdown-toggle.btn-red {
+    color: #fff;
+    background-color: #ca0e18;
+    border-color: #bd000d;
 }
 
 .btn-outline {

@@ -27,6 +27,9 @@ $(document).ready(function() {
             clone.removeAttr("id");
             clone.find(".search-cover").attr("src", movie.coverUri);
             clone.find(".title").text(movie.title);
+            var $editLink = clone.find(".edit-link");
+            var oldVal = $editLink.attr("href");
+            $editLink.attr("href", oldVal + movie.id);
             $searchResults.append(clone);
         }
     }
