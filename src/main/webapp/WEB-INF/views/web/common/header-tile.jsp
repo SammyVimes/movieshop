@@ -26,11 +26,16 @@
                     <i class="fa fa-plus"></i>
                 </a>
             </c:if>
+            <c:if test="${user.userRole eq 'USER'}">
+                <c:set var="owned"><c:url value="/web/app/personal/user/shop/owned"/></c:set>
+                <a href="${owned}" class="control">
+                    <i class="fa fa-folder-o"></i>
+                </a>
+            </c:if>
             <c:set var="catalogLink"><c:url value="/web/app/catalog"/></c:set>
             <a href="${catalogLink}" class="control">
                 <i class="fa fa-shopping-cart"></i>
             </a>
-
             <c:choose>
                 <c:when test="${user ne null}">
                     <a href="#" class="control">

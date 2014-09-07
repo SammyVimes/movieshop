@@ -64,8 +64,18 @@
                 </div>
                 <br/>
                 <div class="row">
-                    <c:set var="buyLink"><c:url value="/web/app/personal/user/shop/buy?id=${movie.id}"/></c:set>
-                    <a href="${buyLink}" class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> Купить</a>
+                    <c:choose>
+                        <%--@elvariable id="owned" type="java.lang.Boolean"--%>
+                        <c:when test="${owned}">
+                            <div class="easy-panel success">
+                                У вас уже есть этот фильм
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <c:set var="buyLink"><c:url value="/web/app/personal/user/shop/buy?id=${movie.id}"/></c:set>
+                            <a href="${buyLink}" class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> Купить</a>
+                        </c:otherwise>
+                    </c:choose>
                 </div>
             </div>
         </div>

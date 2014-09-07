@@ -37,6 +37,13 @@
 
     <definition name="user.catalog.movie" extends="common">
         <put-attribute name="page-content" type="definition" value="movie"/>
+        <put-list-attribute name="cssList" inherit="true">
+            <add-attribute value="/css/panels.css"/>
+        </put-list-attribute>
+    </definition>
+
+    <definition name="user.owned" extends="common">
+        <put-attribute name="page-content" type="definition" value="owned"/>
     </definition>
 
     <!--admin views-->
@@ -77,6 +84,7 @@
     </definition>
 
     <definition name="movie" template="/WEB-INF/views/web/user/movie.jsp"/>
+    <definition name="owned" template="/WEB-INF/views/web/user/owned.jsp"/>
     <definition name="moviesList" template="/WEB-INF/views/web/admin/moviesList.jsp"/>
     <definition name="addMovie" template="/WEB-INF/views/web/admin/addMovie.jsp"/>
     <definition name="editMovie" template="/WEB-INF/views/web/admin/editMovie.jsp"/>

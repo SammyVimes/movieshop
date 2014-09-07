@@ -32,7 +32,7 @@ public class UserSettingsDAO {
     }
 
     public UserSettings getUserSettings(final User user) {
-        List<UserSettings> list = entityManager.createQuery("SELECT a FROM UserSettings a WHERE id = :id", UserSettings.class).setParameter("id", user.getId()).getResultList();
+        List<UserSettings> list = entityManager.createQuery("SELECT a FROM UserSettings a WHERE user = :user", UserSettings.class).setParameter("user", user).getResultList();
         return list.isEmpty() ? null : list.get(0);
     }
 
