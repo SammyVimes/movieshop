@@ -29,14 +29,6 @@
                 <a class="menu-link" href="${popular}"><i class="fa fa-star fa-fw"></i> Популярное</a>
             </li>
 
-            <li>
-                <a class="menu-link" href="#" ><i class="fa fa-flash fa-fw"></i> Новинки</a>
-            </li>
-
-            <li>
-                <a class="menu-link" href="#" ><i class="fa  fa-money fa-fw"></i> Скидки</a>
-            </li>
-
         </ul>
     </div>
     <!-- /.sidebar-collapse -->

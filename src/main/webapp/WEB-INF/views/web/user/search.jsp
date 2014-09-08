@@ -19,7 +19,7 @@
 <tiles:insertAttribute name="sidebar"/>
 <div class="sidebar-helper">
 
-    <div class="">
+    <div class="container">
         <%--@elvariable id="movies" type="java.util.List"--%>
         <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
         <c:forEach items="${movies}" var="movie">

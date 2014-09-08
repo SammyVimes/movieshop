@@ -27,6 +27,10 @@ a:visited {
 }
 
 @media (min-width: 1200px) {
+    .sidebar-helper .container {
+        width: 1000px;
+    }
+
     .container {
         width: 1170px;
     }
@@ -94,7 +98,7 @@ body {
     width: 100%;
     left: 0;
 }
-@media (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1600px) {
     .sidebar-helper {
         padding-left: 230px
     }
