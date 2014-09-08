@@ -1,4 +1,4 @@
-<%--
+<%--s
   Created by IntelliJ IDEA.
   User: Semyon
   Date: 08.09.2014

@@ -31,6 +31,14 @@
                 <hibernate.connection.url>jdbc:mysql://127.0.0.1:3306/movieshop</hibernate.connection.url>
             </properties>
         </profile>
+        <profile>
+            <id>sema_at_work</id>
+            <properties>
+                <hibernate.connection.username>movieshop</hibernate.connection.username>
+                <hibernate.connection.password>test</hibernate.connection.password>
+                <hibernate.connection.url>jdbc:mysql://127.0.0.1:3306/movieshop</hibernate.connection.url>
+            </properties>
+        </profile>
     </profiles>
 
     <repositories>

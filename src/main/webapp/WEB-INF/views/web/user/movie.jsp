@@ -22,26 +22,25 @@
 <div class="container">
 
     <div class="movie-container">
-
         <div class="row">
-            <div class="width-5">
+            <div class="width-12">
+                <h2>
+                    <b>${movie.title}</b>
+                    <c:if test="${movie.localizedTitle ne null}">
+                        <div class="light-text">${movie.localizedTitle}</div>
+                    </c:if>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="width-5 sm-width-12">
                 <img class="movie-cover" src="${movie.coverUri}">
             </div>
             <div class="offset-1 width-6">
-                <div class="row">
-                    <div class="width-12">
-                        <h2 style="margin-top: -4px;">
-                            <b>${movie.title}</b>
-                            <c:if test="${movie.localizedTitle ne null}">
-                                <div class="light-text">${movie.localizedTitle}</div>
-                            </c:if>
-                        </h2>
-                    </div>
-                </div>
                 <c:if test="${movie.trailerUri ne null}">
 
                     <div class="row">
-                        <div class=width-12">
+                        <div class="width-12">
 
                             <iframe id="ytplayer" type="text/html" width="450" height="300"
                                     src="${movie.trailerUri}?controls=0&theme=light"

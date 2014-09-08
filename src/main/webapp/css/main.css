@@ -39,13 +39,13 @@ a:visited {
 
 @media (max-width: 960px) {
     .container {
-        width: 650px;
+        width: 770px;
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        width: 450px;
+        width: 600px;
     }
 }
 
@@ -366,48 +366,50 @@ textarea.form-input {
 
 /*offsets*/
 
-.offset-1 {
-    margin-left: 8%;
-}
+@media (min-width: 992px) {
+    .offset-1 {
+        margin-left: 8%;
+    }
 
-.offset-2 {
-    margin-left: 17%;
-}
+    .offset-2 {
+        margin-left: 17%;
+    }
 
-.offset-3 {
-    margin-left: 25%;
-}
+    .offset-3 {
+        margin-left: 25%;
+    }
 
-.offset-4 {
-    margin-left: 33.3%;
-}
+    .offset-4 {
+        margin-left: 33.3%;
+    }
 
-.offset-5 {
-    margin-left: 41.6%;
-}
+    .offset-5 {
+        margin-left: 41.6%;
+    }
 
-.offset-6 {
-    margin-left: 50%;
-}
+    .offset-6 {
+        margin-left: 50%;
+    }
 
-.offset-7 {
-    margin-left: 58%;
-}
+    .offset-7 {
+        margin-left: 58%;
+    }
 
-.offset-8 {
-    margin-left: 66%;
-}
+    .offset-8 {
+        margin-left: 66%;
+    }
 
-.offset-8 {
-    margin-left: 74%;
-}
+    .offset-8 {
+        margin-left: 74%;
+    }
 
-.offset-9 {
-    margin-left: 82%;
-}
+    .offset-9 {
+        margin-left: 82%;
+    }
 
-.offset-10 {
-    margin-left: 90%;
+    .offset-10 {
+        margin-left: 90%;
+    }
 }
 
 .row {
@@ -421,64 +423,122 @@ textarea.form-input {
 
 .width-1, .width-2, .width-3, .width-4,
 .width-4, .width-5, .width-6, .width-7,
-.width-8, .width-9, .width-10 {
+.width-8, .width-9, .width-10, .width-11, .width-12 {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.width-1 {
-    width: 8%;
+
+@media (max-width: 991px) {
+    .sm-width-1 {
+        width: 8%;
+    }
+
+    .sm-width-2 {
+        width: 17%;
+    }
+
+    .sm-width-3 {
+        width: 25%;
+    }
+
+    .sm-width-4 {
+        width: 32%;
+    }
+
+    .sm-width-5 {
+        width: 41.6%;
+    }
+
+    .sm-width-6 {
+        width: 50%;
+    }
+
+    .sm-width-7 {
+        width: 58%;
+    }
+
+    .sm-width-8 {
+        width: 66%;
+    }
+
+    .sm-width-8 {
+        width: 74%;
+    }
+
+    .sm-width-9 {
+        width: 82%;
+    }
+
+    .sm-width-10 {
+        width: 90%;
+    }
+
+    .sm-width-11 {
+        width: 95%;
+    }
+
+    .sm-width-12 {
+        width: 100%;
+    }
 }
 
-.width-2 {
-    width: 17%;
+@media (min-width: 992px) {
+    .width-1 {
+        width: 8%;
+    }
+
+    .width-2 {
+        width: 17%;
+    }
+
+    .width-3 {
+        width: 25%;
+    }
+
+    .width-4 {
+        width: 32%;
+    }
+
+    .width-5 {
+        width: 41.6%;
+    }
+
+    .width-6 {
+        width: 50%;
+    }
+
+    .width-7 {
+        width: 58%;
+    }
+
+    .width-8 {
+        width: 66%;
+    }
+
+    .width-8 {
+        width: 74%;
+    }
+
+    .width-9 {
+        width: 82%;
+    }
+
+    .width-10 {
+        width: 90%;
+    }
+
+    .width-11 {
+        width: 95%;
+    }
+
+    .width-12 {
+        width: 100%;
+    }
 }
 
-.width-3 {
-    width: 25%;
-}
-
-.width-4 {
-    width: 32%;
-}
-
-.width-5 {
-    width: 41.6%;
-}
-
-.width-6 {
-    width: 50%;
-}
-
-.width-7 {
-    width: 58%;
-}
-
-.width-8 {
-    width: 66%;
-}
-
-.width-8 {
-    width: 74%;
-}
-
-.width-9 {
-    width: 82%;
-}
-
-.width-10 {
-    width: 90%;
-}
-
-.width-11 {
-    width: 95%;
-}
-
-.width-12 {
-    width: 100%;
-}
 
 .page-wrapper {
     padding-top: 20px;
