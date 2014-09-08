@@ -568,3 +568,24 @@ textarea.form-input {
 .movie-cover {
     width: 100%;
 }
+
+.input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+    font-size: 0;
+    display: table-cell;
+    border-collapse: separate;
+}
+
+.input-group-btn > .btn {
+    margin-left: -1px;
+    position: relative;
+    margin: 0
+}
+
+.input-group-btn:last-child>.btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

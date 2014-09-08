@@ -35,6 +35,8 @@ public class CatalogController extends BaseController {
             popularMovies(request, response);
         } else if(request.getRequestURI().contains("/catalog/movie")) {
             showMovie(request, response);
+        } else if(request.getRequestURI().contains("/catalog/search")) {
+            search(request, response);
         } else {
             catalogView(request, response);
         }
@@ -53,6 +55,20 @@ public class CatalogController extends BaseController {
         ModelAndView mav = new ModelAndView("/user.catalog.popular.tiles");
         List<Movie> popularMovies = movieManager.getPopularMovies();
         mav.putObject("popular", popularMovies);
+        mav.process(request, response);
+    }
+
+    public void search(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        ModelAndView mav = new ModelAndView("/user.catalog.search.tiles");
+        String query = request.getParameter("query");
+        if (query == null) {
+            ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
+            modelAndView.process(request, response);
+            return;
+        }
+        List<Movie> found = movieManager.search(query);
+        mav.putObject("movies", found);
+        mav.putObject("query", query);
         mav.process(request, response);
     }
 

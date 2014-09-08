@@ -1,3 +1,4 @@
+<%--@elvariable id="query" type="java.lang.String"--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
@@ -12,10 +13,15 @@
         <ul class="nav" id="side-menu">
 
             <li>
-                <div class="form-element input-group" style="padding: 10px;">
-                    <input class="form-input" id="search">
-                    <span class="input-addon btn btn-normal btn-outline"><i class="fa fa-search"></i></span>
-                </div>
+                <c:set var="searchSidebarLink"><c:url value="/web/app/catalog/search"/></c:set>
+                <form action="${searchSidebarLink}" method="get">
+                    <div class="input-group" style="padding: 10px;">
+                        <input class="form-input" id="search" name="query" value="${query}">
+                        <div class="input-group-btn">
+                            <button class="btn btn-normal btn-outline" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
             </li>
 
             <li>

@@ -42,6 +42,9 @@
         <put-attribute name="page-content" type="definition" value="popular"/>
     </definition>
 
+    <definition name="user.catalog.search" extends="common">
+        <put-attribute name="page-content" type="definition" value="search"/>
+    </definition>
 
     <definition name="user.catalog.movie" extends="common">
         <put-attribute name="page-content" type="definition" value="movie"/>
@@ -88,6 +91,10 @@
     </definition>
 
     <definition name="popular" template="/WEB-INF/views/web/user/popular.jsp">
+        <put-attribute name="sidebar" type="definition" value="sidebar"/>
+    </definition>
+
+    <definition name="search" template="/WEB-INF/views/web/user/search.jsp">
         <put-attribute name="sidebar" type="definition" value="sidebar"/>
     </definition>
 
