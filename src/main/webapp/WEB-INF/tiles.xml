@@ -13,6 +13,7 @@
         <put-attribute name="body" type="definition"/>
         <put-list-attribute name="jsList">
             <add-attribute value="/js/jquery.js"/>
+            <add-attribute value="/js/protoQuery.js"/>
         </put-list-attribute>
         <put-list-attribute name="cssList">
             <add-attribute value="/css/main.css"/>

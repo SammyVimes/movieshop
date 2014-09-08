@@ -8,13 +8,13 @@ $(document).ready(function() {
 
     $("#search_btn").click(function() {
        var query = $("#search").val();
-        $.ajax({
+        new AjaxRequest({
             url: "/movieshop/web/app/personal/admin/movies/search?query=" + query,
             dataType : "json"
         }).done(function(data) {
            showResults(data["movies"]);
-        }).fail(function(message) {
-            alert(data);
+        }).error(function(error) {
+            alert(error);
         });
     });
 

@@ -25,7 +25,11 @@ public class AuthManager {
     }
 
     public void logout(final String key) {
-        authSessions.remove(key);
+        if (key != null && !key.isEmpty()) {
+            if (authSessions.containsKey(key)) {
+                authSessions.remove(key);
+            }
+        }
     }
 
 }
