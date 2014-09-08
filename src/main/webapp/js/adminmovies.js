@@ -4,10 +4,10 @@
 
 $(document).ready(function() {
 
-    var $searchResults = $("#search-results");
+    var $searchResults = $({type: "id", value: "search-results"});
 
-    $("#search_btn").click(function() {
-       var query = $("#search").val();
+    $({type: "id", value: "search_btn"}).click(function() {
+       var query = $({type: "id", value: "search"}).val();
         new AjaxRequest({
             url: "/movieshop/web/app/personal/admin/movies/search?query=" + query,
             dataType : "json"
@@ -22,12 +22,12 @@ $(document).ready(function() {
         $searchResults.empty();
         for (var i = 0; i < movies.length; i++) {
             var movie = movies[i];
-            var clone = $("#template").clone();
+            var clone = $({type: "id", value: "template"}).clone();
             clone.removeClass("hidden");
             clone.removeAttr("id");
-            clone.find(".search-cover").attr("src", movie.coverUri);
-            clone.find(".title").text(movie.title);
-            var $editLink = clone.find(".edit-link");
+            clone.find({type: "class", value: "search-cover"}).attr("src", movie.coverUri);
+            clone.find({type: "class", value: "title"}).text(movie.title);
+            var $editLink = clone.find({type: "class", value: "edit-link"});
             var oldVal = $editLink.attr("href");
             $editLink.attr("href", oldVal + movie.id);
             $searchResults.append(clone);
