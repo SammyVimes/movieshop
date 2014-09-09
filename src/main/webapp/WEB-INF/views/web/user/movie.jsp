@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <br/>
-                <div class="row">
+                <div class="row row-skip">
                     <c:choose>
                         <%--@elvariable id="owned" type="java.lang.Boolean"--%>
                         <c:when test="${owned}">
@@ -77,8 +77,60 @@
                     </c:choose>
                 </div>
             </div>
+            <div class="row row-skip">
+                <div class="width-6 tab" id="actors-tab">Актерский состав</div>
+                <div class="width-6 tab active" id="comments-tab">Отзывы</div>
+            </div>
+            <div class="row">
+                <div class="width-12 hidden" id="actors">
+                    ${actors}
+                </div>
+                <div class="width-12" id="comments">
+                    <%--@elvariable id="_comment" type="ru.danilov.movieshop.core.entity.comment.Comment"--%>
+                    <c:forEach items="${comments}" var="_comment">
+                        <div class="comment">
+                            <div class="row row-skip">
+                                <div class="width-1"><b>${_comment.user.login}</b></div>
+                                <div class="width-6">${_comment.date}</div>
+                            </div>
+                            <div class="row row-skip">
+                                <div class="width-7">${_comment.comment}</div>
+                            </div>
+                        </div>
+                    </c:forEach>
+                </div>
+            </div>
         </div>
     </div>
 
 
 </div>
+
+<script>
+    $(document).ready(function() {
+       var $actors = $({type: "id", value: "actors"});
+       var $comments = $({type: "id", value: "comments"});
+       var $actorsTabBtn = $({type: "id", value: "actors-tab"});
+       var $commentsTabBtn = $({type: "id", value: "comments-tab"});
+       $actorsTabBtn.click(function() {
+           $actors.removeClass("hidden");
+           $commentsTabBtn.removeClass("active");
+           if (!$comments.hasClass("hidden")) {
+               $comments.addClass("hidden");
+           }
+           if (!$actorsTabBtn.hasClass("active")) {
+               $actorsTabBtn.addClass("active");
+           }
+       });
+       $commentsTabBtn.click(function() {
+           $comments.removeClass("hidden");
+           $actorsTabBtn.removeClass("active");
+           if (!$actors.hasClass("hidden")) {
+               $actors.addClass("hidden");
+           }
+           if (!$commentsTabBtn.hasClass("active")) {
+               $commentsTabBtn.addClass("active");
+           }
+       });
+    });
+</script>

@@ -10,6 +10,12 @@
       <output-path>$PROJECT_DIR$/target</output-path>
       <root id="archive" name="lfp.war">
         <element id="artifact" artifact-name="AD4LFP:war exploded" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
+          </element>
+        </element>
       </root>
     </artifact>
     <artifact type="exploded-war" name="AD4LFP:war exploded">
@@ -115,6 +121,8 @@
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:3.1.0" />
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers:3.1.0" />
             <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" />
+            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
           </element>
         </element>
       </root>
@@ -123,6 +131,12 @@
       <output-path>$PROJECT_DIR$/target</output-path>
       <root id="archive" name="emptyproj.war">
         <element id="artifact" artifact-name="EMPTYPROJ:war exploded" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
+          </element>
+        </element>
       </root>
     </artifact>
     <artifact type="exploded-war" name="EMPTYPROJ:war exploded">
@@ -248,6 +262,150 @@
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:3.1.0" />
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers:3.1.0" />
             <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" />
+            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="war" name="MOVIESHOP:war">
+      <output-path>$PROJECT_DIR$/target</output-path>
+      <root id="archive" name="emptyproj.war">
+        <element id="artifact" artifact-name="MOVIESHOP:war exploded" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+    <artifact type="exploded-war" name="MOVIESHOP:war exploded">
+      <output-path>$PROJECT_DIR$/target/emptyproj</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="MOVIESHOP/web/Web" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="MOVIESHOP" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="Maven: org.springframework.ws:spring-ws-core:2.0.2.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework.ws:spring-xml:2.0.2.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-context:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-asm:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-core:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0-2" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-oxm:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-context-support:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: wsdl4j:wsdl4j:1.6.1" />
+            <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.4-1" />
+            <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2.3" />
+            <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+            <element id="library" level="project" name="Maven: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.6.0" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-envers:3.6.6.Final" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:3.6.6.Final" />
+            <element id="library" level="project" name="Maven: antlr:antlr:2.7.6" />
+            <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.1" />
+            <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-commons-annotations:3.2.0.Final" />
+            <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:3.6.6.Final" />
+            <element id="library" level="project" name="Maven: javassist:javassist:3.12.0.GA" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-tools:3.2.0.ga" />
+            <element id="library" level="project" name="Maven: org.beanshell:bsh:2.0b4" />
+            <element id="library" level="project" name="Maven: freemarker:freemarker:2.3.8" />
+            <element id="library" level="project" name="Maven: org.hibernate:jtidy:r8-20060801" />
+            <element id="library" level="project" name="Maven: junit:junit:4.4" />
+            <element id="library" level="project" name="Maven: com.intellij:annotations:7.0.3" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.5.10" />
+            <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:0.9.18" />
+            <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:0.9.18" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-jms:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.0.5.RELEASE" />
+            <element id="library" level="project" name="Maven: org.apache.tomcat:dbcp:6.0.18" />
+            <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.3" />
+            <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
+            <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
+            <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.7" />
+            <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.0.Final" />
+            <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:4.1.0.Final" />
+            <element id="library" level="project" name="Maven: javax.validation:validation-api:1.0.0.GA" />
+            <element id="library" level="project" name="Maven: net.sourceforge.htmlcleaner:htmlcleaner:2.2" />
+            <element id="library" level="project" name="Maven: org.jdom:jdom:1.1" />
+            <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+            <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.2.4" />
+            <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+            <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.0" />
+            <element id="library" level="project" name="Maven: org.aspectj:aspectjtools:1.8.1" />
+            <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.0.1" />
+            <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.3" />
+            <element id="library" level="project" name="Maven: commons-io:commons-io:1.3.2" />
+            <element id="library" level="project" name="Maven: commons-net:commons-net:2.0" />
+            <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.6" />
+            <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
+            <element id="library" level="project" name="Maven: oro:oro:2.0.8" />
+            <element id="library" level="project" name="Maven: com.sun.media:jai-codec:1.1.3" />
+            <element id="library" level="project" name="Maven: javax.media:jai-core:1.1.3" />
+            <element id="library" level="project" name="Maven: quartz:quartz:1.5.1" />
+            <element id="library" level="project" name="Maven: org.apache.xmlrpc:xmlrpc-client:3.1.3" />
+            <element id="library" level="project" name="Maven: org.apache.xmlrpc:xmlrpc-common:3.1.3" />
+            <element id="library" level="project" name="Maven: org.apache.ws.commons.util:ws-commons-util:1.0.2" />
+            <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.3.03" />
+            <element id="library" level="project" name="Maven: org.apache.xmlrpc:xmlrpc-server:3.1.3" />
+            <element id="library" level="project" name="Maven: jakarta-regexp:jakarta-regexp:1.4" />
+            <element id="library" level="project" name="Maven: javax.mail:mail:1.4.7" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-core:2.2.2" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-api:2.2.2" />
+            <element id="library" level="project" name="Maven: commons-digester:commons-digester:2.0" />
+            <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
+            <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.5.8" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-extras:3.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-servlet-wildcard:1.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-servlet:1.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-api:1.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-mustache:1.0.4" />
+            <element id="library" level="project" name="Maven: com.github.spullara.mustache.java:compiler:0.8.4" />
+            <element id="library" level="project" name="Maven: com.google.guava:guava:12.0.1" />
+            <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-jsp:2.2.2" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-servlet:2.2.2" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-template:2.2.2" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-freemarker:3.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-freemarker:1.0.4" />
+            <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.15" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-velocity:3.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.velocity:velocity-tools:2.0" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-velocity:1.0.4" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-el:2.2.2" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-mvel:3.0.4" />
+            <element id="library" level="project" name="Maven: org.mvel:mvel2:2.0.11" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-ognl:3.0.4" />
+            <element id="library" level="project" name="Maven: ognl:ognl:2.7.3" />
+            <element id="library" level="project" name="Maven: jboss:javassist:3.7.ga" />
+            <element id="library" level="project" name="Maven: org.apache.tiles:tiles-compat:3.0.4" />
+            <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1" />
+            <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.7.2" />
+            <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.8.3" />
+            <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.8.3" />
+            <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.8.3" />
+            <element id="library" level="project" name="Maven: com.thoughtworks.xstream:xstream:1.2.2" />
+            <element id="library" level="project" name="Maven: xpp3:xpp3_min:1.1.3.4.O" />
+            <element id="library" level="project" name="Maven: xerces:xercesImpl:2.8.1" />
+            <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2" />
+            <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:3.1.0" />
+            <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers:3.1.0" />
+            <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" />
+            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
           </element>
         </element>
       </root>
@@ -295,15 +453,14 @@
         <processorPath useClasspath="true" />
         <module name="AD4LFP" />
         <module name="EMPTYPROJ" />
+        <module name="MOVIESHOP" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="EMPTYPROJ" target="1.7" />
+      <module name="MOVIESHOP" target="1.7" />
     </bytecodeTargetLevel>
   </component>
-  <component name="CopyrightManager" default="">
-    <module2copyright />
-  </component>
+  <component name="CopyrightManager" default="" />
   <component name="DataSourceManagerImpl" format="xml" hash="3183801825">
     <data-source source="LOCAL" name="persistenceUnit" uuid="209ff53a-5674-4996-91c5-cccf0f8b0f3c">
       <driver-ref>mysql</driver-ref>
@@ -531,9 +688,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AD4LFP.iml" filepath="$PROJECT_DIR$/AD4LFP.iml" />
       <module fileurl="file://$PROJECT_DIR$/MOVIESHOP.iml" filepath="$PROJECT_DIR$/MOVIESHOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MOVIESHOP.iml" filepath="$PROJECT_DIR$/MOVIESHOP.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">
@@ -578,6 +736,20 @@
     </GetOptions>
   </component>
   <component name="libraryTable">
+    <library name="c3p0-0.9.1.2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="hibernate-c3p0-3.6.6.Final">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/hibernate-c3p0-3.6.6.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="Maven: antlr:antlr:2.7.6">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.6/antlr-2.7.6.jar!/" />
@@ -677,6 +849,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/intellij/annotations/7.0.3/annotations-7.0.3-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.mchange:mchange-commons-java:0.2.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/mchange/mchange-commons-java/0.2.7/mchange-commons-java-0.2.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/mchange/mchange-commons-java/0.2.7/mchange-commons-java-0.2.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/mchange/mchange-commons-java/0.2.7/mchange-commons-java-0.2.7-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.sun.media:jai-codec:1.1.3">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/sun/media/jai-codec/1.1.3/jai-codec-1.1.3.jar!/" />
@@ -774,6 +957,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2/commons-fileupload-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-io:commons-io:1.3.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-lang:commons-lang:2.4">
@@ -1038,17 +1232,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/2.7.3/ognl-2.7.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.apache.commons:commons-io:1.3.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-io/1.3.2/commons-io-1.3.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-io/1.3.2/commons-io-1.3.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-io/1.3.2/commons-io-1.3.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.httpcomponents:httpclient:4.0.1">

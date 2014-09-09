@@ -2,6 +2,8 @@ package ru.danilov.movieshop.web.user;
 
 import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
+import ru.danilov.movieshop.core.entity.comment.Comment;
+import ru.danilov.movieshop.core.entity.comment.CommentManager;
 import ru.danilov.movieshop.core.entity.movie.Movie;
 import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.user.User;
@@ -28,6 +30,8 @@ public class CatalogController extends BaseController {
     private AuthManager authManager = ServiceContainer.getService(AuthManager.class);
 
     private UserManager userManager = ServiceContainer.getService(UserManager.class);
+
+    private CommentManager commentManager = ServiceContainer.getService(CommentManager.class);
 
     @Override
     public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
@@ -79,6 +83,8 @@ public class CatalogController extends BaseController {
         Movie movie = movieManager.getMovieById(movieId);
         mav.putObject("movie", movie);
 
+        List<Comment> comments = commentManager.getCommentsForMovie(movie);
+        mav.putObject("comments", comments);
 
         String key = (String) request.getSession().getAttribute(AttributeNames.AUTH_DATA_KEY);
         if (key != null) {

@@ -165,6 +165,13 @@ var $ = function () {
         return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
     }
 
+    function addClass(o, c){
+        var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
+        if (re.test(o.className)) return
+        o.className = (o.className + " " + c).replace(/\s+/g, " ").replace(/(^ | $)/g, "")
+    }
+
+
     function removeClass(ele,cls) {
         if (hasClass(ele,cls)) {
             var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
@@ -314,6 +321,12 @@ var $ = function () {
             });
         };
 
+        $this.addClass = function(className) {
+            $this.each(function(element) {
+                element.className += " " + className;
+            });
+        };
+
         $this.clone = function(deep) {
             if (deep == undefined) {
                 deep =  true;
@@ -348,6 +361,10 @@ var $ = function () {
             $this.each(function(el) {
                 el.innerHTML = text;
             })
+        };
+
+        $this.hasClass = function(className) {
+            return elements[0] ? hasClass(elements[0], className) : false;
         };
 
         $this.append = function(pQ) {
