@@ -36,8 +36,8 @@
                     <div class="title">${movie.title}</div>
                 </div>
                 <div class="width-3">
-                    <c:set var="editLink"><c:url value="/web/app/personal/admin/movies/editMovie?id="/></c:set>
-                    <a href="" class="btn btn-outline btn-red">Удалить</a>
+                    <c:set var="removeLink"><c:url value="/web/app/personal/user/shop/remove?id=${movie.id}"/></c:set>
+                    <a href="${removeLink}" class="btn btn-outline btn-red">Удалить</a>
                 </div>
             </div>
 

@@ -44,6 +44,8 @@ public class ShoppingController extends BaseController {
             addMovieToCart(request, response);
         } else if (requestURI.contains("owned")) {
             ownedMovies(request, response);
+        } else if (requestURI.contains("remove")) {
+            removeMovieFromCart(request, response);
         } else if (requestURI.contains("cart")) {
             cart(request, response);
         } else {
@@ -122,6 +124,48 @@ public class ShoppingController extends BaseController {
         }
         modelAndView.putObject("movies", movieList);
         modelAndView.process(request, response);
+    }
+
+    private void removeMovieFromCart(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        String movieIdString = request.getParameter("id");
+        if (movieIdString == null || movieIdString.isEmpty()) {
+            ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
+            modelAndView.process(request, response);
+            return;
+        }
+        Long movieId = null;
+        try {
+            movieId = Long.valueOf(movieIdString);
+        } catch (NumberFormatException e) {
+            ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
+            modelAndView.process(request, response);
+            return;
+        }
+        Movie movie = movieManager.getMovieById(movieId);
+        String key = (String) request.getSession().getAttribute(AttributeNames.AUTH_DATA_KEY);
+        User user = null;
+        if (key != null) {
+            AuthData authData = authManager.getAuthData(key);
+            user = authData.getUser();
+        }
+        UserSettings userSettings = userManager.getUserSettings(user);
+        if (userSettings == null) {
+            userSettings = new UserSettings();
+            userSettings.setMoney(4000.0);
+            userSettings.setUser(user);
+            userSettings.setMovies(new LinkedList<Movie>());
+            userSettings.setCart(new LinkedList<Movie>());
+            userManager.createSettings(userSettings);
+        }
+        List<Movie> cart = userSettings.getCart();
+        for (int i = 0; i < cart.size(); i++) {
+            Movie _movie = cart.get(i);
+            if (_movie.getId() == movie.getId()) {
+                cart.remove(_movie);
+            }
+        }
+        userManager.update(userSettings);
+        response.sendRedirect("/movieshop/web/app/personal/user/shop/cart");
     }
 
     private void addMovieToCart(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
