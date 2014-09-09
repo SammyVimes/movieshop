@@ -71,34 +71,45 @@
                             </div>
                         </c:when>
                         <c:otherwise>
-                            <c:set var="buyLink"><c:url value="/web/app/personal/user/shop/buy?id=${movie.id}"/></c:set>
-                            <a href="${buyLink}" class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> Купить</a>
+                            <c:set var="buyLink"><c:url value="/web/app/personal/user/shop/addToCart?id=${movie.id}"/></c:set>
+                            <a href="${buyLink}" class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> Добавить в корзину</a>
                         </c:otherwise>
                     </c:choose>
                 </div>
             </div>
-            <div class="row row-skip">
-                <div class="width-6 tab" id="actors-tab">Актерский состав</div>
-                <div class="width-6 tab active" id="comments-tab">Отзывы</div>
+        </div>
+        <div class="row row-skip">
+            <div class="width-6 tab" id="actors-tab">Актерский состав</div>
+            <div class="width-6 tab active" id="comments-tab">Отзывы</div>
+        </div>
+        <div class="row">
+            <div class="width-12 hidden" id="actors">
+                ${actors}
             </div>
-            <div class="row">
-                <div class="width-12 hidden" id="actors">
-                    ${actors}
-                </div>
-                <div class="width-12" id="comments">
-                    <%--@elvariable id="_comment" type="ru.danilov.movieshop.core.entity.comment.Comment"--%>
-                    <c:forEach items="${comments}" var="_comment">
-                        <div class="comment">
-                            <div class="row row-skip">
-                                <div class="width-1"><b>${_comment.user.login}</b></div>
-                                <div class="width-6">${_comment.date}</div>
-                            </div>
-                            <div class="row row-skip">
-                                <div class="width-7">${_comment.comment}</div>
-                            </div>
+            <div class="width-12" id="comments">
+                <div class="row row-skip">
+                    <c:set var="addCommentLink"><c:url value="/web/app/personal/user/shop/addComment"/></c:set>
+                    <form action="${addCommentLink}" method="post" class="width-12">
+                        <div class="form-element">
+                            <label for="comment-input"><b>Новый комментарий</b></label>
+                            <textarea class="form-input width-12" id="comment-input" name="comment"></textarea>
+                            <input class="hidden" name="movieId" value="${movie.id}">
+                            <button type="submit" class="btn btn-outline btn-normal width-3">Отправить</button>
                         </div>
-                    </c:forEach>
+                    </form>
                 </div>
+                <%--@elvariable id="_comment" type="ru.danilov.movieshop.core.entity.comment.Comment"--%>
+                <c:forEach items="${comments}" var="_comment">
+                    <div class="comment">
+                        <div class="row row-skip">
+                            <div class="width-1"><b>${_comment.user.login}</b></div>
+                            <div class="width-6">${_comment.date}</div>
+                        </div>
+                        <div class="row row-skip">
+                            <div class="width-7">${_comment.comment}</div>
+                        </div>
+                    </div>
+                </c:forEach>
             </div>
         </div>
     </div>

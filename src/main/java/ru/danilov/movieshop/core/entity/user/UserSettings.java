@@ -24,6 +24,9 @@ public class UserSettings {
     @ManyToMany
     private List<Movie> movies;
 
+    @ManyToMany
+    private List<Movie> cart;
+
     @NotNull
     @OneToOne(optional = false, orphanRemoval = true)
     private User user;
@@ -50,6 +53,22 @@ public class UserSettings {
 
     public void setMovies(final List<Movie> movies) {
         this.movies = movies;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(final long id) {
+        this.id = id;
+    }
+
+    public List<Movie> getCart() {
+        return cart;
+    }
+
+    public void setCart(final List<Movie> cart) {
+        this.cart = cart;
     }
 
 }

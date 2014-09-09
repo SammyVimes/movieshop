@@ -10,7 +10,7 @@
 
 <div class="page-header">
     <div class="container">
-        <c:set var="brandLink"><c:url value="/web/app/main"/></c:set>
+        <c:set var="brandLink"><c:url value="/web/app/catalog"/></c:set>
         <a href="${brandLink}" class="brand movieshop-brand">
             Movie Shop
         </a>
@@ -32,8 +32,8 @@
                     <i class="fa fa-folder-o"></i>
                 </a>
             </c:if>
-            <c:set var="catalogLink"><c:url value="/web/app/catalog"/></c:set>
-            <a href="${catalogLink}" class="control">
+                <c:set var="cart"><c:url value="/web/app/personal/user/shop/cart"/></c:set>
+            <a href="${cart}" class="control">
                 <i class="fa fa-shopping-cart"></i>
             </a>
             <c:choose>

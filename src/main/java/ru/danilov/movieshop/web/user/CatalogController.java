@@ -101,6 +101,13 @@ public class CatalogController extends BaseController {
                                 break;
                             }
                         }
+                        movies = settings.getCart();
+                        for (Movie _movie : movies) {
+                            if (_movie.getId() == movieId) {
+                                mav.putObject("owned", true);
+                                break;
+                            }
+                        }
                     }
                 }
             }
