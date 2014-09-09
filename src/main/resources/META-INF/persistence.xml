@@ -17,11 +17,15 @@
             <property name="hibernate.connection.charSet" value="UTF-8"/>
             <property name="hibernate.connection.pool_size" value="250"/>
             <property name="hibernate.generate_statistics" value="true"/>
-
             <property name="hibernate.connection.url" value="${hibernate.connection.url}" />
             <property name="hibernate.connection.username" value="${hibernate.connection.username}" />
             <property name="hibernate.connection.password" value="${hibernate.connection.password}" />
-            <property name="hbm2ddl.auto" value="update"></property>
+            <property name="hbm2ddl.auto" value="update"/>
+            <property name="hibernate.c3p0.min_size" value="5"/>
+            <property name="hibernate.c3p0.max_size" value="20"/>
+            <property name="hibernate.c3p0.timeout" value="1800"/>
+            <property name="hibernate.c3p0.max_statements" value="50"/>
+            <property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider"/>
         </properties>
     </persistence-unit>
 </persistence>
