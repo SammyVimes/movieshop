@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="i18n">
+    <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="i18n french">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AD4LFP.iws" afterPath="$PROJECT_DIR$/AD4LFP.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties" />
     </list>
@@ -166,8 +166,8 @@
       <file leaf-file-name="res_fr.properties" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8095238" vertical-offset="0" max-vertical-offset="527">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.84325397" vertical-offset="0" max-vertical-offset="527">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -1335,7 +1335,7 @@
       <workItem from="1410183861802" duration="8806000" />
       <workItem from="1410202365069" duration="5541000" />
       <workItem from="1410292713773" duration="8986000" />
-      <workItem from="1410365043591" duration="14513000" />
+      <workItem from="1410365043591" duration="14580000" />
     </task>
     <task id="LOCAL-00001" summary="Create Project">
       <created>1399384250122</created>
@@ -1389,11 +1389,15 @@
       <created>1410387089376</created>
       <updated>1410387089376</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="i18n french">
+      <created>1410387182664</created>
+      <updated>1410387182664</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186251000" />
+    <option name="totallyTimeSpent" value="186318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1459,7 +1463,8 @@
     <MESSAGE value="should fix: charachter encoding issue" />
     <MESSAGE value="add profiles" />
     <MESSAGE value="i18n" />
-    <option name="LAST_COMMIT_MESSAGE" value="i18n" />
+    <MESSAGE value="i18n french" />
+    <option name="LAST_COMMIT_MESSAGE" value="i18n french" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -3288,8 +3293,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8095238" vertical-offset="0" max-vertical-offset="527">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.84325397" vertical-offset="0" max-vertical-offset="527">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
         </state>
       </provider>
