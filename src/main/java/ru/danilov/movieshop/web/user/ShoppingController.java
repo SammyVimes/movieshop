@@ -9,6 +9,7 @@ import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.user.User;
 import ru.danilov.movieshop.core.entity.user.UserManager;
 import ru.danilov.movieshop.core.entity.user.UserSettings;
+import ru.danilov.movieshop.core.money.Currency;
 import ru.danilov.movieshop.web.base.ModelAndView;
 import ru.danilov.movieshop.web.controller.BaseController;
 import ru.danilov.movieshop.web.util.AttributeNames;
@@ -230,6 +231,7 @@ public class ShoppingController extends BaseController {
             userSettings.setCart(new LinkedList<Movie>());
             userManager.createSettings(userSettings);
         }
+        Double money = userSettings.getMoney();
         List<Movie> movieList = userSettings.getMovies();
         List<Movie> cart = userSettings.getCart();
         for (int i = 0; i < cart.size(); i++) {
@@ -241,8 +243,20 @@ public class ShoppingController extends BaseController {
                     return;
                 }
             }
+            Double price = _movie.getPrice();
+            if (_movie.getCurrency() == Currency.US_DOLLARS) {
+                price *= 35;
+            }
+            money -= price;
+            if (money <= 0) {
+                ModelAndView modelAndView = new ModelAndView("/error.tiles");
+                modelAndView.putObject("error", "Не достаточно средств");
+                modelAndView.process(request, response);
+                return;
+            }
             movieList.add(_movie);
         }
+        userSettings.setMoney(money);
         cart.clear();
         userManager.update(userSettings);
         response.sendRedirect("/movieshop/web/app/personal/user/shop/owned");

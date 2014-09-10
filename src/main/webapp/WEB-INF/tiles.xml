@@ -107,6 +107,7 @@
     </definition>
 
     <definition name="movie" template="/WEB-INF/views/web/user/movie.jsp"/>
+    <definition name="error" template="/WEB-INF/views/web/common/error.jsp"/>
     <definition name="cart" template="/WEB-INF/views/web/user/cart.jsp"/>
     <definition name="profile" template="/WEB-INF/views/web/user/profile.jsp"/>
     <definition name="reg" template="/WEB-INF/views/web/user/register.jsp"/>

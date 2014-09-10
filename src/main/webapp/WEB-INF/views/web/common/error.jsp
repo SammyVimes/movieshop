@@ -21,15 +21,16 @@
 <%
     Locale locale = request.getLocale();
     ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
-    String s_404 = resBound.getString("s_404");
-    pageContext.setAttribute("s_404", s_404);
+    String s_error = resBound.getString("s_error");
+    pageContext.setAttribute("s_error", s_error);
+    String s_back = resBound.getString("s_back");
+    pageContext.setAttribute("s_back", s_back);
 %>
 
 <div class="jumbotron jumbotron-green">
     <div class="container">
-        <h1>${s_404}</h1>
-        <c:set var="mainPageLink"><c:url value="/web/app/main"/></c:set>
-        <a href="${mainPageLink}"><h3>GET TO THE CHOPPA!</h3></a>
+        <h1>${s_error}: ${error}</h1>
+        <a href="javascript:history.back()"><h3>${s_back}</h3></a>
     </div>
 </div>
 
