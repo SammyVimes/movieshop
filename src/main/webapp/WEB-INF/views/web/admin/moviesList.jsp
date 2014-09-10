@@ -9,6 +9,19 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<%@ page import="ru.danilov.movieshop.web.util.UTF8ResourceBundle" %>
+<%@ page import="java.util.Locale" %>
+<%@ page import="java.util.ResourceBundle" %>
+
+<%
+    Locale locale = request.getLocale();
+    ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
+    String sDelete = resBound.getString("s_delete");
+    String sEdit = resBound.getString("s_edit");
+    pageContext.setAttribute("sDelete", sDelete);
+    pageContext.setAttribute("sEdit", sEdit);
+%>
+
 <div class="container">
 
     <div class="row">
@@ -33,7 +46,7 @@
     </div>
     <div class="width-3">
         <c:set var="editLink"><c:url value="/web/app/personal/admin/movies/editMovie?id="/></c:set>
-        <a class="btn btn-outline btn-normal edit-link" href="${editLink}">Редактировать</a>
-        <a href="" class="btn btn-outline btn-red">Удалить</a>
+        <a class="btn btn-outline btn-normal edit-link" href="${editLink}">${sEdit}</a>
+        <a href="" class="btn btn-outline btn-red">${sDelete}</a>
     </div>
 </div>

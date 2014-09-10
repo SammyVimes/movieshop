@@ -8,9 +8,20 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+
+<%@ page import="ru.danilov.movieshop.web.util.UTF8ResourceBundle" %>
+<%@ page import="java.util.Locale" %>
+<%@ page import="java.util.ResourceBundle" %>
+<%
+    Locale locale = request.getLocale();
+    ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
+    String sYourMovies = resBound.getString("s_your_movies");
+    pageContext.setAttribute("sYourMovies", sYourMovies);
+%>
+
 <div class="jumbotron jumbotron-green hidden-print">
     <div class="container">
-        <h1><i class="fa fa-rocket"></i>&nbsp; Ваши фильмы</h1>
+        <h1><i class="fa fa-rocket"></i>&nbsp; ${sYourMovies}</h1>
     </div>
 </div>
 

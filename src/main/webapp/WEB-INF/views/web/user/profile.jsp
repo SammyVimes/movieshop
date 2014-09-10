@@ -8,14 +8,29 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+
+<%@ page import="ru.danilov.movieshop.web.util.UTF8ResourceBundle" %>
+<%@ page import="java.util.Locale" %>
+<%@ page import="java.util.ResourceBundle" %>
+<%
+    Locale locale = request.getLocale();
+    ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
+    String sProfile = resBound.getString("s_profile");
+    String sLeft = resBound.getString("s_left");
+    String sMovie = resBound.getString("s_movie");
+    pageContext.setAttribute("sProfile", sProfile);
+    pageContext.setAttribute("sLeft", sLeft);
+    pageContext.setAttribute("sMovie", sMovie);
+%>
+
 <div class="jumbotron jumbotron-green hidden-print">
     <div class="container">
-        <h1><i class="fa fa-user"></i>&nbsp; Профиль ${user.login}</h1>
+        <h1><i class="fa fa-user"></i>&nbsp; ${sProfile} ${user.login}</h1>
 
         <p>
             <%--@elvariable id="money" type="java.lang.Double"--%>
             <c:if test="${money ne null}">
-                Остаток на счету: ${money}
+                ${sLeft}: ${money}
             </c:if>
         </p>
     </div>
@@ -36,7 +51,8 @@
             <div class="comment">
                 <div class="row row-skip">
                     <c:set var="movieLink"><c:url value="/web/app/catalog/movie?id=${comment.movie.id}"/></c:set>
-                    <div class="width-3"><b>Фильм: <a href="${movieLink}" class="movie-link">${comment.movie.title}</a></b>
+                    <div class="width-3"><b>${sMovie}: <a href="${movieLink}"
+                                                          class="movie-link">${comment.movie.title}</a></b>
                     </div>
                     <div class="width-6">${comment.date}</div>
                 </div>

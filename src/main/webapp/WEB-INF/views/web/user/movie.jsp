@@ -21,12 +21,16 @@
     String sSend = resBound.getString("s_send");
     String sComments = resBound.getString("s_comments");
     String sNewComment = resBound.getString("s_new_comment");
+    String sPrice = resBound.getString("s_price");
+    String sDescription = resBound.getString("s_description");
     pageContext.setAttribute("sAddToCart", sAddToCart);
     pageContext.setAttribute("sAlreadyGot", sAlreadyGot);
     pageContext.setAttribute("sActors", sActors);
     pageContext.setAttribute("sComments", sComments);
     pageContext.setAttribute("sSend", sSend);
     pageContext.setAttribute("sNewComment", sNewComment);
+    pageContext.setAttribute("sPrice", sPrice);
+    pageContext.setAttribute("sDescription", sDescription);
 %>
 
 <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
@@ -73,12 +77,12 @@
 
                 <div class="row row-skip">
                     <div class="width-12 description row-skip">
-                        <b>Описание: </b>${movie.description}
+                        <b>${sDescription}: </b>${movie.description}
                     </div>
                 </div>
                 <div class="row">
                     <div class="width-12 price row-skip">
-                        <b>Цена: </b><m:money amount="${movie.price}" currency="${movie.currency}"/>
+                        <b>${sPrice}: </b><m:money amount="${movie.price}" currency="${movie.currency}"/>
                     </div>
                 </div>
                 <br/>
