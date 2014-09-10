@@ -95,6 +95,7 @@ public class ShoppingController extends BaseController {
             userSettings.setMoney(4000.0);
             userSettings.setUser(user);
             userSettings.setMovies(new LinkedList<Movie>());
+            userSettings.setCart(new LinkedList<Movie>());
             userManager.createSettings(userSettings);
         }
         List<Movie> movieList = userSettings.getMovies();

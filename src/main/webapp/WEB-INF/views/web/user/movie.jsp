@@ -9,6 +9,26 @@
 <%@ taglib prefix="m" uri="http://www.danilov.ru/moneytaglib" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<%@ page import="ru.danilov.movieshop.web.util.UTF8ResourceBundle" %>
+<%@ page import="java.util.Locale" %>
+<%@ page import="java.util.ResourceBundle" %>
+<%
+    Locale locale = request.getLocale();
+    ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
+    String sAddToCart = resBound.getString("s_add_to_cart");
+    String sAlreadyGot = resBound.getString("s_already_got");
+    String sActors = resBound.getString("s_actors");
+    String sSend = resBound.getString("s_send");
+    String sComments = resBound.getString("s_comments");
+    String sNewComment = resBound.getString("s_new_comment");
+    pageContext.setAttribute("sAddToCart", sAddToCart);
+    pageContext.setAttribute("sAlreadyGot", sAlreadyGot);
+    pageContext.setAttribute("sActors", sActors);
+    pageContext.setAttribute("sComments", sComments);
+    pageContext.setAttribute("sSend", sSend);
+    pageContext.setAttribute("sNewComment", sNewComment);
+%>
+
 <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
 
 <div class="jumbotron jumbotron-green jumbotron-ad hidden-print">
@@ -67,20 +87,21 @@
                         <%--@elvariable id="owned" type="java.lang.Boolean"--%>
                         <c:when test="${owned}">
                             <div class="easy-panel success">
-                                У вас уже есть этот фильм
+                                    ${sAlreadyGot}
                             </div>
                         </c:when>
                         <c:otherwise>
                             <c:set var="buyLink"><c:url value="/web/app/personal/user/shop/addToCart?id=${movie.id}"/></c:set>
-                            <a href="${buyLink}" class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> Добавить в корзину</a>
+                            <a href="${buyLink}"
+                               class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> ${sAddToCart}</a>
                         </c:otherwise>
                     </c:choose>
                 </div>
             </div>
         </div>
         <div class="row row-skip">
-            <div class="width-6 tab" id="actors-tab">Актерский состав</div>
-            <div class="width-6 tab active" id="comments-tab">Отзывы</div>
+            <div class="width-6 tab" id="actors-tab">${sActors}</div>
+            <div class="width-6 tab active" id="comments-tab">${sComments}</div>
         </div>
         <div class="row">
             <div class="width-12 hidden" id="actors">
@@ -91,10 +112,10 @@
                     <c:set var="addCommentLink"><c:url value="/web/app/personal/user/shop/addComment"/></c:set>
                     <form action="${addCommentLink}" method="post" class="width-12">
                         <div class="form-element">
-                            <label for="comment-input"><b>Новый комментарий</b></label>
+                            <label for="comment-input"><b>${sNewComment}</b></label>
                             <textarea class="form-input width-12" id="comment-input" name="comment"></textarea>
                             <input class="hidden" name="movieId" value="${movie.id}">
-                            <button type="submit" class="btn btn-outline btn-normal width-3">Отправить</button>
+                            <button type="submit" class="btn btn-outline btn-normal width-3">${sSend}</button>
                         </div>
                     </form>
                 </div>

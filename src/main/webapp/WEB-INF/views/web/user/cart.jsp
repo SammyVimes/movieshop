@@ -1,3 +1,6 @@
+<%@ page import="ru.danilov.movieshop.web.util.UTF8ResourceBundle" %>
+<%@ page import="java.util.Locale" %>
+<%@ page import="java.util.ResourceBundle" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
@@ -8,14 +11,28 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+
+<%
+    Locale locale = request.getLocale();
+    ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
+    String sCart = resBound.getString("s_your_cart");
+    String sCartEmpty = resBound.getString("s_is_empty");
+    String sDelete = resBound.getString("s_delete");
+    String sBuy = resBound.getString("s_buy");
+    pageContext.setAttribute("sCart", sCart);
+    pageContext.setAttribute("sCartEmpty", sCartEmpty);
+    pageContext.setAttribute("sDelete", sDelete);
+    pageContext.setAttribute("sBuy", sBuy);
+%>
+
 <div class="jumbotron jumbotron-green hidden-print">
     <div class="container">
         <c:choose>
             <c:when test="${isEmpty}">
-                <h1><i class="fa fa-shopping-cart"></i>&nbsp; Ваша корзина пуста</h1>
+                <h1><i class="fa fa-shopping-cart"></i>&nbsp; ${sCart} ${sCartEmpty}</h1>
             </c:when>
             <c:otherwise>
-                <h1><i class="fa fa-shopping-cart"></i>&nbsp; Ваша корзина</h1>
+                <h1><i class="fa fa-shopping-cart"></i>&nbsp; ${sCart}</h1>
             </c:otherwise>
         </c:choose>
     </div>
@@ -37,7 +54,7 @@
                 </div>
                 <div class="width-3">
                     <c:set var="removeLink"><c:url value="/web/app/personal/user/shop/remove?id=${movie.id}"/></c:set>
-                    <a href="${removeLink}" class="btn btn-outline btn-red">Удалить</a>
+                    <a href="${removeLink}" class="btn btn-outline btn-red">${sDelete}</a>
                 </div>
             </div>
 
@@ -45,7 +62,7 @@
 
         <c:if test="${not isEmpty}">
             <c:set var="movieLink"><c:url value="/web/app/personal/user/shop/buy"/></c:set>
-            <a href="${movieLink}" class="btn btn-outline btn-success">Купить</a>
+            <a href="${movieLink}" class="btn btn-outline btn-success">${sBuy}</a>
         </c:if>
 
     </div>
