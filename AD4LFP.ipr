@@ -272,12 +272,6 @@
       <output-path>$PROJECT_DIR$/target</output-path>
       <root id="archive" name="emptyproj.war">
         <element id="artifact" artifact-name="MOVIESHOP:war exploded" />
-        <element id="directory" name="WEB-INF">
-          <element id="directory" name="lib">
-            <element id="library" level="project" name="c3p0-0.9.1.2" />
-            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
-          </element>
-        </element>
       </root>
     </artifact>
     <artifact type="exploded-war" name="MOVIESHOP:war exploded">
@@ -404,8 +398,6 @@
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:3.1.0" />
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers:3.1.0" />
             <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" />
-            <element id="library" level="project" name="c3p0-0.9.1.2" />
-            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
           </element>
         </element>
       </root>

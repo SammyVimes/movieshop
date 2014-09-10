@@ -2,11 +2,6 @@ package ru.danilov.movieshop.core.entity.user;
 
 import ru.danilov.movieshop.web.util.ServiceContainer;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
 /**
  * Created by Semyon on 05.09.2014.
  */
@@ -38,6 +33,10 @@ public class UserManager {
     public void createUser(final User user) throws UserManagerException {
         validate(user);
         userDAO.persist(user);
+    }
+
+    public User getUserById(final Long id) {
+        return userDAO.getById(id);
     }
 
     public User getUserByLogin(final String login) {

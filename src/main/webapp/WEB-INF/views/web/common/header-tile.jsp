@@ -38,8 +38,9 @@
             </a>
             <c:choose>
                 <c:when test="${user ne null}">
-                    <a href="#" class="control">
-                        <i class="fa fa-user"></i>
+                    <c:set var="profileLink"><c:url value="/web/app/user/profile/showProfile?id=${user.id}"/></c:set>
+                    <a href="${profileLink}" class="control">
+                    <i class="fa fa-user"></i>
                     </a>
                     <c:set var="logoutLink"><c:url value="/web/app/main/logout"/></c:set>
                     <a href="${logoutLink}" class="control">

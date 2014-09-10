@@ -6,7 +6,6 @@ import ru.danilov.movieshop.core.util.HibernateUtil;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceException;
 import java.util.List;
 
 /**
@@ -30,4 +29,9 @@ public class UserDAO {
         return list.isEmpty() ? null : list.get(0);
     }
 
+    public User getById(final Long id) {
+        List<User> list = entityManager.createQuery("SELECT a FROM User a WHERE  id = :id", User.class)
+                .setParameter("id", id).getResultList();
+        return list.isEmpty() ? null : list.get(0);
+    }
 }

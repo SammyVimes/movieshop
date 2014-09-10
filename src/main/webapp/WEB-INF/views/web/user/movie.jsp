@@ -102,7 +102,13 @@
                 <c:forEach items="${comments}" var="_comment">
                     <div class="comment">
                         <div class="row row-skip">
-                            <div class="width-1"><b>${_comment.user.login}</b></div>
+                            <div class="width-2">
+                                <b>
+                                    <c:set var="userlink"><c:url
+                                            value="/web/app/user/profile/showProfile?id=${_comment.user.id}"/></c:set>
+                                    <a href="${userlink}" class="user-link">${_comment.user.login}</a>
+                                </b>
+                            </div>
                             <div class="width-6">${_comment.date}</div>
                         </div>
                         <div class="row row-skip">

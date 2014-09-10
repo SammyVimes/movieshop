@@ -3,7 +3,7 @@ package ru.danilov.movieshop.core.entity.comment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.danilov.movieshop.core.entity.movie.Movie;
-import ru.danilov.movieshop.core.entity.movie.MovieDAO;
+import ru.danilov.movieshop.core.entity.user.User;
 import ru.danilov.movieshop.web.util.ServiceContainer;
 
 import java.util.List;
@@ -23,6 +23,10 @@ public class CommentManager {
 
     public List<Comment> getCommentsForMovie(final Movie movie) {
         return commentDAO.getAllCommentsForMovie(movie);
+    }
+
+    public List<Comment> getCommentsOfUser(final User user) {
+        return commentDAO.getAllCommentsOfUser(user);
     }
 
 }

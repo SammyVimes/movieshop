@@ -61,6 +61,10 @@
         <put-attribute name="page-content" type="definition" value="cart"/>
     </definition>
 
+    <definition name="user.profile" extends="common">
+        <put-attribute name="page-content" type="definition" value="profile"/>
+    </definition>
+
     <!--admin views-->
 
     <definition name="admin.moviesList" extends="common">
@@ -104,6 +108,7 @@
 
     <definition name="movie" template="/WEB-INF/views/web/user/movie.jsp"/>
     <definition name="cart" template="/WEB-INF/views/web/user/cart.jsp"/>
+    <definition name="profile" template="/WEB-INF/views/web/user/profile.jsp"/>
     <definition name="reg" template="/WEB-INF/views/web/user/register.jsp"/>
     <definition name="owned" template="/WEB-INF/views/web/user/owned.jsp"/>
     <definition name="moviesList" template="/WEB-INF/views/web/admin/moviesList.jsp"/>
