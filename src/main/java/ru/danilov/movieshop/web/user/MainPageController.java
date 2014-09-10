@@ -44,7 +44,7 @@ public class MainPageController extends BaseController {
     public void logout(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         authManager.logout((String) session.getAttribute(AttributeNames.AUTH_DATA_KEY));
-        response.sendRedirect("/movieshop/web/auth");
+        response.sendRedirect("/movieshop/web/app/catalog");
     }
 
 }

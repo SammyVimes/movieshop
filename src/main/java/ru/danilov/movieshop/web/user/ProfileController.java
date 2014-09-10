@@ -4,6 +4,7 @@ import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
 import ru.danilov.movieshop.core.entity.comment.Comment;
 import ru.danilov.movieshop.core.entity.comment.CommentManager;
+import ru.danilov.movieshop.core.entity.movie.Movie;
 import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.user.User;
 import ru.danilov.movieshop.core.entity.user.UserManager;
@@ -17,6 +18,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -63,11 +65,17 @@ public class ProfileController extends BaseController {
             if (authData != null) {
                 thisUser = authData.getUser();
                 if (thisUser != null) {
-                    UserSettings settings = userManager.getUserSettings(user);
-                    if (settings != null) {
-                        if (thisUser != null && user.getId() == thisUser.getId()) {
-                            modelAndView.putObject("money", settings.getMoney());
-                        }
+                    UserSettings userSettings = userManager.getUserSettings(user);
+                    if (userSettings == null) {
+                        userSettings = new UserSettings();
+                        userSettings.setMoney(4000.0);
+                        userSettings.setUser(user);
+                        userSettings.setMovies(new LinkedList<Movie>());
+                        userSettings.setCart(new LinkedList<Movie>());
+                        userManager.createSettings(userSettings);
+                    }
+                    if (thisUser != null && user.getId() == thisUser.getId()) {
+                        modelAndView.putObject("money", userSettings.getMoney());
                     }
                 }
             }

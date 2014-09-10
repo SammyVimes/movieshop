@@ -42,8 +42,13 @@ public class ApplicationMainServlet extends BaseServlet {
         super.init();
     }
 
+    private void beforeProcess(final HttpServletRequest req, final HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
+    }
+
     @Override
     protected void doGet(final HttpServletRequest req, final HttpServletResponse resp) throws ServletException, IOException {
+        beforeProcess(req, resp);
         BaseController controller = findMatchingController(req.getRequestURI());
         if (controller != null) {
             controller.handleGetRequest(req, resp);
@@ -55,6 +60,7 @@ public class ApplicationMainServlet extends BaseServlet {
 
     @Override
     protected void doPost(final HttpServletRequest req, final HttpServletResponse resp) throws ServletException, IOException {
+        beforeProcess(req, resp);
         BaseController controller = findMatchingController(req.getRequestURI());
         if (controller != null) {
             controller.handlePostRequest(req, resp);
