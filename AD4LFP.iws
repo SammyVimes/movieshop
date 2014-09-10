@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="add profiles">
+    <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="i18n">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AD4LFP.iws" afterPath="$PROJECT_DIR$/AD4LFP.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/editMovie.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/editMovie.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error404.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/owned.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/owned.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/popular.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/popular.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res_ru.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/search.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/search.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/sidebar-tile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/sidebar-tile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties" />
     </list>
     <ignored path="AD4LFP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,8 +100,8 @@
       <file leaf-file-name="res.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="527">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="527">
+              <caret line="25" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -132,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addMovie.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="addMovie.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1751">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -175,11 +163,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="res_fr.properties" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="res_fr.properties" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="357">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.8095238" vertical-offset="0" max-vertical-offset="527">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -209,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/panels.css" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/EveryRequestFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java" />
@@ -260,6 +247,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res_ru.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/editMovie.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties" />
       </list>
     </option>
   </component>
@@ -1347,7 +1335,7 @@
       <workItem from="1410183861802" duration="8806000" />
       <workItem from="1410202365069" duration="5541000" />
       <workItem from="1410292713773" duration="8986000" />
-      <workItem from="1410365043591" duration="14416000" />
+      <workItem from="1410365043591" duration="14513000" />
     </task>
     <task id="LOCAL-00001" summary="Create Project">
       <created>1399384250122</created>
@@ -1397,11 +1385,15 @@
       <created>1410385798915</created>
       <updated>1410385798915</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="i18n">
+      <created>1410387089376</created>
+      <updated>1410387089376</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186154000" />
+    <option name="totallyTimeSpent" value="186251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1466,7 +1458,8 @@
     <MESSAGE value="implemented cart removal" />
     <MESSAGE value="should fix: charachter encoding issue" />
     <MESSAGE value="add profiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="add profiles" />
+    <MESSAGE value="i18n" />
+    <option name="LAST_COMMIT_MESSAGE" value="i18n" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -3247,32 +3240,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="357">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="527">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.32" vertical-offset="0" max-vertical-offset="527">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -3302,6 +3273,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="25" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8095238" vertical-offset="0" max-vertical-offset="527">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
   </component>
