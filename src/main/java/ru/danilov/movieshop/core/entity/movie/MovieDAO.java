@@ -31,6 +31,17 @@ public class MovieDAO {
         return _movie;
     }
 
+    public void remove(final Movie movie) {
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        if (!entityManager.contains(movie)) {
+            entityManager.remove(update(movie));
+        } else {
+            entityManager.remove(movie);
+        }
+        transaction.commit();
+    }
+
     public List<Movie> search(final String query) {
         return entityManager.createQuery("SELECT a FROM Movie a WHERE title LIKE '%" + query + "%'", Movie.class).getResultList();
     }

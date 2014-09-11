@@ -12,7 +12,7 @@
         <element id="artifact" artifact-name="AD4LFP:war exploded" />
         <element id="directory" name="WEB-INF">
           <element id="directory" name="lib">
-            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="c3p0-0.9.2.1" />
             <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
           </element>
         </element>
@@ -27,21 +27,9 @@
             <element id="module-output" name="MOVIESHOP" />
           </element>
           <element id="directory" name="lib">
-            <element id="library" level="project" name="Maven: org.springframework.ws:spring-ws-core:2.0.2.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework.ws:spring-xml:2.0.2.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-asm:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-core:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0-2" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-oxm:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context-support:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: wsdl4j:wsdl4j:1.6.1" />
             <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.4-1" />
             <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2.3" />
@@ -69,10 +57,6 @@
             <element id="library" level="project" name="Maven: org.springframework:spring-aspects:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:0.9.18" />
             <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:0.9.18" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-jms:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: org.apache.tomcat:dbcp:6.0.18" />
             <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.3" />
             <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
@@ -121,7 +105,7 @@
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:3.1.0" />
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers:3.1.0" />
             <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" />
-            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="c3p0-0.9.2.1" />
             <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
           </element>
         </element>
@@ -133,7 +117,7 @@
         <element id="artifact" artifact-name="EMPTYPROJ:war exploded" />
         <element id="directory" name="WEB-INF">
           <element id="directory" name="lib">
-            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="c3p0-0.9.2.1" />
             <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
           </element>
         </element>
@@ -148,21 +132,9 @@
             <element id="module-output" name="MOVIESHOP" />
           </element>
           <element id="directory" name="lib">
-            <element id="library" level="project" name="Maven: org.springframework.ws:spring-ws-core:2.0.2.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework.ws:spring-xml:2.0.2.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-asm:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-core:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: javax.xml.stream:stax-api:1.0-2" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-oxm:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-web:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-context-support:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: wsdl4j:wsdl4j:1.6.1" />
             <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.4-1" />
             <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2.3" />
@@ -187,10 +159,6 @@
             <element id="library" level="project" name="Maven: com.intellij:annotations:7.0.3" />
             <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:0.9.18" />
             <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:0.9.18" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-jms:3.0.5.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.0.5.RELEASE" />
             <element id="library" level="project" name="Maven: org.apache.tomcat:dbcp:6.0.18" />
             <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.3" />
             <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
@@ -262,7 +230,7 @@
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:3.1.0" />
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers:3.1.0" />
             <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" />
-            <element id="library" level="project" name="c3p0-0.9.1.2" />
+            <element id="library" level="project" name="c3p0-0.9.2.1" />
             <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
           </element>
         </element>
@@ -272,6 +240,12 @@
       <output-path>$PROJECT_DIR$/target</output-path>
       <root id="archive" name="emptyproj.war">
         <element id="artifact" artifact-name="MOVIESHOP:war exploded" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="c3p0-0.9.2.1" />
+            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
+          </element>
+        </element>
       </root>
     </artifact>
     <artifact type="exploded-war" name="MOVIESHOP:war exploded">
@@ -342,7 +316,7 @@
             <element id="library" level="project" name="Maven: org.aspectj:aspectjtools:1.8.1" />
             <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.0.1" />
             <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.3" />
-            <element id="library" level="project" name="Maven: commons-io:commons-io:1.3.2" />
+            <element id="library" level="project" name="Maven: org.apache.commons:commons-io:1.3.2" />
             <element id="library" level="project" name="Maven: commons-net:commons-net:2.0" />
             <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.6" />
             <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
@@ -398,6 +372,8 @@
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:3.1.0" />
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers:3.1.0" />
             <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:1.8.3" />
+            <element id="library" level="project" name="c3p0-0.9.2.1" />
+            <element id="library" level="project" name="hibernate-c3p0-3.6.6.Final" />
           </element>
         </element>
       </root>
@@ -452,7 +428,9 @@
       <module name="MOVIESHOP" target="1.7" />
     </bytecodeTargetLevel>
   </component>
-  <component name="CopyrightManager" default="" />
+  <component name="CopyrightManager" default="">
+    <module2copyright />
+  </component>
   <component name="DataSourceManagerImpl" format="xml" hash="3183801825">
     <data-source source="LOCAL" name="persistenceUnit" uuid="209ff53a-5674-4996-91c5-cccf0f8b0f3c">
       <driver-ref>mysql</driver-ref>
@@ -680,10 +658,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AD4LFP.iml" filepath="$PROJECT_DIR$/AD4LFP.iml" />
       <module fileurl="file://$PROJECT_DIR$/MOVIESHOP.iml" filepath="$PROJECT_DIR$/MOVIESHOP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MOVIESHOP.iml" filepath="$PROJECT_DIR$/MOVIESHOP.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">
@@ -728,9 +705,9 @@
     </GetOptions>
   </component>
   <component name="libraryTable">
-    <library name="c3p0-0.9.1.2">
+    <library name="c3p0-0.9.2.1">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.1.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.2.1.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
@@ -949,17 +926,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2/commons-fileupload-1.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: commons-io:commons-io:1.3.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.3.2/commons-io-1.3.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-lang:commons-lang:2.4">
@@ -1224,6 +1190,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/2.7.3/ognl-2.7.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.commons:commons-io:1.3.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-io/1.3.2/commons-io-1.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-io/1.3.2/commons-io-1.3.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-io/1.3.2/commons-io-1.3.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.httpcomponents:httpclient:4.0.1">

@@ -29,6 +29,7 @@
                 <hibernate.connection.username>root</hibernate.connection.username>
                 <hibernate.connection.password>root</hibernate.connection.password>
                 <hibernate.connection.url>jdbc:mysql://127.0.0.1:3306/movieshop</hibernate.connection.url>
+                <content.folder>/home/semyon/Pictures</content.folder>
             </properties>
         </profile>
         <profile>
@@ -37,6 +38,7 @@
                 <hibernate.connection.username>movieshop</hibernate.connection.username>
                 <hibernate.connection.password>test</hibernate.connection.password>
                 <hibernate.connection.url>jdbc:mysql://127.0.0.1:3306/movieshop</hibernate.connection.url>
+                <content.folder>/home/semyon/Pictures</content.folder>
             </properties>
         </profile>
     </profiles>
@@ -159,6 +161,24 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.5</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <filtering>true</filtering>
+                            <directory>src/main/webapp</directory>
+                            <includes>
+                                <include>**/web.xml</include>
+                            </includes>
+                        </resource>
+                    </webResources>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+                </configuration>
             </plugin>
 
         </plugins>

@@ -18,15 +18,29 @@ public class CommentManager {
     private CommentDAO commentDAO = ServiceContainer.getService(CommentDAO.class);
 
     public void addComment(final Comment comment) {
-        commentDAO.persist(comment);
+        try {
+            commentDAO.persist(comment);
+        } catch (Exception e) {
+            LOGGER.trace("Failed to persist comment: " + e.getMessage());
+        }
     }
 
     public List<Comment> getCommentsForMovie(final Movie movie) {
-        return commentDAO.getAllCommentsForMovie(movie);
+        try {
+            return commentDAO.getAllCommentsForMovie(movie);
+        } catch (Exception e) {
+            LOGGER.trace("Failed to get comments for movie: " + e.getMessage());
+        }
+        return null;
     }
 
     public List<Comment> getCommentsOfUser(final User user) {
-        return commentDAO.getAllCommentsOfUser(user);
+        try {
+            return commentDAO.getAllCommentsOfUser(user);
+        } catch (Exception e) {
+            LOGGER.trace("Failed to get comments of user: " + e.getMessage());
+        }
+        return null;
     }
 
 }

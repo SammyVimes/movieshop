@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="i18n french">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error.jsp" />
+    <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="фыв&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ContentServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AD4LFP.ipr" afterPath="$PROJECT_DIR$/AD4LFP.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AD4LFP.iws" afterPath="$PROJECT_DIR$/AD4LFP.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error404.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error404.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/res_ru.properties" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/res_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/money/MoneyTag.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/money/MoneyTag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/auth.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/auth.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/common-page-tile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/common-page-tile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hibernate.properties" afterPath="$PROJECT_DIR$/hibernate.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="AD4LFP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +31,24 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true" />
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.6.Final/hibernate-core-3.6.6.Final-sources.jar!/org/hibernate/connection/ConnectionProviderFactory.java" line="170" class="org.hibernate.connection.ConnectionProviderFactory" package="org.hibernate.connection">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -65,8 +84,9 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
-    <ui_properties converted="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -74,110 +94,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tiles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1613" max-vertical-offset="2210">
-              <caret line="109" column="27" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="27" />
+            <state line="164" column="49" selection-start="5903" selection-end="5903" vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="10455">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="res_ru.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_ru.properties">
+      <file leaf-file-name="MovieManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            <state line="78" column="31" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="771" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="res.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res.properties">
+      <file leaf-file-name="UserManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="561">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moviesList.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="986">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="2" />
+            <state line="7" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java">
+      <file leaf-file-name="MoneyTag.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/money/MoneyTag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.72" vertical-offset="3559" max-vertical-offset="4250">
-              <caret line="252" column="70" selection-start-line="252" selection-start-column="70" selection-end-line="252" selection-end-column="70" />
+            <state line="43" column="82" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addMovie.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp">
+      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1751">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state line="99" column="38" selection-start="3259" selection-end="3259" vertical-scroll-proportion="0.7419899" vertical-offset="1045" max-vertical-offset="1935">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="res_en.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties">
+      <file leaf-file-name="ContentServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ContentServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="561">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding />
+            <state line="33" column="43" selection-start="1040" selection-end="1041" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="990">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="res_fr.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties">
+      <file leaf-file-name="ApplicationMainServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.68" vertical-offset="0" max-vertical-offset="561">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7634195" vertical-offset="160" max-vertical-offset="748">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state line="40" column="75" selection-start="1923" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error404.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error404.jsp">
+      <file leaf-file-name="ModelAndView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="731">
-              <caret line="18" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state line="19" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/BaseServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="13" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="177" column="0" selection-start="7454" selection-end="7454" vertical-scroll-proportion="-18.5" vertical-offset="2211" max-vertical-offset="2745">
               <folding />
             </state>
           </provider>
@@ -204,57 +207,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/EMPTYPROJ.iml" />
+        <option value="$PROJECT_DIR$/EMPTYPROJ.ipr" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManagerException.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/popular.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/MainPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/items.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/panels.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/editMovie.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/EveryRequestFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/movie.css" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettingsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/owned.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManagerException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/AD4LFP.iws" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/auth/AuthManager.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/adminmovies.js" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/util/Cache.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/protoQuery.js" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/movie.css" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/MainPageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ProfileController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/res_fr.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/res_en.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/res.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/util/UTF8ResourceBundle.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/auth.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/cart.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/owned.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/profile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/popular.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/sidebar-tile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/search.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/editMovie.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error404.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res_ru.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/auth/AuthManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/adminmovies.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/protoQuery.js" />
+        <option value="$PROJECT_DIR$/hibernate.properties" />
+        <option value="$PROJECT_DIR$/AD4LFP.iws" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/hibernate/connection/C3P0ConnectionProvider.java" />
+        <option value="$PROJECT_DIR$/MOVIESHOP.iml" />
+        <option value="$PROJECT_DIR$/AD4LFP.ipr" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/auth.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/common-page-tile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/money/MoneyTag.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ContentServlet.java" />
       </list>
     </option>
   </component>
@@ -268,7 +271,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Users\Semyon\apache-maven" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.1.0" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -278,7 +281,7 @@
     </option>
     <option name="enabledProfiles">
       <list>
-        <option value="sema" />
+        <option value="sema_at_work" />
       </list>
     </option>
   </component>
@@ -300,6 +303,38 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="movieshop" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="movieshop" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="clean" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="Profiles" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProfilesNode" />
         </PATH_ELEMENT>
@@ -307,10 +342,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -328,7 +363,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -340,7 +375,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -355,376 +389,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="AD4LFP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tag" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="danilov" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'res'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="danilov" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="movieshop" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AD4LFP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="danilov" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="movieshop" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -733,32 +425,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="danilov" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="movieshop" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -767,16 +447,205 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MOVIESHOP" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="danilov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="danilov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="danilov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="danilov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -785,7 +654,7 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -802,11 +671,11 @@
     <property name="LayoutCode.rearrangeEntriesJSPX" value="false" />
     <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistory" value="AD4&#10;MainP&#10;AuthC&#10;pom.x" />
+    <property name="SearchEverywhereHistory" value="notifi&#10;DataSources&#10;m&#10;HibernatePersistence&#10;HibernatePers&#10;web&#10;C3&#10;pom&#10;AD4&#10;MainP&#10;AuthC&#10;pom.x" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/hibernate-c3p0-3.6.6.Final.jar!/" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Shop&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java&#10;Shoppi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java&#10;ResourceB&#9;PSI&#9;JAVA://java.util.ResourceBundle&#10;Shopp&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java&#10;main&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;AuthF&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.filter.AuthFilter&#10;movi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/movie.css&#10;User&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/user/User.java&#10;pop&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/popular.jsp&#10;sear&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/search.jsp&#10;Base&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/servlet/BaseServlet.java&#10;&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;items&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/items.css&#10;ite&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/items.css&#10;main.css&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;ModelA&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.base.ModelAndView&#10;Movie&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;main.cs&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;boo&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/bootstrap/css/bootstrap.css&#10;Movi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;web&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/web.xml&#10;Ba&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/impl/BasicTilesContainer.java&#10;Defini&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/dao/ResolvingLocaleUrlDefinitionDAO.java&#10;Cache&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/util/Cache.java&#10;Cac&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-extras/3.0.4/tiles-extras-3.0.4.jar!/org/apache/tiles/extras/complete/CompleteAutoloadTilesListener.class&#10;Def&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/DefinitionsFactory.java&#10;DefinitionsFactory&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/DefinitionsFactory.java&#10;Bas&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar!/org/apache/tiles/impl/BasicTilesContainer.class&#10;BasicTil&#9;PSI&#9;JAVA://org.apache.tiles.impl.BasicTilesContainer&#10;po&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml&#10;pom&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="Shopp&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java&#10;&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;movi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/movie.jsp&#10;items&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/items.css&#10;ite&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/items.css&#10;main.css&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;main&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;ModelA&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.base.ModelAndView&#10;Movie&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;main.cs&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;boo&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/bootstrap/css/bootstrap.css&#10;Movi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;web&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/web.xml&#10;Ba&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/impl/BasicTilesContainer.java&#10;Defini&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/dao/ResolvingLocaleUrlDefinitionDAO.java&#10;Cache&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/util/Cache.java&#10;Cac&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-extras/3.0.4/tiles-extras-3.0.4.jar!/org/apache/tiles/extras/complete/CompleteAutoloadTilesListener.class&#10;Def&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/DefinitionsFactory.java&#10;DefinitionsFactory&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2-sources.jar!/org/apache/tiles/definition/DefinitionsFactory.java&#10;Bas&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/org/apache/tiles/tiles-core/2.2.2/tiles-core-2.2.2.jar!/org/apache/tiles/impl/BasicTilesContainer.class&#10;BasicTil&#9;PSI&#9;JAVA://org.apache.tiles.impl.BasicTilesContainer&#10;po&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml&#10;pom&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
@@ -825,49 +694,18 @@
       <recent name="ru.a4si2.web.admin.controllers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\javaProjects\MOVIESHOP\src\main\resources\META-INF" />
-      <recent name="F:\javaProjects\MOVIESHOP\lib" />
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="F:\javaProjects\MOVIESHOP\src\main\webapp\lib" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin" />
       <recent name="$PROJECT_DIR$/src/main/java/ru/a4si2/entities/notification" />
+      <recent name="$PROJECT_DIR$/src/main/java/ru/a4si2/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\javaProjects\MOVIESHOP\src\main\java\ru\danilov" />
-      <recent name="F:\javaProjects\MOVIESHOP\src" />
-      <recent name="F:\javaProjects\MOVIESHOP\src\main\webapp\WEB-INF\classes" />
-      <recent name="F:\javaProjects\MOVIESHOP\src\main\resources" />
-      <recent name="F:\javaProjects\MOVIESHOP" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration default="false" name="AuthController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.sofitlabs.web.admin.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ru.sofitlabs.web.admin.controllers.AuthController" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AD4LFP" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -958,7 +796,7 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
       </method>
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
       <module name="" />
       <setting name="vmparams" value="" />
       <setting name="cmdLine" value="run-app" />
@@ -966,6 +804,26 @@
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EMPTYPROJ" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -990,6 +848,53 @@
       </MavenSettings>
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EMPTYPROJ" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EMPTYPROJ" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -998,7 +903,7 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -1040,6 +945,26 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EMPTYPROJ" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1090,7 +1015,7 @@
       <option name="launchUrl" value="false" />
       <option name="launcherParameters">
         <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="browserFamily" value="FIREFOX" />
           <option name="launcherType" value="OSDefault" />
           <option name="newPlayerInstance" value="false" />
           <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
@@ -1127,14 +1052,53 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EMPTYPROJ" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EMPTYPROJ" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
       <option name="BCName" value="" />
       <option name="launcherParameters">
         <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="browserFamily" value="FIREFOX" />
           <option name="launcherType" value="OSDefault" />
           <option name="newPlayerInstance" value="false" />
           <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
@@ -1178,6 +1142,26 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EMPTYPROJ" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -1195,7 +1179,6 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -1204,13 +1187,41 @@
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.55" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+    <configuration default="false" name="AuthController" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.sofitlabs.web.admin.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.sofitlabs.web.admin.controllers.AuthController" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AD4LFP" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.52" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/movieshop/web/app/main" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="AD4LFP:war exploded">
+        <artifact name="MOVIESHOP:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/movieshop" />
           </settings>
@@ -1218,6 +1229,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_AD4LFP" />
+        <option name="HTTP_PORT" value="8080" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1280,24 +1292,23 @@
       <method>
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="AD4LFP:war exploded" />
+          <artifact name="MOVIESHOP:war exploded" />
         </option>
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Application.AuthController" />
+      <item index="0" class="java.lang.String" itemvalue="Application.AuthController" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
       <item index="2" class="java.lang.String" itemvalue="Application.Test" />
       <item index="3" class="java.lang.String" itemvalue="Application.EMailManager" />
       <item index="4" class="java.lang.String" itemvalue="Maven.AD4LFP [tomcat:run-war]" />
     </list>
     <recent_temporary>
-      <list size="5">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Maven.AD4LFP [tomcat:run-war]" />
         <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.AuthController" />
-        <item index="3" class="java.lang.String" itemvalue="Application.EMailManager" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="2" class="java.lang.String" itemvalue="Application.EMailManager" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1306,8 +1317,28 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" myUseAcceleration="nothing" cleanupOnStartRun="true">
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">C:\Users\Semyon\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
@@ -1339,10 +1370,10 @@
       <workItem from="1410162724309" duration="1133000" />
       <workItem from="1410163864610" duration="198000" />
       <workItem from="1410164063831" duration="4086000" />
-      <workItem from="1410183861802" duration="8806000" />
-      <workItem from="1410202365069" duration="5541000" />
-      <workItem from="1410292713773" duration="8986000" />
-      <workItem from="1410365043591" duration="15429000" />
+      <workItem from="1410183861802" duration="17655000" />
+      <workItem from="1410436763014" duration="156000" />
+      <workItem from="1410437518329" duration="3606000" />
+      <workItem from="1410441247513" duration="9136000" />
     </task>
     <task id="LOCAL-00001" summary="Create Project">
       <created>1399384250122</created>
@@ -1356,104 +1387,62 @@
       <created>1410187514675</created>
       <updated>1410187514675</updated>
     </task>
-    <task id="LOCAL-00004" summary="added search">
-      <created>1410209329733</created>
-      <updated>1410209329733</updated>
+    <task id="LOCAL-00004" summary="added my fcuking jquery!!!">
+      <created>1410192737327</created>
+      <updated>1410192737327</updated>
     </task>
-    <task id="LOCAL-00005" summary="css fixed">
-      <created>1410213532610</created>
-      <updated>1410213532610</updated>
+    <task id="LOCAL-00005" summary="12">
+      <created>1410250815474</created>
+      <updated>1410250815474</updated>
     </task>
-    <task id="LOCAL-00006" summary="css fixed">
-      <created>1410297569307</created>
-      <updated>1410297569307</updated>
-    </task>
-    <task id="LOCAL-00007" summary="добавлена корзина и отзывы">
-      <created>1410300652338</created>
-      <updated>1410300652338</updated>
-    </task>
-    <task id="LOCAL-00008" summary="implemented cart removal">
-      <created>1410301431915</created>
-      <updated>1410301431915</updated>
-    </task>
-    <task id="LOCAL-00009" summary="should fix: charachter encoding issue">
-      <created>1410301798813</created>
-      <updated>1410301798813</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add profiles">
-      <created>1410372471149</created>
-      <updated>1410372471149</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add profiles">
-      <created>1410373764956</created>
-      <updated>1410373764956</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add profiles">
-      <created>1410385798915</created>
-      <updated>1410385798915</updated>
-    </task>
-    <task id="LOCAL-00013" summary="i18n">
-      <created>1410387089376</created>
-      <updated>1410387089376</updated>
-    </task>
-    <task id="LOCAL-00014" summary="i18n french">
-      <created>1410387182664</created>
-      <updated>1410387182664</updated>
-    </task>
-    <task id="LOCAL-00015" summary="i18n french">
-      <created>1410387246589</created>
-      <updated>1410387246589</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187167000" />
+    <option name="totallyTimeSpent" value="178958000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39240506" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39240506" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.306962" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28697917" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1578125" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28489584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32700422" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="101" y="127" width="1720" height="827" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39451477" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32694355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37912673" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31629393" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28697917" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16988418" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="101" y="127" width="1720" height="827" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -1467,22 +1456,15 @@
     <MESSAGE value="Create Project" />
     <MESSAGE value="some css and верстка" />
     <MESSAGE value="replaced jQuery with my own ProtoQuery (ajax + promise)" />
-    <MESSAGE value="added search" />
-    <MESSAGE value="css fixed" />
-    <MESSAGE value="добавлена корзина и отзывы" />
-    <MESSAGE value="implemented cart removal" />
-    <MESSAGE value="should fix: charachter encoding issue" />
-    <MESSAGE value="add profiles" />
-    <MESSAGE value="i18n" />
-    <MESSAGE value="i18n french" />
-    <option name="LAST_COMMIT_MESSAGE" value="i18n french" />
+    <MESSAGE value="added my fcuking jquery!!!" />
+    <MESSAGE value="12" />
+    <MESSAGE value="фыв&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="фыв&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="98" />
+      <option name="time" value="81" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1490,450 +1472,559 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$MAVEN_REPOSITORY$/com/mchange/c3p0/0.9.5-pre8/c3p0-0.9.5-pre8.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6869" max-vertical-offset="11509">
-          <caret line="410" column="51" selection-start-line="410" selection-start-column="51" selection-end-line="410" selection-end-column="51" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/mchange/c3p0/0.9.5-pre8/c3p0-0.9.5-pre8.jar!/com/mchange/v2/c3p0/cfg/C3P0ConfigUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="172" selection-end="172" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="585" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Persistence.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="57" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="525" />
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.7.0_04/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="486" column="0" selection-start="18380" selection-end="18380" vertical-scroll-proportion="0.0" vertical-offset="6187" max-vertical-offset="32370" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/Persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="37" selection-start="2594" selection-end="2594" vertical-scroll-proportion="0.0" vertical-offset="592" max-vertical-offset="1845" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/spi/PersistenceProviderResolverHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="3000" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hibernate.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.6.Final/hibernate-entitymanager-4.3.6.Final.jar!/org/hibernate/jpa/HibernatePersistenceProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.6.Final/hibernate-entitymanager-4.3.6.Final-sources.jar!/org/hibernate/jpa/HibernatePersistenceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="13" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.14173229" vertical-offset="108" max-vertical-offset="2520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="12" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.6.Final/hibernate-entitymanager-4.3.6.Final.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.53149605" vertical-offset="270" max-vertical-offset="1425" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/PersistenceContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="18" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.37428024" vertical-offset="0" max-vertical-offset="885" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="521">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final-sources.jar!/javax/persistence/spi/PersistenceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="32" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.33205375" vertical-offset="277" max-vertical-offset="975" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/3.6.6.Final/hibernate-entitymanager-3.6.6.Final.jar!/org/hibernate/ejb/EntityManagerFactoryImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="25" selection-start="2212" selection-end="2212" vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="1080" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.6.Final/hibernate-core-3.6.6.Final.jar!/org/hibernate/cfg/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="40" selection-start="13396" selection-end="13396" vertical-scroll-proportion="-6.76" vertical-offset="2696" max-vertical-offset="9585" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/3.6.6.Final/hibernate-entitymanager-3.6.6.Final-sources.jar!/org/hibernate/ejb/HibernatePersistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="32" selection-start="2564" selection-end="2564" vertical-scroll-proportion="0.0" vertical-offset="232" max-vertical-offset="1230" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.6.Final/hibernate-core-3.6.6.Final-sources.jar!/org/hibernate/cfg/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1852" column="26" selection-start="63261" selection-end="63261" vertical-scroll-proportion="0.0" vertical-offset="24806" max-vertical-offset="58005" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-c3p0/3.6.6.Final/hibernate-c3p0-3.6.6.Final.jar!/org/hibernate/connection/C3P0ConnectionProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final-sources.jar!/javax/persistence/Persistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1894" selection-end="1894" vertical-scroll-proportion="0.0" vertical-offset="427" max-vertical-offset="1455" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.6.Final/hibernate-core-3.6.6.Final-sources.jar!/org/hibernate/util/ReflectHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="0" selection-start="6568" selection-end="6568" vertical-scroll-proportion="0.0" vertical-offset="2073" max-vertical-offset="5130" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-c3p0/3.6.6.Final/hibernate-c3p0-3.6.6.Final-sources.jar!/org/hibernate/connection/C3P0ConnectionProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="13" selection-start="0" selection-end="9025" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3360" />
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/MOVIESHOP:MOVIESHOP:1.0">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>MOVIESHOP:MOVIESHOP:1.0</OriginalElement>
+          <nodes>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4/org.apache.tiles:tiles-servlet:jar:3.0.4</node>
+            <node x="" y="">org.aspectj:aspectjtools:jar:1.8.1</node>
+            <node x="" y="">org.springframework:spring-beans:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.slf4j:slf4j-api:jar:1.5.10</node>
+            <node x="" y="">org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-ognl:jar:3.0.4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4/org.apache.tiles:tiles-request-freemarker:jar:1.0.4/org.apache.tiles:tiles-request-servlet:jar:1.0.4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-servlet-wildcard:jar:1.0.4/org.slf4j:slf4j-api:jar:1.5.8</node>
+            <node x="" y="">org.apache.tiles:tiles-core:jar:2.2.2/commons-digester:commons-digester:jar:2.0</node>
+            <node x="" y="">org.codehaus.jackson:jackson-jaxrs:jar:1.8.3/org.codehaus.jackson:jackson-mapper-asl:jar:1.8.3</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-mvel:jar:3.0.4/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4</node>
+            <node x="" y="">com.thoughtworks.xstream:xstream:jar:1.2.2</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-el:jar:2.2.2/org.apache.tiles:tiles-core:jar:2.2.2</node>
+            <node x="" y="">org.springframework:spring-orm:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.xmlrpc:xmlrpc-client:jar:3.1.3</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tomcat:tomcat-jsp-api:jar:8.0.12/org.apache.tomcat:tomcat-el-api:jar:8.0.12</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-servlet-wildcard:jar:1.0.4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.velocity:velocity-tools:jar:2.0/commons-collections:commons-collections:jar:3.2</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.0.1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-mustache:jar:1.0.4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4/org.apache.tiles:tiles-template:jar:3.0.4</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-ognl:jar:3.0.4/org.apache.tiles:tiles-core:jar:3.0.4</node>
+            <node x="" y="">org.apache.velocity:velocity:jar:1.6</node>
+            <node x="" y="">org.apache.velocity:velocity:jar:1.6/commons-lang:commons-lang:jar:2.4</node>
+            <node x="" y="">org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework.ws:spring-xml:jar:2.0.2.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-envers:jar:3.6.6.Final/org.hibernate:hibernate-tools:jar:3.2.0.ga/freemarker:freemarker:jar:2.3.8</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-mvel:jar:3.0.4/org.apache.tiles:tiles-core:jar:3.0.4</node>
+            <node x="" y="">com.sun.xml.bind:jaxb-impl:jar:2.2.4-1</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework.ws:spring-xml:jar:2.0.2.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-envers:jar:3.6.6.Final/org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final</node>
+            <node x="" y="">com.thoughtworks.xstream:xstream:jar:1.2.2/xpp3:xpp3_min:jar:1.1.3.4.O</node>
+            <node x="" y="">org.codehaus.jackson:jackson-jaxrs:jar:1.8.3</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-oxm:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4</node>
+            <node x="" y="">org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.tiles:tiles-servlet:jar:3.0.4</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.0.1/commons-codec:commons-codec:jar:1.3</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.6.Final/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-oxm:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.velocity:velocity-tools:jar:2.0/oro:oro:jar:2.0.8</node>
+            <node x="" y="">org.springframework:spring-core:jar:3.0.5.RELEASE/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.3</node>
+            <node x="" y="">org.apache.xmlrpc:xmlrpc-server:jar:3.1.3/commons-logging:commons-logging:jar:1.1</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.6.Final/org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.velocity:velocity-tools:jar:2.0/org.apache.velocity:velocity:jar:1.6.2</node>
+            <node x="" y="">org.apache.velocity:velocity:jar:1.6/commons-collections:commons-collections:jar:3.2.1</node>
+            <node x="" y="">org.apache.lucene:lucene-analyzers:jar:3.1.0</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-webmvc:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.xmlrpc:xmlrpc-client:jar:3.1.3/org.apache.xmlrpc:xmlrpc-common:jar:3.1.3</node>
+            <node x="" y="">org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">javax.mail:mail:jar:1.4.7</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.tiles:tiles-request-velocity:jar:1.0.4</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.6.Final/commons-collections:commons-collections:jar:3.1</node>
+            <node x="" y="">org.apache.commons:commons-io:jar:1.3.2</node>
+            <node x="" y="">com.googlecode.json-simple:json-simple:jar:1.1</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-servlet-wildcard:jar:1.0.4/org.springframework:spring-web:jar:3.2.0.RELEASE</node>
+            <node x="" y="">oro:oro:jar:2.0.8</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.6.Final/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final</node>
+            <node x="" y="">org.hibernate:hibernate-c3p0:jar:3.6.6.Final</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.6.Final/dom4j:dom4j:jar:1.6.1</node>
+            <node x="" y="">xerces:xercesImpl:jar:2.8.1/xml-apis:xml-apis:jar:1.3.03</node>
+            <node x="" y="">org.apache.tiles:tiles-core:jar:2.2.2/org.slf4j:jcl-over-slf4j:jar:1.5.8</node>
+            <node x="" y="">org.apache.tiles:tiles-jsp:jar:2.2.2/org.apache.tiles:tiles-template:jar:2.2.2/org.apache.tiles:tiles-api:jar:2.2.2</node>
+            <node x="" y="">org.springframework:spring-context-support:jar:3.0.5.RELEASE</node>
+            <node x="" y="">com.intellij:annotations:jar:7.0.3</node>
+            <node x="" y="">org.apache.tiles:tiles-el:jar:2.2.2</node>
+            <node x="" y="">org.apache.tiles:tiles-jsp:jar:2.2.2/org.apache.tiles:tiles-servlet:jar:2.2.2/org.apache.tiles:tiles-core:jar:2.2.2</node>
+            <node x="" y="">javax.mail:mail:jar:1.4.7/javax.activation:activation:jar:1.1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-servlet-wildcard:jar:1.0.4/org.apache.tiles:tiles-request-servlet:jar:1.0.4/org.apache.tiles:tiles-request-api:jar:1.0.4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-jsp:jar:3.0.4</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.6.Final/javax.transaction:jta:jar:1.1</node>
+            <node x="" y="">org.apache.lucene:lucene-analyzers:jar:3.1.0/org.apache.lucene:lucene-core:jar:3.1.0</node>
+            <node x="" y="">org.apache.xmlrpc:xmlrpc-client:jar:3.1.3/org.apache.xmlrpc:xmlrpc-common:jar:3.1.3/org.apache.ws.commons.util:ws-commons-util:jar:1.0.2/xml-apis:xml-apis:jar:1.0.b2</node>
+            <node x="" y="">org.apache.tomcat:tomcat-jsp-api:jar:8.0.12</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-mustache:jar:1.0.4/com.github.spullara.mustache.java:compiler:jar:0.8.4/com.google.guava:guava:jar:12.0</node>
+            <node x="" y="">javax.inject:javax.inject:jar:1</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">org.hibernate:hibernate-envers:jar:3.6.6.Final/org.hibernate:hibernate-tools:jar:3.2.0.ga</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-el:jar:3.0.4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4/org.apache.tiles:tiles-request-freemarker:jar:1.0.4/org.slf4j:slf4j-api:jar:1.5.8</node>
+            <node x="" y="">com.sun.xml.bind:jaxb-impl:jar:2.2.4-1/javax.xml.bind:jaxb-api:jar:2.2.3</node>
+            <node x="" y="">org.apache.tiles:tiles-jsp:jar:2.2.2</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.tiles:tiles-request-velocity:jar:1.0.4/org.apache.velocity:velocity-tools:jar:2.0</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.6.Final</node>
+            <node x="" y="">org.hibernate:hibernate-envers:jar:3.6.6.Final/org.hibernate:hibernate-entitymanager:jar:3.6.6.Final</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-expression:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">quartz:quartz:jar:1.5.1</node>
+            <node x="" y="">net.sourceforge.htmlcleaner:htmlcleaner:jar:2.2</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4/org.apache.tiles:tiles-request-freemarker:jar:1.0.4/org.freemarker:freemarker:jar:2.3.15</node>
+            <node x="" y="">org.apache.xmlrpc:xmlrpc-client:jar:3.1.3/org.apache.xmlrpc:xmlrpc-common:jar:3.1.3/org.apache.ws.commons.util:ws-commons-util:jar:1.0.2</node>
+            <node x="" y="">org.springframework:spring-jms:jar:3.0.5.RELEASE</node>
+            <node x="" y="">com.sun.media:jai-codec:jar:1.1.3/javax.media:jai-core:jar:1.1.3</node>
+            <node x="" y="">org.springframework:spring-tx:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.apache.tiles:tiles-core:jar:2.2.2/org.slf4j:jcl-over-slf4j:jar:1.5.8/org.slf4j:slf4j-api:jar:1.5.8</node>
+            <node x="" y="">commons-pool:commons-pool:jar:1.5.4</node>
+            <node x="" y="">com.sun.xml.bind:jaxb-impl:jar:2.2.4-1/javax.xml.bind:jaxb-api:jar:2.2.3/javax.activation:activation:jar:1.1</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-mustache:jar:1.0.4/org.apache.tiles:tiles-request-api:jar:1.0.4/org.slf4j:slf4j-api:jar:1.5.8</node>
+            <node x="" y="">org.hibernate:hibernate-envers:jar:3.6.6.Final/org.hibernate:hibernate-tools:jar:3.2.0.ga/org.beanshell:bsh:jar:2.0b4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/commons-digester:commons-digester:jar:2.0</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework.ws:spring-xml:jar:2.0.2.RELEASE/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-oxm:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.tiles:tiles-request-velocity:jar:1.0.4/org.apache.tiles:tiles-request-servlet:jar:1.0.4</node>
+            <node x="" y="">org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-validator:jar:4.1.0.Final</node>
+            <node x="" y="">org.hibernate:hibernate-envers:jar:3.6.6.Final</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jms:jar:3.0.5.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tomcat:dbcp:jar:6.0.18</node>
+            <node x="" y="">org.apache.tiles:tiles-jsp:jar:2.2.2/org.apache.tiles:tiles-template:jar:2.2.2</node>
+            <node x="" y="">org.springframework:spring-jms:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">com.sun.media:jai-codec:jar:1.1.3</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-mustache:jar:1.0.4/com.github.spullara.mustache.java:compiler:jar:0.8.4</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.lucene:lucene-core:jar:3.1.0</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.tiles:tiles-template:jar:3.0.4</node>
+            <node x="" y="">javax.servlet:jstl:jar:1.2</node>
+            <node x="" y="">commons-net:commons-net:jar:2.0</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-servlet-wildcard:jar:1.0.4/org.apache.tiles:tiles-request-servlet:jar:1.0.4</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework.ws:spring-xml:jar:2.0.2.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">xerces:xercesImpl:jar:2.8.1</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/com.google.guava:guava:jar:12.0.1</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-web:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE</node>
+            <node x="" y="">jakarta-regexp:jakarta-regexp:jar:1.4</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-compat:jar:3.0.4/org.apache.tiles:tiles-jsp:jar:3.0.4</node>
+            <node x="" y="">org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-expression:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-request-mustache:jar:1.0.4/org.apache.tiles:tiles-request-api:jar:1.0.4</node>
+            <node x="" y="">org.apache.xmlrpc:xmlrpc-client:jar:3.1.3/org.apache.xmlrpc:xmlrpc-common:jar:3.1.3/org.apache.ws.commons.util:ws-commons-util:jar:1.0.2/junit:junit:jar:3.8.1</node>
+            <node x="" y="">ch.qos.logback:logback-classic:jar:0.9.18/ch.qos.logback:logback-core:jar:0.9.18</node>
+            <node x="" y="">org.hibernate:hibernate-envers:jar:3.6.6.Final/org.hibernate:hibernate-core:jar:3.6.6.Final</node>
+            <node x="" y="">javax.activation:activation:jar:1.1</node>
+            <node x="" y="">org.codehaus.jackson:jackson-jaxrs:jar:1.8.3/org.codehaus.jackson:jackson-core-asl:jar:1.8.3</node>
+            <node x="" y="">org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">javax.persistence:persistence-api:jar:1.0</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.0.Final</node>
+            <node x="" y="">com.sun.xml.bind:jaxb-impl:jar:2.2.4-1/javax.xml.bind:jaxb-api:jar:2.2.3/javax.xml.stream:stax-api:jar:1.0-2</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-compat:jar:3.0.4/org.apache.tiles:tiles-core:jar:3.0.4</node>
+            <node x="" y="">org.apache.xmlrpc:xmlrpc-server:jar:3.1.3</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-expression:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.codehaus.groovy:groovy-all:jar:1.8.3</node>
+            <node x="" y="">org.apache.tomcat:tomcat-jasper-el:jar:8.0.12/org.apache.tomcat:tomcat-el-api:jar:8.0.12</node>
+            <node x="" y="">org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/wsdl4j:wsdl4j:jar:1.6.1</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.0.1/org.apache.httpcomponents:httpcore:jar:4.0.1</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.6.Final/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-compat:jar:3.0.4</node>
+            <node x="" y="">org.springframework:spring-web:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.hibernate:hibernate-envers:jar:3.6.6.Final/org.hibernate:hibernate-tools:jar:3.2.0.ga/org.hibernate:jtidy:jar:r8-20060801</node>
+            <node x="" y="">org.apache.tiles:tiles-jsp:jar:2.2.2/org.apache.tiles:tiles-servlet:jar:2.2.2</node>
+            <node x="" y="">ch.qos.logback:logback-classic:jar:0.9.18</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework.ws:spring-xml:jar:2.0.2.RELEASE/javax.xml.stream:stax-api:jar:1.0-2</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-core:jar:3.0.4</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.6.Final/antlr:antlr:jar:2.7.6</node>
+            <node x="" y="">org.hibernate:hibernate-core:jar:3.6.6.Final</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-ognl:jar:3.0.4/ognl:ognl:jar:2.7.3/jboss:javassist:jar:3.7.ga</node>
+            <node x="" y="">org.apache.tomcat:tomcat-jsp-api:jar:8.0.12/org.apache.tomcat:tomcat-servlet-api:jar:8.0.12</node>
+            <node x="" y="">org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.6.Final/javassist:javassist:jar:3.12.0.GA</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-compat:jar:3.0.4/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="" y="">org.apache.xmlrpc:xmlrpc-server:jar:3.1.3/org.apache.xmlrpc:xmlrpc-common:jar:3.1.3</node>
+            <node x="" y="">org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/com.google.guava:guava:jar:12.0.1/com.google.code.findbugs:jsr305:jar:1.3.9</node>
+            <node x="" y="">mysql:mysql-connector-java:jar:5.1.6</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tomcat:tomcat-jasper-el:jar:8.0.12</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4/org.apache.tiles:tiles-request-freemarker:jar:1.0.4</node>
+            <node x="" y="">net.sourceforge.htmlcleaner:htmlcleaner:jar:2.2/org.jdom:jdom:jar:1.1</node>
+            <node x="" y="">org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-core:jar:2.2.2/org.apache.tiles:tiles-api:jar:2.2.2</node>
+            <node x="" y="">org.hibernate:hibernate-entitymanager:jar:3.6.6.Final/org.hibernate:hibernate-core:jar:3.6.6.Final</node>
+            <node x="" y="">org.aspectj:aspectjrt:jar:1.8.0</node>
+            <node x="" y="">org.apache.tiles:tiles-core:jar:2.2.2/commons-digester:commons-digester:jar:2.0/commons-beanutils:commons-beanutils:jar:1.8.0</node>
+            <node x="" y="">org.codehaus.jackson:jackson-jaxrs:jar:1.8.3/org.codehaus.jackson:jackson-mapper-asl:jar:1.8.3/org.codehaus.jackson:jackson-core-asl:jar:1.8.3</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-oxm:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework:spring-web:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jms:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-mvel:jar:3.0.4</node>
+            <node x="" y="">org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.velocity:velocity:jar:1.6/oro:oro:jar:2.0.8</node>
+            <node x="" y="">org.springframework:spring-test:jar:3.0.5.RELEASE</node>
+            <node x="" y="">junit:junit:jar:4.4</node>
+            <node x="" y="">commons-fileupload:commons-fileupload:jar:1.2</node>
+            <node x="" y="">org.hibernate:hibernate-validator:jar:4.1.0.Final/javax.validation:validation-api:jar:1.0.0.GA</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-freemarker:jar:3.0.4/org.apache.tiles:tiles-request-freemarker:jar:1.0.4/org.apache.tiles:tiles-request-api:jar:1.0.4</node>
+            <node x="" y="">org.springframework:spring-jms:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-mvel:jar:3.0.4/org.mvel:mvel2:jar:2.0.11</node>
+            <node x="" y="">org.springframework:spring-jms:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-ognl:jar:3.0.4/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="" y="">c3p0:c3p0:jar:0.9.1.2</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/org.springframework.ws:spring-xml:jar:2.0.2.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.ws:spring-ws-core:jar:2.0.2.RELEASE/javax.xml.stream:stax-api:jar:1.0-2</node>
+            <node x="" y="">org.apache.tiles:tiles-core:jar:2.2.2</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-ognl:jar:3.0.4/ognl:ognl:jar:2.7.3</node>
+            <node x="" y="">org.apache.httpcomponents:httpcore:jar:4.2.4</node>
+            <node x="" y="">org.apache.httpcomponents:httpclient:jar:4.0.1/commons-logging:commons-logging:jar:1.1.1</node>
+            <node x="" y="">org.apache.tiles:tiles-extras:jar:3.0.4/org.apache.tiles:tiles-velocity:jar:3.0.4/org.apache.velocity:velocity-tools:jar:2.0</node>
+            <node x="" y="">org.xerial:sqlite-jdbc:jar:3.7.2</node>
+            <node x="" y="">org.springframework:spring-core:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE</node>
+            <node x="" y="">MOVIESHOP:MOVIESHOP:1.0</node>
+            <node x="" y="">org.jvnet.jaxb2_commons:jaxb2-basics-runtime:jar:0.6.0</node>
+            <node x="" y="">org.apache.tomcat:tomcat-el-api:jar:8.0.12</node>
+            <node x="" y="">org.springframework:spring-jms:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="200.0" y="2098.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.68" vertical-offset="0" max-vertical-offset="629">
-          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+        <state line="28" column="109" selection-start="2114" selection-end="2114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/util/Cache.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/3.6.6.Final/hibernate-core-3.6.6.Final-sources.jar!/org/hibernate/connection/ConnectionProviderFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2550" max-vertical-offset="3451">
-          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/protoQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5805" max-vertical-offset="6562">
-          <caret line="366" column="52" selection-start-line="366" selection-start-column="52" selection-end-line="366" selection-end-column="52" />
+        <state line="142" column="0" selection-start="5418" selection-end="5418" vertical-scroll-proportion="0.0" vertical-offset="1376" max-vertical-offset="3030">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adminmovies.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/util/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="731">
-          <caret line="24" column="57" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="952">
-          <caret line="53" column="5" selection-start-line="15" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="16" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="833">
-          <caret line="39" column="123" selection-start-line="39" selection-start-column="123" selection-end-line="39" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1377">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#753#754#0" expanded="false" />
-            <element signature="e#778#779#0" expanded="false" />
-            <element signature="e#818#819#0" expanded="false" />
-            <element signature="e#846#847#0" expanded="false" />
-            <element signature="e#880#881#0" expanded="false" />
-            <element signature="e#910#911#0" expanded="false" />
-            <element signature="e#962#963#0" expanded="false" />
-            <element signature="e#1000#1001#0" expanded="false" />
-            <element signature="e#1029#1030#0" expanded="false" />
-            <element signature="e#1056#1057#0" expanded="false" />
-            <element signature="e#1100#1101#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1191#1192#0" expanded="false" />
-            <element signature="e#1238#1239#0" expanded="false" />
-            <element signature="e#1272#1273#0" expanded="false" />
-            <element signature="e#1301#1302#0" expanded="false" />
-            <element signature="e#1328#1329#0" expanded="false" />
-            <element signature="e#1372#1373#0" expanded="false" />
-            <element signature="e#1404#1405#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="731">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/movie.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state line="23" column="51" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/User.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/com/mchange/v2/c3p0/DataSources.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="385" max-vertical-offset="918">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state line="6" column="19" selection-start="168" selection-end="168" vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/3.6.6.Final/hibernate-entitymanager-3.6.6.Final-sources.jar!/org/hibernate/ejb/Ejb3Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="918" column="0" selection-start="36534" selection-end="36534" vertical-scroll-proportion="0.33267716" vertical-offset="12056" max-vertical-offset="23835" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AD4LFP.iws">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1832" column="36" selection-start="121573" selection-end="121573" vertical-scroll-proportion="0.0" vertical-offset="27480" max-vertical-offset="31110">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/3.6.6.Final/hibernate-entitymanager-3.6.6.Final-sources.jar!/org/hibernate/ejb/EntityManagerFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="274" max-vertical-offset="952">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <element signature="e#1290#1291#0" expanded="false" />
-            <element signature="e#1332#1333#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        <state line="76" column="0" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="2580">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java">
+    <entry file="file://$PROJECT_DIR$/EMPTYPROJ.ipr">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        <state line="3" column="106" selection-start="128" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="22875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
+    <entry file="file://$PROJECT_DIR$/AD4LFP.ipr">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10164" max-vertical-offset="10829">
-          <caret line="629" column="35" selection-start-line="629" selection-start-column="35" selection-end-line="629" selection-end-column="35" />
+        <state line="44" column="125" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="31155">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/net/DualStackPlainSocketImpl.java">
+    <entry file="file://$PROJECT_DIR$/MOVIESHOP.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="4142" max-vertical-offset="4726">
-          <caret line="282" column="22" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1105">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="800" max-vertical-offset="1615">
-          <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="531" max-vertical-offset="1819">
-          <caret line="65" column="74" selection-start-line="65" selection-start-column="74" selection-end-line="65" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="1802">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/Locale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12506" max-vertical-offset="53992">
-          <caret line="814" column="0" selection-start-line="814" selection-start-column="0" selection-end-line="814" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/ResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="20921" max-vertical-offset="49283">
-          <caret line="1327" column="0" selection-start-line="1327" selection-start-column="0" selection-end-line="1327" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/MainPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="168" max-vertical-offset="765">
-          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/util/UTF8ResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="538" max-vertical-offset="1258">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="952">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/catalog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.076923" vertical-offset="262" max-vertical-offset="765">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/popular.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="952">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/owned.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="153" max-vertical-offset="935">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/auth.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="17" max-vertical-offset="1003">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="28" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="1411">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.384615" vertical-offset="2" max-vertical-offset="1173">
-          <caret line="16" column="77" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6153846" vertical-offset="144" max-vertical-offset="1275">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="25" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1088">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state line="25" column="67" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2640">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/common-page-tile.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.692307" vertical-offset="330" max-vertical-offset="833">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state line="32" column="66" selection-start="1407" selection-end="1418" vertical-scroll-proportion="-14.375" vertical-offset="135" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/auth.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="43" selection-start="584" selection-end="584" vertical-scroll-proportion="-1.875" vertical-offset="195" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/auth/AuthManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="41" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="89" selection-start="365" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="22" selection-start="1000" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="960">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.192307" vertical-offset="132" max-vertical-offset="3111">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state line="177" column="0" selection-start="7454" selection-end="7454" vertical-scroll-proportion="-18.5" vertical-offset="2211" max-vertical-offset="2745">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/sidebar-tile.jsp">
+    <entry file="jar:///usr/java/jdk1.7.0_04/src.zip!/java/net/PlainSocketImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.5" vertical-offset="381" max-vertical-offset="884">
-          <caret line="40" column="102" selection-start-line="40" selection-start-column="102" selection-end-line="40" selection-end-column="102" />
+        <state line="63" column="16" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.33333334" vertical-offset="407" max-vertical-offset="945">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/search.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/money/MoneyTag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="969">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
+        <state line="43" column="82" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/editMovie.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/BaseServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3846154" vertical-offset="4" max-vertical-offset="2244">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state line="15" column="13" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/base/ModelAndView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="986">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="2" />
+        <state line="19" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/addMovie.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state line="40" column="75" selection-start="1923" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error404.jsp">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="731">
-          <caret line="18" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state line="164" column="49" selection-start="5903" selection-end="5903" vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="10455">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_ru.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state line="78" column="31" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="771" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ContentServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_fr.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.68" vertical-offset="0" max-vertical-offset="561">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/tiles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1613" max-vertical-offset="2210">
-          <caret line="109" column="27" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="27" />
-          <folding />
+        <state line="33" column="43" selection-start="1040" selection-end="1041" vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="990">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.72" vertical-offset="3559" max-vertical-offset="4250">
-          <caret line="252" column="70" selection-start-line="252" selection-start-column="70" selection-end-line="252" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7634195" vertical-offset="160" max-vertical-offset="748">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state line="99" column="38" selection-start="3259" selection-end="3259" vertical-scroll-proportion="0.7419899" vertical-offset="1045" max-vertical-offset="1935">
           <folding />
         </state>
       </provider>
@@ -1944,7 +2035,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>AD4LFP:war exploded</last-edited>
+          <last-edited>AD4LFP:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1957,7 +2048,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (MOVIESHOP)|Web</last-edited>
+          <last-edited>AspectJ</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1980,7 +2071,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1992,7 +2083,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>AspectJ|MOVIESHOP</last-edited>
+          <last-edited>MOVIESHOP</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

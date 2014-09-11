@@ -68,7 +68,7 @@ public class MovieManager {
     }
 
     public List<Movie> getAllMovies() {
-        return null;
+        return movieDAO.getAllMovies();
     }
 
     public Movie getMovieById(final Long movieId) {
@@ -76,7 +76,7 @@ public class MovieManager {
     }
 
     private void removeMovie(final Movie movie) {
-
+        movieDAO.remove(movie);
     }
 
     public List<Movie> getPopularMovies() {
