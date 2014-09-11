@@ -48,7 +48,7 @@
             <div class="row row-skip">
                 <div class="width-2">
                     <c:set var="coverUri"><c:url value="/content/?filePath="/></c:set>
-                    <img class=search-cover" src="${coverUri}${movie.coverUri}">
+                    <img class="search-cover" src="${coverUri}${movie.coverUri}">
                 </div>
                 <div class="width-3">
                     <div class="title">${movie.title}</div>

@@ -38,14 +38,14 @@
 </div>
 
 <div class="hidden row row-skip" id="template">
-    <div class="width-2">
+    <div class="width-2 sm-width-2">
         <c:set var="coverUri"><c:url value="/content/?filePath="/></c:set>
         <img class="search-cover" src="${coverUri}${movie.coverUri}">
     </div>
-    <div class="width-3">
+    <div class="width-3 sm-width-3">
         <div class="title"></div>
     </div>
-    <div class="width-3">
+    <div class="width-3 sm-width-3">
         <c:set var="editLink"><c:url value="/web/app/personal/admin/movies/editMovie?id="/></c:set>
         <a class="btn btn-outline btn-normal edit-link" href="${editLink}">${sEdit}</a>
         <a href="" class="btn btn-outline btn-red">${sDelete}</a>
