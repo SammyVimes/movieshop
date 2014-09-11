@@ -110,7 +110,7 @@
         </div>
         <div class="row">
             <div class="width-12 hidden" id="actors">
-                ${actors}
+                ${movie.actors}
             </div>
             <div class="width-12" id="comments">
                 <div class="row row-skip">

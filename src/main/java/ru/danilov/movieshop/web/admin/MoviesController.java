@@ -97,6 +97,7 @@ public class MoviesController extends BaseController {
         String priceString = request.getParameter("price");
         String popularString = request.getParameter("popular");
         String currencyString = request.getParameter("currency");
+        String actorsString = request.getParameter("actors");
         String description = request.getParameter("description");
         Double price = null;
         if (!priceString.isEmpty()) {
@@ -118,6 +119,7 @@ public class MoviesController extends BaseController {
 
         Movie movie = new Movie();
         movie.setTitle(title);
+        movie.setActors(actorsString);
         movie.setDescription(description);
         if (!localizedTitle.isEmpty()) {
             movie.setLocalizedTitle(localizedTitle);
@@ -152,6 +154,7 @@ public class MoviesController extends BaseController {
         String trailerURL = request.getParameter("trailerURL");
         String priceString = request.getParameter("price");
         String popularString = request.getParameter("popular");
+        String actorsString = request.getParameter("actors");
         String currencyString = request.getParameter("currency");
         String description = request.getParameter("description");
         Double price = null;
@@ -176,6 +179,7 @@ public class MoviesController extends BaseController {
         Movie movie = movieManager.getMovieById(id);
         Movie clone = movie.getClone();
         clone.setTitle(title);
+        clone.setActors(actorsString);
         clone.setDescription(description);
         if (!localizedTitle.isEmpty()) {
             clone.setLocalizedTitle(localizedTitle);

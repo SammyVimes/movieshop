@@ -86,6 +86,12 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="form-element width-12">
+                            <label for="actors" class="width-2">Актёрский состав</label>
+                            <textarea id="actors" rows="10" cols="45" class="form-input width-6" name="actors"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="width-1">
                             <button type="submit" class="btn btn-outline btn-success">Сохранить</button>
                         </div>

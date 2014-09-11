@@ -41,6 +41,10 @@ public class Movie {
     @Column(name = "description", nullable = false, columnDefinition = "TEXT")
     private String description;
 
+    @Nullable
+    @Column(name = "actors", nullable = true, columnDefinition = "TEXT")
+    private String actors;
+
     @NotNull
     @Column(name = "currency", nullable = false)
     @Enumerated(EnumType.STRING)
@@ -127,6 +131,15 @@ public class Movie {
 
     public void setTrailerUri(@Nullable final String trailerUri) {
         this.trailerUri = trailerUri;
+    }
+
+    @Nullable
+    public String getActors() {
+        return actors;
+    }
+
+    public void setActors(@Nullable String actors) {
+        this.actors = actors;
     }
 
     public Movie getClone() {
