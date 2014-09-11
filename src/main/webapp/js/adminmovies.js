@@ -25,7 +25,8 @@ $(document).ready(function() {
             var clone = $({type: "id", value: "template"}).clone();
             clone.removeClass("hidden");
             clone.removeAttr("id");
-            clone.find({type: "class", value: "search-cover"}).attr("src", movie.coverUri);
+            var searchCover = clone.find({type: "class", value: "search-cover"});
+            searchCover.attr("src", searchCover.attr("src") + movie.coverUri);
             clone.find({type: "class", value: "title"}).text(movie.title);
             var $editLink = clone.find({type: "class", value: "edit-link"});
             var oldVal = $editLink.attr("href");

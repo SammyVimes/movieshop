@@ -111,7 +111,7 @@
         <servlet-class>ru.danilov.movieshop.web.servlet.ContentServlet</servlet-class>
         <init-param>
             <param-name>folder</param-name>
-            <param-value>${content.folder}</param-value>
+            <param-value>C:\Users\Семён\Pictures\content</param-value>
         </init-param>
     </servlet>
 

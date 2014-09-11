@@ -31,7 +31,7 @@ public class ContentServlet extends BaseServlet {
 
     @Override
     protected void doGet(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
-        String filePath = contentFolder + "/" + request.getParameter("filePath");
+        String filePath = contentFolder + "\\" + request.getParameter("filePath");
         Path path = Paths.get(filePath);
         File file = new File(filePath);
         int length   = 0;

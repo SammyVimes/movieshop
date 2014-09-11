@@ -37,7 +37,8 @@
             <c:set var="movieLink"><c:url value="/web/app/catalog/movie?id=${movie.id}"/></c:set>
             <a href="${movieLink}">
                 <div class="item item-width news">
-                    <img src="${movie.coverUri}">
+                    <c:set var="coverUri"><c:url value="/content/?filePath="/></c:set>
+                    <img src="${coverUri}${movie.coverUri}">
 
                     <div class="newstextblock">
                         <span>${movie.title}</span>

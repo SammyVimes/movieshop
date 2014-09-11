@@ -39,7 +39,8 @@
 
 <div class="hidden row row-skip" id="template">
     <div class="width-2">
-        <img class="search-cover">
+        <c:set var="coverUri"><c:url value="/content/?filePath="/></c:set>
+        <img class="search-cover" src="${coverUri}${movie.coverUri}">
     </div>
     <div class="width-3">
         <div class="title"></div>

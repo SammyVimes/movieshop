@@ -58,7 +58,8 @@
         </div>
         <div class="row">
             <div class="width-5 sm-width-12">
-                <img class="movie-cover" src="${movie.coverUri}">
+                <c:set var="coverUri"><c:url value="/content/?filePath="/></c:set>
+                <img class="movie-cover" src="${coverUri}${movie.coverUri}">
             </div>
             <div class="offset-1 width-6">
                 <c:if test="${movie.trailerUri ne null}">
