@@ -82,7 +82,7 @@ public class ProfileController extends BaseController {
         }
         List<Comment> commentList = commentManager.getCommentsOfUser(user);
         modelAndView.putObject("comments", commentList);
-        modelAndView.putObject("user", user);
+        modelAndView.putObject("profile", user);
         modelAndView.process(request, response);
     }
 

@@ -48,7 +48,7 @@ public class MoviesController extends BaseController {
         } else if (requestURI.contains("editMovie")) {
             editMoviePost(request, response);
         } else {
-
+            show404(request, response);
         }
     }
 

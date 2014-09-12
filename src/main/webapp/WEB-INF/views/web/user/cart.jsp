@@ -2,6 +2,7 @@
 <%@ page import="java.util.Locale" %>
 <%@ page import="java.util.ResourceBundle" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="m" uri="http://www.danilov.ru/moneytaglib" %>
 <%--
   Created by IntelliJ IDEA.
   User: Semyon
@@ -13,16 +14,18 @@
 
 
 <%
-    Locale locale = request.getLocale();
+    Locale locale = (Locale) request.getAttribute("locale");
     ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
     String sCart = resBound.getString("s_your_cart");
     String sCartEmpty = resBound.getString("s_is_empty");
     String sDelete = resBound.getString("s_delete");
+    String sPrice = resBound.getString("s_price");
     String sBuy = resBound.getString("s_buy");
     pageContext.setAttribute("sCart", sCart);
     pageContext.setAttribute("sCartEmpty", sCartEmpty);
     pageContext.setAttribute("sDelete", sDelete);
     pageContext.setAttribute("sBuy", sBuy);
+    pageContext.setAttribute("sPrice", sPrice);
 %>
 
 <div class="jumbotron jumbotron-green hidden-print">
@@ -45,13 +48,17 @@
         <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
         <c:forEach items="${movies}" var="movie">
 
-            <div class="row row-skip">
+            <c:set var="movieUrl"><c:url value="/web/app/catalog/movie?id=${movie.id}"/></c:set>
+            <div class="row row-skip card" >
                 <div class="width-2">
                     <c:set var="coverUri"><c:url value="/content/?filePath="/></c:set>
-                    <img class="search-cover" src="${coverUri}${movie.coverUri}">
+                    <a href="${movieUrl}"><img class="search-cover" src="${coverUri}${movie.coverUri}"></a>
                 </div>
                 <div class="width-3">
-                    <div class="title">${movie.title}</div>
+                    <div class="title"><a class="underline-link" href="${movieUrl}">${movie.title}</a></div>
+                </div>
+                <div class="width-2">
+                    <div class="price">${sPrice}: <m:money amount="${movie.price}" currency="${movie.currency}"/></div>
                 </div>
                 <div class="width-3">
                     <c:set var="removeLink"><c:url value="/web/app/personal/user/shop/remove?id=${movie.id}"/></c:set>
@@ -63,7 +70,7 @@
 
         <c:if test="${not isEmpty}">
             <c:set var="movieLink"><c:url value="/web/app/personal/user/shop/buy"/></c:set>
-            <a href="${movieLink}" class="btn btn-outline btn-success">${sBuy}</a>
+            <a href="${movieLink}" class="btn btn-block btn-outline btn-success">${sBuy}</a>
         </c:if>
 
     </div>

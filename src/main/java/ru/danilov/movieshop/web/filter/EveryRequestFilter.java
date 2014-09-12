@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Locale;
 
 /**
  * Created by Semyon on 07.09.2014.
@@ -33,6 +34,11 @@ public class EveryRequestFilter extends BaseFilter {
                 request.setAttribute("user", authData.getUser());
             }
         }
+        String lang = (String) request.getSession().getAttribute("lang");
+        if (lang == null || lang.isEmpty()) {
+            lang = "ru";
+        }
+        request.setAttribute("locale", new Locale(lang));
         filterChain.doFilter(request, response);
     }
 

@@ -13,7 +13,7 @@
 <%@ page import="java.util.Locale" %>
 <%@ page import="java.util.ResourceBundle" %>
 <%
-    Locale locale = request.getLocale();
+    Locale locale = (Locale) request.getAttribute("locale");
     ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
     String sPopular = resBound.getString("s_popular");
     pageContext.setAttribute("sPopular", sPopular);

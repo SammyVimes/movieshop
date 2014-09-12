@@ -25,6 +25,7 @@
 
     <definition name="register" extends="common">
         <put-attribute name="page-content" type="definition" value="reg"/>
+        <put-attribute name="title" value="Регистрация" type="string"/>
         <put-list-attribute name="cssList" inherit="true">
             <add-attribute value="/css/panels.css"/>
         </put-list-attribute>
@@ -32,21 +33,26 @@
 
     <definition name="user.main" extends="common">
         <put-attribute name="page-content" type="definition" value="mainuserpage"/>
+        <put-attribute name="title" value="Главная" type="string"/>
     </definition>
 
     <definition name="user.catalog" extends="common">
         <put-attribute name="page-content" type="definition" value="catalog"/>
+        <put-attribute name="title" value="Каталог" type="string"/>
     </definition>
 
     <definition name="user.catalog.popular" extends="common">
         <put-attribute name="page-content" type="definition" value="popular"/>
+        <put-attribute name="title" value="Популярное" type="string"/>
     </definition>
 
     <definition name="user.catalog.search" extends="common">
         <put-attribute name="page-content" type="definition" value="search"/>
+        <put-attribute name="title" value="Поиск" type="string"/>
     </definition>
 
     <definition name="user.catalog.movie" extends="common">
+        <put-attribute name="title" value="Фильм" type="string"/>
         <put-attribute name="page-content" type="definition" value="movie"/>
         <put-list-attribute name="cssList" inherit="true">
             <add-attribute value="/css/panels.css"/>
@@ -54,20 +60,24 @@
     </definition>
 
     <definition name="user.owned" extends="common">
+        <put-attribute name="title" value="Ваши фильмы" type="string"/>
         <put-attribute name="page-content" type="definition" value="owned"/>
     </definition>
 
     <definition name="user.cart" extends="common">
+        <put-attribute name="title" value="Корзина" type="string"/>
         <put-attribute name="page-content" type="definition" value="cart"/>
     </definition>
 
     <definition name="user.profile" extends="common">
+        <put-attribute name="title" value="Профиль" type="string"/>
         <put-attribute name="page-content" type="definition" value="profile"/>
     </definition>
 
     <!--admin views-->
 
     <definition name="admin.moviesList" extends="common">
+        <put-attribute name="title" value="Список фильмов" type="string"/>
         <put-attribute name="page-content" type="definition" value="moviesList"/>
         <put-list-attribute name="jsList" inherit="true">
             <add-attribute value="/js/adminmovies.js"/>
@@ -76,6 +86,7 @@
 
 
     <definition name="admin.addMovie" extends="common">
+        <put-attribute name="title" value="Добавить фильм" type="string"/>
         <put-attribute name="page-content" type="definition" value="addMovie"/>
         <put-list-attribute name="cssList" inherit="true">
             <add-attribute value="/css/panels.css"/>
@@ -84,6 +95,7 @@
 
 
     <definition name="admin.editMovie" extends="common">
+        <put-attribute name="title" value="Редактировать" type="string"/>
         <put-attribute name="page-content" type="definition" value="editMovie"/>
         <put-list-attribute name="cssList" inherit="true">
             <add-attribute value="/css/panels.css"/>

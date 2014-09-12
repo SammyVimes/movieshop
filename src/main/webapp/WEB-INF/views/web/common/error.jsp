@@ -19,7 +19,7 @@
 <body>
 
 <%
-    Locale locale = request.getLocale();
+    Locale locale = (Locale) request.getAttribute("locale");
     ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
     String s_error = resBound.getString("s_error");
     pageContext.setAttribute("s_error", s_error);

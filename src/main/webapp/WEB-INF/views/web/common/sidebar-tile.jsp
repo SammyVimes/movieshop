@@ -14,7 +14,7 @@
 
 
 <%
-    Locale locale = request.getLocale();
+    Locale locale = (Locale) request.getAttribute("locale");
     ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
     String sPopularSide = resBound.getString("s_popular_side");
     pageContext.setAttribute("sPopularSide", sPopularSide);

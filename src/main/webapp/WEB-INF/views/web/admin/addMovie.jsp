@@ -17,13 +17,15 @@
     </div>
 </div>
 
-<%--@elvariable id="error" type="java.lang.String"--%>
-<c:if test="${error ne null}">
-    ${error}
-</c:if>
-
 <div class="page-wrapper">
     <div class="container">
+
+        <%--@elvariable id="error" type="java.lang.String"--%>
+        <c:if test="${error ne null}">
+            <div class="easy-panel error">
+                    ${error}
+            </div>
+        </c:if>
 
         <div class="panel panel-normal">
             <div class="panel-heading">

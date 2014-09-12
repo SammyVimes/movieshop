@@ -627,6 +627,15 @@ textarea.form-input {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
-.user-link:hover, .movie-link:hover {
+.user-link:hover, .movie-link:hover, .underline-link:hover {
     text-decoration: underline;
+}
+
+.card {
+    background-color: rgb(240, 237, 237);
+    border-radius: 3px;
+    padding: 15px;
+    border: 1px solid rgb(73, 94, 179);
+    margin-bottom: 5px;
+    margin-top: 5px;
 }

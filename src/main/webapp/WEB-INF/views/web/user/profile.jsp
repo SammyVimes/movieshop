@@ -13,7 +13,7 @@
 <%@ page import="java.util.Locale" %>
 <%@ page import="java.util.ResourceBundle" %>
 <%
-    Locale locale = request.getLocale();
+    Locale locale = (Locale) request.getAttribute("locale");
     ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
     String sProfile = resBound.getString("s_profile");
     String sLeft = resBound.getString("s_left");
@@ -25,7 +25,7 @@
 
 <div class="jumbotron jumbotron-green hidden-print">
     <div class="container">
-        <h1><i class="fa fa-user"></i>&nbsp; ${sProfile} ${user.login}</h1>
+        <h1><i class="fa fa-user"></i>&nbsp; ${sProfile} ${profile.login}</h1>
 
         <p>
             <%--@elvariable id="money" type="java.lang.Double"--%>

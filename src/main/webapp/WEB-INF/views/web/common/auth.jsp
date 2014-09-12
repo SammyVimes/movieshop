@@ -20,7 +20,7 @@
     <title>Авторизация</title>
 </head>
 <%
-    Locale locale = request.getLocale();
+    Locale locale = (Locale) request.getAttribute("locale");
     ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
     String sAuth = resBound.getString("s_auth");
     String sReg = resBound.getString("s_reg");

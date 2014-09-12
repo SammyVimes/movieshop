@@ -1,6 +1,7 @@
 package ru.danilov.movieshop.web.controller;
 
 import org.json.simple.JSONObject;
+import ru.danilov.movieshop.web.base.ModelAndView;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -19,9 +20,15 @@ public abstract class BaseController {
 
     public void sendJSONResponse(final JSONObject jsonObject, final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
         out.print(jsonObject.toJSONString());
         out.flush();
+    }
+
+    public void show404(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
+        modelAndView.process(request, response);
     }
 
 }
