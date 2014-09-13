@@ -21,6 +21,10 @@
                 <a href="${searchLink}" class="control">
                     <i class="fa fa-search"></i>
                 </a>
+                <c:set var="addNewActor"><c:url value="/web/app/personal/admin/actors/addActor"/></c:set>
+                <a href="${addNewActor}" class="control">
+                    <i class="fa fa-group"></i>
+                </a>
                 <c:set var="addNew"><c:url value="/web/app/personal/admin/movies/addMovie"/></c:set>
                 <a href="${addNew}" class="control">
                     <i class="fa fa-plus"></i>

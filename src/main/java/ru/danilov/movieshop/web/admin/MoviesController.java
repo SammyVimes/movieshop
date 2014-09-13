@@ -90,8 +90,8 @@ public class MoviesController extends BaseController {
         String idString = request.getParameter("id");
         Long id = Long.valueOf(idString);
         Movie movie = movieManager.getMovieById(id);
-        List<Actor> actors = actorManager.getAllActorsOfMovie(movie);
         modelAndView.putObject("movie", movie);
+        List<Actor> actors = actorManager.getAllActorsOfMovie(movie);
         modelAndView.putObject("movieActors", actors);
         modelAndView.putObject("allActors", actorManager.getAllActors());
         modelAndView.process(request, response);
@@ -149,6 +149,7 @@ public class MoviesController extends BaseController {
             LOGGER.error("Failed to save movie: " + e.getMessage());
             ModelAndView modelAndView = new ModelAndView("/admin.addMovie.tiles");
             modelAndView.putObject("error", e.getMessage());
+            modelAndView.putObject("allActors", actorManager.getAllActors());
             modelAndView.process(request, response);
         }
         if (actorsIds != null) {
@@ -164,6 +165,7 @@ public class MoviesController extends BaseController {
                         LOGGER.error("Exception raised while adding actor: " + e.getMessage());
                         ModelAndView modelAndView = new ModelAndView("/admin.addMovie.tiles");
                         modelAndView.putObject("error", e.getMessage());
+                        modelAndView.putObject("allActors", actorManager.getAllActors());
                         modelAndView.process(request, response);
                     }
                 } catch (NumberFormatException e) {
@@ -182,7 +184,7 @@ public class MoviesController extends BaseController {
         String trailerURL = request.getParameter("trailerURL");
         String priceString = request.getParameter("price");
         String popularString = request.getParameter("popular");
-        String actorsString = request.getParameter("actors");
+        String[] actorsIds = request.getParameterValues("actor-id");
         String currencyString = request.getParameter("currency");
         String description = request.getParameter("description");
         Double price = null;
@@ -227,10 +229,47 @@ public class MoviesController extends BaseController {
         clone.setCurrency(currency);
         ModelAndView modelAndView = new ModelAndView("/admin.editMovie.tiles");
         modelAndView.putObject("movie", clone);
+        if (actorsIds != null) {
+            for (String actorIdString : actorsIds) {
+                Long actorId;
+                try {
+                    actorId = Long.valueOf(actorIdString);
+                    try {
+                        Actor actor = actorManager.getActorById(actorId);
+                        boolean hasMovie = false;
+                        for (Movie movie1 : actor.getMovies()) {
+                            if (movie1.getId() == clone.getId()) {
+                                hasMovie = true;
+                                break;
+                            }
+                        }
+                        if (!hasMovie) {
+                            actor.getMovies().add(movie);
+                            actorManager.updateActor(actor);
+                        }
+                    } catch (Exception e) {
+                        LOGGER.error("Exception raised while adding actor: " + e.getMessage());
+                        modelAndView.putObject("error", e.getMessage());
+                        List<Actor> actors = actorManager.getAllActorsOfMovie(movie);
+                        modelAndView.putObject("movieActors", actors);
+                        modelAndView.putObject("allActors", actorManager.getAllActors());
+                        modelAndView.process(request, response);
+                    }
+                } catch (NumberFormatException e) {
+                    LOGGER.debug("Bad actor id: " + e.getMessage());
+                }
+            }
+        }
         try {
             movieManager.updateMovie(clone);
             modelAndView.putObject("success", "Информация обновлена");
+            List<Actor> actors = actorManager.getAllActorsOfMovie(clone);
+            modelAndView.putObject("movieActors", actors);
+            modelAndView.putObject("allActors", actorManager.getAllActors());
         } catch (MovieManagerException e) {
+            List<Actor> actors = actorManager.getAllActorsOfMovie(movie);
+            modelAndView.putObject("movieActors", actors);
+            modelAndView.putObject("allActors", actorManager.getAllActors());
             LOGGER.error("Failed to update movie: " + e.getMessage());
             modelAndView.putObject("error", e.getMessage());
         }

@@ -94,6 +94,14 @@
         </put-list-attribute>
     </definition>
 
+    <definition name="admin.addActor" extends="common">
+        <put-attribute name="title" value="Добавить актёра" type="string"/>
+        <put-attribute name="page-content" type="definition" value="addActor"/>
+        <put-list-attribute name="cssList" inherit="true">
+            <add-attribute value="/css/panels.css"/>
+        </put-list-attribute>
+    </definition>
+
 
     <definition name="admin.editMovie" extends="common">
         <put-attribute name="title" value="Редактировать" type="string"/>
@@ -127,6 +135,7 @@
     <definition name="owned" template="/WEB-INF/views/web/user/owned.jsp"/>
     <definition name="moviesList" template="/WEB-INF/views/web/admin/moviesList.jsp"/>
     <definition name="addMovie" template="/WEB-INF/views/web/admin/addMovie.jsp"/>
+    <definition name="addActor" template="/WEB-INF/views/web/admin/addActor.jsp"/>
     <definition name="editMovie" template="/WEB-INF/views/web/admin/editMovie.jsp"/>
 
     <definition name="errorNotFound" template="/WEB-INF/views/web/common/error404.jsp"/>
