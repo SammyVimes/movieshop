@@ -96,22 +96,22 @@
         </taglib>
     </jsp-config>
 
-    <security-constraint>
-        <web-resource-collection>
-            <web-resource-name>shop</web-resource-name>
-            <url-pattern>/*</url-pattern>
-        </web-resource-collection>
-        <user-data-constraint>
-            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
-        </user-data-constraint>
-    </security-constraint>
+    <!--<security-constraint>-->
+    <!--<web-resource-collection>-->
+    <!--<web-resource-name>shop</web-resource-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
+    <!--</web-resource-collection>-->
+    <!--<user-data-constraint>-->
+    <!--<transport-guarantee>CONFIDENTIAL</transport-guarantee>-->
+    <!--</user-data-constraint>-->
+    <!--</security-constraint>-->
 
     <servlet>
         <servlet-name>contentServlet</servlet-name>
         <servlet-class>ru.danilov.movieshop.web.servlet.ContentServlet</servlet-class>
         <init-param>
             <param-name>folder</param-name>
-            <param-value>C:\Users\Семён\Pictures\content</param-value>
+            <param-value>C:\Users\Semyon\Pictures\content</param-value>
         </init-param>
     </servlet>
 
@@ -119,5 +119,5 @@
         <servlet-name>contentServlet</servlet-name>
         <url-pattern>/content/*</url-pattern>
     </servlet-mapping>
-    
+
 </web-app>

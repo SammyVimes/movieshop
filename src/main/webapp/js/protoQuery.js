@@ -158,7 +158,9 @@ function ProtoPromise(fn) {
 
     return $this;
 }
-
+/**
+ *
+ */
 var $ = function () {
 
     function hasClass(ele,cls) {
@@ -250,7 +252,7 @@ var $ = function () {
                         }
                         break;
                     case "attr":
-                        var array = getElementByAttribute(value.attr, value.value, parent);
+                        var array = getElementsByAttribute(value.attr, value.value, parent);
                         for (var i = 0; i < array.length; i++) {
                             elements.push(array[i]);
                         }
@@ -296,9 +298,14 @@ var $ = function () {
             }
         };
 
-        $this.val = function () {
-            if (elements[0]) {
+        $this.val = function (value) {
+            if (!value && elements[0]) {
                 return elements[0].value;
+            }
+            if (value) {
+                $this.each(function (e) {
+                    e.value = value;
+                });
             }
             return null;
         };
@@ -372,6 +379,24 @@ var $ = function () {
                 pQ.each(function(elToAppend) {
                     el.appendChild(elToAppend);
                 });
+            });
+        };
+
+        $this.appendAsFirst = function (pQ) {
+            $this.each(function (el) {
+                pQ.each(function (elToAppend) {
+                    if (el.childNodes.length > 0) {
+                        el.insertBefore(elToAppend, el.childNodes[0]);
+                    } else {
+                        el.append(elToAppend);
+                    }
+                });
+            });
+        };
+
+        $this.removeSelf = function () {
+            $this.each(function (e) {
+                e.parentNode.removeChild(e);
             });
         };
 

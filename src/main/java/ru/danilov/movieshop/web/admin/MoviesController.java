@@ -4,6 +4,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ru.danilov.movieshop.core.entity.actor.Actor;
+import ru.danilov.movieshop.core.entity.actor.ActorManager;
 import ru.danilov.movieshop.core.entity.movie.Movie;
 import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.movie.MovieManagerException;
@@ -26,6 +28,8 @@ public class MoviesController extends BaseController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MovieManager.class);
 
     private MovieManager movieManager = ServiceContainer.getService(MovieManager.class);
+
+    private ActorManager actorManager = ServiceContainer.getService(ActorManager.class);
 
     @Override
     public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
@@ -77,6 +81,7 @@ public class MoviesController extends BaseController {
 
     public void addMovieGetView(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         ModelAndView modelAndView = new ModelAndView("/admin.addMovie.tiles");
+        modelAndView.putObject("actors", actorManager.getAllActors());
         modelAndView.process(request, response);
     }
 
@@ -85,7 +90,10 @@ public class MoviesController extends BaseController {
         String idString = request.getParameter("id");
         Long id = Long.valueOf(idString);
         Movie movie = movieManager.getMovieById(id);
+        List<Actor> actors = actorManager.getAllActorsOfMovie(movie);
         modelAndView.putObject("movie", movie);
+        modelAndView.putObject("movieActors", actors);
+        modelAndView.putObject("allActors", actorManager.getAllActors());
         modelAndView.process(request, response);
     }
 
@@ -97,7 +105,7 @@ public class MoviesController extends BaseController {
         String priceString = request.getParameter("price");
         String popularString = request.getParameter("popular");
         String currencyString = request.getParameter("currency");
-        String actorsString = request.getParameter("actors");
+        String[] actorsIds = request.getParameterValues("actor-id");
         String description = request.getParameter("description");
         Double price = null;
         if (!priceString.isEmpty()) {
@@ -119,7 +127,7 @@ public class MoviesController extends BaseController {
 
         Movie movie = new Movie();
         movie.setTitle(title);
-        movie.setActors(actorsString);
+
         movie.setDescription(description);
         if (!localizedTitle.isEmpty()) {
             movie.setLocalizedTitle(localizedTitle);
@@ -142,6 +150,26 @@ public class MoviesController extends BaseController {
             ModelAndView modelAndView = new ModelAndView("/admin.addMovie.tiles");
             modelAndView.putObject("error", e.getMessage());
             modelAndView.process(request, response);
+        }
+        if (actorsIds != null) {
+            for (String actorIdString : actorsIds) {
+                Long actorId;
+                try {
+                    actorId = Long.valueOf(actorIdString);
+                    try {
+                        Actor actor = actorManager.getActorById(actorId);
+                        actor.getMovies().add(movie);
+                        actorManager.updateActor(actor);
+                    } catch (Exception e) {
+                        LOGGER.error("Exception raised while adding actor: " + e.getMessage());
+                        ModelAndView modelAndView = new ModelAndView("/admin.addMovie.tiles");
+                        modelAndView.putObject("error", e.getMessage());
+                        modelAndView.process(request, response);
+                    }
+                } catch (NumberFormatException e) {
+                    LOGGER.debug("Bad actor id: " + e.getMessage());
+                }
+            }
         }
         response.sendRedirect("/movieshop/web/app/personal/admin/movies/editMovie?id=" + movie.getId());
     }
@@ -179,7 +207,9 @@ public class MoviesController extends BaseController {
         Movie movie = movieManager.getMovieById(id);
         Movie clone = movie.getClone();
         clone.setTitle(title);
-        clone.setActors(actorsString);
+
+        /**/
+
         clone.setDescription(description);
         if (!localizedTitle.isEmpty()) {
             clone.setLocalizedTitle(localizedTitle);

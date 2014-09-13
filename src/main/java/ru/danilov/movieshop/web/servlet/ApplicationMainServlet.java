@@ -27,7 +27,7 @@ public class ApplicationMainServlet extends BaseServlet {
     public void init() throws ServletException {
         AuthController authController = new AuthController();
         controllerMap.put("/auth", authController);
-        MainPageController mainPageController= new MainPageController();
+        MainPageController mainPageController = new MainPageController();
         controllerMap.put("/app/main", mainPageController);
         CatalogController catalogController = new CatalogController();
         controllerMap.put("/app/catalog", catalogController);

@@ -1,5 +1,6 @@
 package ru.danilov.movieshop.web.controller;
 
+import ru.danilov.movieshop.core.aspect.HttpLoggable;
 import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
 import ru.danilov.movieshop.core.entity.user.User;
@@ -24,7 +25,7 @@ public class AuthController extends BaseController {
 
     private UserManager userManager = ServiceContainer.getService(UserManager.class);
 
-    private AuthManager authManager= ServiceContainer.getService(AuthManager.class);
+    private AuthManager authManager = ServiceContainer.getService(AuthManager.class);
 
     @Override
     public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
@@ -45,6 +46,7 @@ public class AuthController extends BaseController {
         request.getRequestDispatcher("/WEB-INF/views/web/common/auth.jsp").forward(request, response);
     }
 
+    @HttpLoggable(variablesToLog = {"login", "password"})
     public void auth(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
