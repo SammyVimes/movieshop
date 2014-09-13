@@ -394,6 +394,13 @@ var $ = function () {
             });
         };
 
+        $this.parent = function () {
+            if (elements[0]) {
+                return $(elements[0].parentNode);
+            }
+            return $();
+        };
+
         $this.removeSelf = function () {
             $this.each(function (e) {
                 e.parentNode.removeChild(e);

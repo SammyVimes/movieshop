@@ -51,5 +51,9 @@ function Modal(id) {
         }
     });
 
+    $this.getProtoQueryObject = function () {
+        return modal;
+    };
+
     return $this;
 }

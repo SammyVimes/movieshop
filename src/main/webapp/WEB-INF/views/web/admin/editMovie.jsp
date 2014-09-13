@@ -227,41 +227,52 @@
         actorPicker.click(function () {
             modal.open();
         });
+        var actors = $({type: "id", value: "actors"}).find({type: "class", value: "actor"});
+        var modalActors = modal.getProtoQueryObject().find({type: "class", value: "actor"});
 
-        $({type: "class", value: "actor"}).click(function () {
+        var selectables = [];
 
-            var selected = false;
-            var view = null;
-
-            return function () {
-                var $this = $(this);
-
-                function select() {
-                    $this.addClass("selected");
-                    var actorId = $this.find({type: "class", value: "actor-id"}).val();
-                    var actorName = $this.find({type: "class", value: "actor-name"}).val();
-                    view = createTemplate(actorName, actorId);
-                    var removeBtn = view.find({type: "class", value: "remove-actor"});
-                    removeBtn.click(function () {
-                        deselect();
-                    });
-                    selected = true;
-                }
-
-                function deselect() {
-                    $this.removeClass("selected");
-                    selected = false;
-                    view.removeSelf();
-                }
-
-                if (!selected) {
-                    select();
+        modalActors.each(function (e) {
+            var selectable = $(e);
+            var actorId = selectable.find({type: "class", value: "actor-id"}).val();
+            var actorName = selectable.find({type: "class", value: "actor-name"}).val();
+            selectable.select = function () {
+                selectable.addClass("selected");
+                selectable.view = createTemplate(actorName, actorId);
+                var removeBtn = selectable.view.find({type: "class", value: "remove-actor"});
+                removeBtn.click(function () {
+                    selectable.deselect();
+                });
+                selectable.selected = true;
+            };
+            selectable.deselect = function () {
+                selectable.removeClass("selected");
+                selectable.selected = false;
+                selectable.view.removeSelf();
+            };
+            selectable.click(function () {
+                if (selectable.selected) {
+                    selectable.deselect();
                 } else {
-                    deselect();
+                    selectable.select();
                 }
-
-            }
-
-        }());
+            });
+            actors.each(function (e2) {
+                var existedActor = $(e2);
+                var e2Id = existedActor.find({type: "class", value: "actor-id"}).val();
+                var removeBtn = existedActor.find({type: "class", value: "remove-actor"});
+                removeBtn.click(function () {
+                    if (existedActor.selectable) {
+                        existedActor.selectable.deselect();
+                    }
+                });
+                if (e2Id == actorId) {
+                    existedActor.selectable = selectable;
+                    selectable.view = existedActor.parent();
+                    selectable.selected = true;
+                    selectable.addClass("selected");
+                }
+            });
+        });
     });
 </script>
