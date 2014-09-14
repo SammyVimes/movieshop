@@ -48,34 +48,40 @@
                 <c:set var="formLink"><c:url value="/web/app/personal/admin/movies/editMovie"/></c:set>
                 <form action="${formLink}" method="post">
                     <input class="hidden" name="id" value="${movie.id}">
+
                     <div class="row">
                         <div class="form-element width-12">
                             <label for="title" class="width-2">Название</label>
-                            <input id="title" class="form-input width-6" type="text" name="title" value="${movie.title}">
+                            <input id="title" class="form-input width-6" type="text" name="title"
+                                   value="${movie.title}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-element width-12">
                             <label for="localizedTitle" class="width-2">Название на русском языке (если есть)</label>
-                            <input id="localizedTitle" class="form-input width-6" type="text" name="localizedTitle" value="${movie.localizedTitle}">
+                            <input id="localizedTitle" class="form-input width-6" type="text" name="localizedTitle"
+                                   value="${movie.localizedTitle}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-element width-12">
                             <label for="coverURL" class="width-2">URL картинки</label>
-                            <input id="coverURL" class="form-input width-6" type="text" name="coverURL" value="${movie.coverUri}">
+                            <input id="coverURL" class="form-input width-6" type="text" name="coverURL"
+                                   value="${movie.coverUri}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-element width-12">
                             <label for="trailerURL" class="width-2">URL трейлера</label>
-                            <input id="trailerURL" class="form-input width-6" type="text" name="trailerURL" value="${movie.trailerUri}">
+                            <input id="trailerURL" class="form-input width-6" type="text" name="trailerURL"
+                                   value="${movie.trailerUri}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-element width-12">
                             <label for="price" class="width-2">Цена</label>
-                            <input id="price" class="form-input width-6" type="text" name="price" value="${movie.price}">
+                            <input id="price" class="form-input width-6" type="text" name="price"
+                                   value="${movie.price}">
                         </div>
                     </div>
                     <div class="row">
@@ -111,30 +117,33 @@
                     <div class="row">
                         <div class="form-element width-12">
                             <label for="description" class="width-2">Описание</label>
-                            <textarea id="description" rows="10" cols="45" class="form-input width-6" name="description">${movie.description}</textarea>
+                            <textarea id="description" rows="10" cols="45" class="form-input width-6"
+                                      name="description">${movie.description}</textarea>
                         </div>
                     </div>
-                    <div class="row" id="actors">
+                    <div class="row">
                         <div class="width-2">
                             <label>Актёрский состав</label>
                         </div>
                         <%--@elvariable id="actor" type="ru.danilov.movieshop.core.entity.actor.Actor"--%>
                         <%--@elvariable id="movieActors" type="java.util.List"--%>
-                        <c:forEach items="${movieActors}" var="actor">
-                            <div class="width-4">
-                                <div class="actor">
-                                    <div class="form-element input-group">
-                                        <input disabled class="actor-name form-input" value="${actor.name}">
+                        <div class="width-9" id="actors">
+                            <c:forEach items="${movieActors}" var="actor">
+                                <div class="width-4">
+                                    <div class="actor">
+                                        <div class="form-element input-group">
+                                            <input disabled class="actor-name form-input" value="${actor.name}">
 
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-red btn-outline remove-actor" type="button"><i
-                                                    class="fa fa-trash"></i></button>
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-red btn-outline remove-actor" type="button"><i
+                                                        class="fa fa-trash"></i></button>
+                                            </div>
                                         </div>
+                                        <input class="hidden actor-id" name="actor-id" value="${actor.id}">
                                     </div>
-                                    <input class="hidden actor-id" name="actor-id" value="${actor.id}">
                                 </div>
-                            </div>
-                        </c:forEach>
+                            </c:forEach>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="width-5">
@@ -257,22 +266,28 @@
                     selectable.select();
                 }
             });
-            actors.each(function (e2) {
+            var _actors = actors.elements;
+            for (var i = 0; i < _actors.length; i++) {
+                var e2 = _actors[i];
                 var existedActor = $(e2);
                 var e2Id = existedActor.find({type: "class", value: "actor-id"}).val();
-                var removeBtn = existedActor.find({type: "class", value: "remove-actor"});
-                removeBtn.click(function () {
-                    if (existedActor.selectable) {
-                        existedActor.selectable.deselect();
-                    }
-                });
                 if (e2Id == actorId) {
-                    existedActor.selectable = selectable;
-                    selectable.view = existedActor.parent();
-                    selectable.selected = true;
-                    selectable.addClass("selected");
+                    var __noneed__ = function (existedActor) {
+                        var removeBtn = existedActor.find({type: "class", value: "remove-actor"});
+                        removeBtn.click(function () {
+                            if (existedActor.selectable) {
+                                existedActor.selectable.deselect();
+                            }
+                        });
+                        existedActor.selectable = selectable;
+                        selectable.view = existedActor.parent();
+                        selectable.selected = true;
+                        selectable.addClass("selected");
+                    }(existedActor);
+                    _actors.splice(i, 1);
+                    break;
                 }
-            });
+            }
         });
     });
 </script>

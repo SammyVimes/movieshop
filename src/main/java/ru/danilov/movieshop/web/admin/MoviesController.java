@@ -18,6 +18,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -230,22 +231,16 @@ public class MoviesController extends BaseController {
         ModelAndView modelAndView = new ModelAndView("/admin.editMovie.tiles");
         modelAndView.putObject("movie", clone);
         if (actorsIds != null) {
+            List<Actor> newMovieActors = new LinkedList<>();
+            List<Actor> actorsLeft = actorManager.getAllActorsOfMovie(movie);
             for (String actorIdString : actorsIds) {
                 Long actorId;
                 try {
                     actorId = Long.valueOf(actorIdString);
                     try {
                         Actor actor = actorManager.getActorById(actorId);
-                        boolean hasMovie = false;
-                        for (Movie movie1 : actor.getMovies()) {
-                            if (movie1.getId() == clone.getId()) {
-                                hasMovie = true;
-                                break;
-                            }
-                        }
-                        if (!hasMovie) {
-                            actor.getMovies().add(movie);
-                            actorManager.updateActor(actor);
+                        if (!actorsLeft.remove(actor)) {
+                            newMovieActors.add(actor);
                         }
                     } catch (Exception e) {
                         LOGGER.error("Exception raised while adding actor: " + e.getMessage());
@@ -258,6 +253,38 @@ public class MoviesController extends BaseController {
                 } catch (NumberFormatException e) {
                     LOGGER.debug("Bad actor id: " + e.getMessage());
                 }
+            }
+            try {
+                for (Actor actor : actorsLeft) {
+                    actor.getMovies().remove(movie);
+                    actorManager.updateActor(actor);
+                }
+                for (Actor actor : newMovieActors) {
+                    boolean hasMovie = false;
+                    for (Movie movie1 : actor.getMovies()) {
+                        if (movie1.getId() == clone.getId()) {
+                            hasMovie = true;
+                            break;
+                        }
+                    }
+                    if (!hasMovie) {
+                        actor.getMovies().add(movie);
+                        actorManager.updateActor(actor);
+                    }
+                }
+            } catch (Exception e) {
+                LOGGER.error("Exception raised while adding actor: " + e.getMessage());
+                modelAndView.putObject("error", e.getMessage());
+                List<Actor> actors = actorManager.getAllActorsOfMovie(movie);
+                modelAndView.putObject("movieActors", actors);
+                modelAndView.putObject("allActors", actorManager.getAllActors());
+                modelAndView.process(request, response);
+            }
+        } else {
+            List<Actor> movieActors = actorManager.getAllActorsOfMovie(movie);
+            for (Actor actor : movieActors) {
+                actor.getMovies().remove(movie);
+                actorManager.updateActor(actor);
             }
         }
         try {

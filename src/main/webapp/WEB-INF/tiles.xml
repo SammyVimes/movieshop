@@ -60,6 +60,11 @@
         </put-list-attribute>
     </definition>
 
+    <definition name="user.catalog.showActor" extends="common">
+        <put-attribute name="title" value="Актёр" type="string"/>
+        <put-attribute name="page-content" type="definition" value="actor"/>
+    </definition>
+
     <definition name="user.owned" extends="common">
         <put-attribute name="title" value="Ваши фильмы" type="string"/>
         <put-attribute name="page-content" type="definition" value="owned"/>
@@ -128,6 +133,7 @@
     </definition>
 
     <definition name="movie" template="/WEB-INF/views/web/user/movie.jsp"/>
+    <definition name="actor" template="/WEB-INF/views/web/user/actor.jsp"/>
     <definition name="error" template="/WEB-INF/views/web/common/error.jsp"/>
     <definition name="cart" template="/WEB-INF/views/web/user/cart.jsp"/>
     <definition name="profile" template="/WEB-INF/views/web/user/profile.jsp"/>

@@ -1,5 +1,6 @@
 package ru.danilov.movieshop.core.entity.actor;
 
+import org.jetbrains.annotations.NotNull;
 import ru.danilov.movieshop.core.entity.movie.Movie;
 
 import javax.persistence.*;
@@ -12,15 +13,23 @@ import java.util.List;
 @Entity
 public class Actor {
 
+    //уникальный идентификатор
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "name")
+    //имя
+    @NotNull
+    @Column(name = "name", nullable = false)
     private String name;
 
     @ManyToMany
     private List<Movie> movies;
+
+    //пол
+    @NotNull
+    @Column(name = "sex", nullable = false)
+    private boolean sex;
 
     public long getId() {
         return id;
@@ -46,4 +55,11 @@ public class Actor {
         this.movies = movies;
     }
 
+    public boolean isSex() {
+        return sex;
+    }
+
+    public void setSex(final boolean sex) {
+        this.sex = sex;
+    }
 }

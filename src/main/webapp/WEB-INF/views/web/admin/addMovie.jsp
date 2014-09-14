@@ -85,12 +85,16 @@
                     <div class="row">
                         <div class="form-element width-12">
                             <label for="description" class="width-2">Описание</label>
-                            <textarea id="description" rows="10" cols="45" class="form-input width-6" name="description"></textarea>
+                            <textarea id="description" rows="10" cols="45" class="form-input width-6"
+                                      name="description"></textarea>
                         </div>
                     </div>
-                    <div class="row" id="actors">
+                    <div class="row">
                         <div class="width-2">
                             <label>Актёрский состав</label>
+                        </div>
+                        <div class="width-9" id="actors">
+
                         </div>
                     </div>
                     <div class="row">

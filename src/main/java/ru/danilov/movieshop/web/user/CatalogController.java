@@ -2,6 +2,8 @@ package ru.danilov.movieshop.web.user;
 
 import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
+import ru.danilov.movieshop.core.entity.actor.Actor;
+import ru.danilov.movieshop.core.entity.actor.ActorManager;
 import ru.danilov.movieshop.core.entity.comment.Comment;
 import ru.danilov.movieshop.core.entity.comment.CommentManager;
 import ru.danilov.movieshop.core.entity.movie.Movie;
@@ -33,6 +35,8 @@ public class CatalogController extends BaseController {
 
     private CommentManager commentManager = ServiceContainer.getService(CommentManager.class);
 
+    private ActorManager actorManager = ServiceContainer.getService(ActorManager.class);
+
     @Override
     public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         if (request.getRequestURI().contains("/catalog/popular")) {
@@ -41,6 +45,8 @@ public class CatalogController extends BaseController {
             showMovie(request, response);
         } else if(request.getRequestURI().contains("/catalog/search")) {
             search(request, response);
+        } else if (request.getRequestURI().contains("/catalog/showActor")) {
+            showActor(request, response);
         } else {
             catalogView(request, response);
         }
@@ -112,7 +118,26 @@ public class CatalogController extends BaseController {
                 }
             }
         }
+        List<Actor> actors = actorManager.getAllActorsOfMovie(movie);
+        mav.putObject("actors", actors);
+        mav.process(request, response);
+    }
 
+    public void showActor(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        ModelAndView mav = new ModelAndView("/user.catalog.showActor.tiles");
+        String actorIdString = request.getParameter("id");
+        Long actorId;
+        try {
+            actorId = Long.valueOf(actorIdString);
+        } catch (NumberFormatException e) {
+            ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
+            modelAndView.process(request, response);
+            return;
+        }
+        Actor actor = actorManager.getActorById(actorId);
+        mav.putObject("actor", actor);
+        List<Movie> movies = actor.getMovies();
+        mav.putObject("movies", movies);
         mav.process(request, response);
     }
 

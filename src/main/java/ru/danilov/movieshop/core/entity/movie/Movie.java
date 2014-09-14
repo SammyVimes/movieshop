@@ -143,4 +143,20 @@ public class Movie {
         return movie;
     }
 
+    public boolean movieEqual(final Movie movie) {
+        return title.equals(movie.getTitle());
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+        if (!(obj instanceof Movie)) {
+            return false;
+        }
+        return id == ((Movie) obj).getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) id;
+    }
 }

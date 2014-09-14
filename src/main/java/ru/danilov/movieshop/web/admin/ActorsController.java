@@ -37,8 +37,14 @@ public class ActorsController extends BaseController {
 
     private void addActorPost(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
+        String isMale = request.getParameter("sex");
         Actor actor = new Actor();
         actor.setMovies(new LinkedList<Movie>());
+        if (isMale != null && isMale.equals("on")) {
+            actor.setSex(true);
+        } else {
+            actor.setSex(false);
+        }
         actor.setName(name);
         try {
             actorManager.createActor(actor);

@@ -38,6 +38,10 @@
                         <label for="name" class="width-2">Имя</label>
                         <input class="form-input width-6" name="name" id="name">
                     </div>
+                    <div class="form-element width-12">
+                        <label for="sex" class="width-2">Мужчина?</label>
+                        <input type="checkbox" name="sex" id="sex">
+                    </div>
                     <button type="submit" class="btn btn-outline btn-success">Добавить</button>
                 </form>
             </div>

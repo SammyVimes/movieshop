@@ -42,7 +42,6 @@
 </div>
 
 
-
 <div class="container">
 
     <div class="movie-container">
@@ -87,6 +86,7 @@
                     </div>
                 </div>
                 <br/>
+
                 <div class="row row-skip">
                     <c:choose>
                         <%--@elvariable id="owned" type="java.lang.Boolean"--%>
@@ -96,7 +96,8 @@
                             </div>
                         </c:when>
                         <c:otherwise>
-                            <c:set var="buyLink"><c:url value="/web/app/personal/user/shop/addToCart?id=${movie.id}"/></c:set>
+                            <c:set var="buyLink"><c:url
+                                    value="/web/app/personal/user/shop/addToCart?id=${movie.id}"/></c:set>
                             <a href="${buyLink}"
                                class="btn btn-outline btn-success btn-lg btn-block fa fa-shopping-cart"> ${sAddToCart}</a>
                         </c:otherwise>
@@ -110,7 +111,15 @@
         </div>
         <div class="row">
             <div class="width-12 hidden" id="actors">
-                ${movie.actors}
+                <c:set var="actorShowUrl"><c:url value="/web/app/catalog/showActor?id="/></c:set>
+                <%--@elvariable id="actors" type="java.util.List"--%>
+                <%--@elvariable id="actor" type="ru.danilov.movieshop.core.entity.actor.Actor"--%>
+                <c:forEach items="${actors}" var="actor">
+                    <div class="row">
+                        <a href="${actorShowUrl}${actor.id}" class="underline-link offset-1 width-4"><h4>
+                            <b>${actor.name}</b></h4></a>
+                    </div>
+                </c:forEach>
             </div>
             <div class="width-12" id="comments">
                 <div class="row row-skip">
@@ -150,30 +159,30 @@
 </div>
 
 <script>
-    $(document).ready(function() {
-       var $actors = $({type: "id", value: "actors"});
-       var $comments = $({type: "id", value: "comments"});
-       var $actorsTabBtn = $({type: "id", value: "actors-tab"});
-       var $commentsTabBtn = $({type: "id", value: "comments-tab"});
-       $actorsTabBtn.click(function() {
-           $actors.removeClass("hidden");
-           $commentsTabBtn.removeClass("active");
-           if (!$comments.hasClass("hidden")) {
-               $comments.addClass("hidden");
-           }
-           if (!$actorsTabBtn.hasClass("active")) {
-               $actorsTabBtn.addClass("active");
-           }
-       });
-       $commentsTabBtn.click(function() {
-           $comments.removeClass("hidden");
-           $actorsTabBtn.removeClass("active");
-           if (!$actors.hasClass("hidden")) {
-               $actors.addClass("hidden");
-           }
-           if (!$commentsTabBtn.hasClass("active")) {
-               $commentsTabBtn.addClass("active");
-           }
-       });
+    $(document).ready(function () {
+        var $actors = $({type: "id", value: "actors"});
+        var $comments = $({type: "id", value: "comments"});
+        var $actorsTabBtn = $({type: "id", value: "actors-tab"});
+        var $commentsTabBtn = $({type: "id", value: "comments-tab"});
+        $actorsTabBtn.click(function () {
+            $actors.removeClass("hidden");
+            $commentsTabBtn.removeClass("active");
+            if (!$comments.hasClass("hidden")) {
+                $comments.addClass("hidden");
+            }
+            if (!$actorsTabBtn.hasClass("active")) {
+                $actorsTabBtn.addClass("active");
+            }
+        });
+        $commentsTabBtn.click(function () {
+            $comments.removeClass("hidden");
+            $actorsTabBtn.removeClass("active");
+            if (!$actors.hasClass("hidden")) {
+                $actors.addClass("hidden");
+            }
+            if (!$commentsTabBtn.hasClass("active")) {
+                $commentsTabBtn.addClass("active");
+            }
+        });
     });
 </script>

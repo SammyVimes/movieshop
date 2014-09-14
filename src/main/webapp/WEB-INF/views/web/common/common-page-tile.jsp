@@ -10,35 +10,34 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <tiles:useAttribute id="title" name="title" classname="java.lang.String"/>
+    <title>${title}</title>
 
-        <tiles:useAttribute id="title" name="title" classname="java.lang.String" />
-        <title>${title}</title>
+    <c:set var="cssBaseUrl">${pageContext.request.contextPath}/css/</c:set>
+    <link rel="stylesheet" href="${cssBaseUrl}items.css" type="text/css">
+    <link rel="stylesheet" href="${cssBaseUrl}movie.css" type="text/css">
+    <c:set var="libBaseUrl">${pageContext.request.contextPath}/lib/</c:set>
+    <link rel="stylesheet" href="${libBaseUrl}css/font-awesome.css" type="text/css">
 
-        <c:set var="cssBaseUrl">${pageContext.request.contextPath}/css/</c:set>
-        <link rel="stylesheet" href="${cssBaseUrl}items.css" type="text/css">
-        <link rel="stylesheet" href="${cssBaseUrl}movie.css" type="text/css">
-        <c:set var="libBaseUrl">${pageContext.request.contextPath}/lib/</c:set>
-        <link rel="stylesheet" href="${libBaseUrl}css/font-awesome.css" type="text/css">
-
-        <tiles:useAttribute id="jsList" name="jsList" classname="java.util.List" />
-        <c:forEach items="${jsList}" var="jsRawLink">
-            <c:set var="jsLink">${pageContext.request.contextPath}${jsRawLink}</c:set>
-            <script src="${jsLink}">void(0)</script>
-        </c:forEach>
+    <tiles:useAttribute id="jsList" name="jsList" classname="java.util.List"/>
+    <c:forEach items="${jsList}" var="jsRawLink">
+        <c:set var="jsLink">${pageContext.request.contextPath}${jsRawLink}</c:set>
+        <script src="${jsLink}">void(0)</script>
+    </c:forEach>
 
 
-        <tiles:useAttribute id="cssList" name="cssList" classname="java.util.List" />
-        <c:forEach items="${cssList}" var="cssRawLink">
-            <c:set var="cssLink">${pageContext.request.contextPath}${cssRawLink}</c:set>
-            <link rel="stylesheet" href="${cssLink}" type="text/css">
-        </c:forEach>
+    <tiles:useAttribute id="cssList" name="cssList" classname="java.util.List"/>
+    <c:forEach items="${cssList}" var="cssRawLink">
+        <c:set var="cssLink">${pageContext.request.contextPath}${cssRawLink}</c:set>
+        <link rel="stylesheet" href="${cssLink}" type="text/css">
+    </c:forEach>
 
-    </head>
+</head>
 
-    <body>
-        <tiles:insertAttribute name="header"/>
-        <tiles:insertAttribute name="page-content"/>
-    </body>
+<body>
+<tiles:insertAttribute name="header"/>
+<tiles:insertAttribute name="page-content"/>
+</body>
 
 </html>
