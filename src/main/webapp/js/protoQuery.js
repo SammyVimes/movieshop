@@ -324,13 +324,17 @@ var $ = function () {
 
         $this.removeClass = function(className) {
             $this.each(function(element) {
-                removeClass(element, className);
+                while (hasClass(element, className)) {
+                    removeClass(element, className);
+                }
             });
         };
 
         $this.addClass = function(className) {
             $this.each(function(element) {
-                element.className += " " + className;
+                if (!hasClass(element, className)) {
+                    element.className += " " + className;
+                }
             });
         };
 

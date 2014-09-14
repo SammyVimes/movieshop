@@ -12,6 +12,7 @@ import ru.danilov.movieshop.web.util.AttributeNames;
 import ru.danilov.movieshop.web.util.ServiceContainer;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -61,6 +62,9 @@ public class AuthController extends BaseController {
                 HttpSession session = request.getSession();
                 authManager.putAuthData(authData);
                 session.setAttribute(AttributeNames.AUTH_DATA_KEY, authData.getKey());
+                Cookie cookie = new Cookie(AttributeNames.AUTH_DATA_KEY, authData.getKey());
+                cookie.setMaxAge(600000 * 4);
+                response.addCookie(cookie);
                 if (user.getUserRole() == UserRole.ADMIN) {
                     response.sendRedirect("/movieshop/web/app/personal/admin/movies");
                 } else {
