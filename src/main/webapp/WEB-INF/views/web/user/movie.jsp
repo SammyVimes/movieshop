@@ -9,6 +9,7 @@
 <%@ taglib prefix="m" uri="http://www.danilov.ru/moneytaglib" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<%@ page import="ru.danilov.movieshop.core.entity.movie.Movie" %>
 <%@ page import="ru.danilov.movieshop.web.util.UTF8ResourceBundle" %>
 <%@ page import="java.util.Locale" %>
 <%@ page import="java.util.ResourceBundle" %>
@@ -31,6 +32,11 @@
     pageContext.setAttribute("sNewComment", sNewComment);
     pageContext.setAttribute("sPrice", sPrice);
     pageContext.setAttribute("sDescription", sDescription);
+    Movie movie = (Movie) request.getAttribute("movie");
+    String sGenreTitle = resBound.getString("s_genre");
+    String sGenre = resBound.getString(movie.getGenre().getProp());
+    pageContext.setAttribute("sGenre", sGenre);
+    pageContext.setAttribute("sGenreTitle", sGenreTitle);
 %>
 
 <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
@@ -78,6 +84,11 @@
                 <div class="row row-skip">
                     <div class="width-12 description row-skip">
                         <b>${sDescription}: </b>${movie.description}
+                    </div>
+                </div>
+                <div class="row row-skip">
+                    <div class="width-12 description row-skip">
+                        <b>${sGenreTitle}: </b>${sGenre}
                     </div>
                 </div>
                 <div class="row">

@@ -1,3 +1,6 @@
+<%@ page import="ru.danilov.movieshop.core.entity.movie.MovieGenre" %>
+<%@ page import="java.util.Arrays" %>
+<%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
   User: Semyon
@@ -17,6 +20,11 @@
         </div>
     </div>
 </div>
+
+<%
+    List<MovieGenre> genres = Arrays.asList(MovieGenre.values());
+    request.setAttribute("genres", genres);
+%>
 
 <div class="page-wrapper">
     <div class="container">
@@ -59,6 +67,16 @@
                         <div class="form-element width-12">
                             <label for="trailerURL" class="width-2">URL трейлера</label>
                             <input id="trailerURL" class="form-input width-6" type="text" name="trailerURL">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-element width-12">
+                            <label for="genre" class="width-2">Жанр</label>
+                            <select id="genre" class="form-input width-6" name="genre">
+                                <c:forEach items="${genres}" var="genre">
+                                    <option value="${genre.name}">${genre.title}</option>
+                                </c:forEach>
+                            </select>
                         </div>
                     </div>
                     <div class="row">

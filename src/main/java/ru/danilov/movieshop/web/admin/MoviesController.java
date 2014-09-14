@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import ru.danilov.movieshop.core.entity.actor.Actor;
 import ru.danilov.movieshop.core.entity.actor.ActorManager;
 import ru.danilov.movieshop.core.entity.movie.Movie;
+import ru.danilov.movieshop.core.entity.movie.MovieGenre;
 import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.movie.MovieManagerException;
 import ru.danilov.movieshop.core.money.Currency;
@@ -105,6 +106,8 @@ public class MoviesController extends BaseController {
         String trailerURL = request.getParameter("trailerURL");
         String priceString = request.getParameter("price");
         String popularString = request.getParameter("popular");
+        String genreString = request.getParameter("genre");
+        MovieGenre genre = MovieGenre.valueOf(genreString);
         String currencyString = request.getParameter("currency");
         String[] actorsIds = request.getParameterValues("actor-id");
         String description = request.getParameter("description");
@@ -128,6 +131,8 @@ public class MoviesController extends BaseController {
 
         Movie movie = new Movie();
         movie.setTitle(title);
+
+        movie.setGenre(genre);
 
         movie.setDescription(description);
         if (!localizedTitle.isEmpty()) {
@@ -185,6 +190,8 @@ public class MoviesController extends BaseController {
         String trailerURL = request.getParameter("trailerURL");
         String priceString = request.getParameter("price");
         String popularString = request.getParameter("popular");
+        String genreString = request.getParameter("genre");
+        MovieGenre genre = MovieGenre.valueOf(genreString);
         String[] actorsIds = request.getParameterValues("actor-id");
         String currencyString = request.getParameter("currency");
         String description = request.getParameter("description");
@@ -227,6 +234,7 @@ public class MoviesController extends BaseController {
             clone.setPopular(false);
         }
         clone.setPrice(price);
+        clone.setGenre(genre);
         clone.setCurrency(currency);
         ModelAndView modelAndView = new ModelAndView("/admin.editMovie.tiles");
         modelAndView.putObject("movie", clone);

@@ -1,4 +1,7 @@
+<%@ page import="ru.danilov.movieshop.core.entity.movie.MovieGenre" %>
 <%@ page import="ru.danilov.movieshop.web.util.UTF8ResourceBundle" %>
+<%@ page import="java.util.Arrays" %>
+<%@ page import="java.util.List" %>
 <%@ page import="java.util.Locale" %>
 <%@ page import="java.util.ResourceBundle" %>
 <%--@elvariable id="query" type="java.lang.String"--%>
@@ -18,6 +21,8 @@
     ResourceBundle resBound = new UTF8ResourceBundle("ru.danilov.res", locale);
     String sPopularSide = resBound.getString("s_popular_side");
     pageContext.setAttribute("sPopularSide", sPopularSide);
+    List<MovieGenre> genres = Arrays.asList(MovieGenre.values());
+    request.setAttribute("genres", genres);
 %>
 
 <div id="sidebar" class="sidebar" role="navigation">
@@ -40,6 +45,15 @@
                 <c:set var="popular"><c:url value="/web/app/catalog/popular"/></c:set>
                 <a class="menu-link" href="${popular}"><i class="fa fa-star fa-fw"></i> ${sPopularSide}</a>
             </li>
+
+            <c:set var="genreLink"><c:url value="/web/app/catalog/genre?genre="/></c:set>
+            <c:forEach items="${genres}" var="genre">
+                <li>
+                    <a class="menu-link" href="${genreLink}${genre.name}"><i
+                            class="fa ${genre.cssClass} fa-fw"></i> <%=resBound.getString(((MovieGenre) pageContext.getAttribute("genre")).getProp())%>
+                    </a>
+                </li>
+            </c:forEach>
 
         </ul>
     </div>

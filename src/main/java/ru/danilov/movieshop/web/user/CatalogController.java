@@ -7,6 +7,7 @@ import ru.danilov.movieshop.core.entity.actor.ActorManager;
 import ru.danilov.movieshop.core.entity.comment.Comment;
 import ru.danilov.movieshop.core.entity.comment.CommentManager;
 import ru.danilov.movieshop.core.entity.movie.Movie;
+import ru.danilov.movieshop.core.entity.movie.MovieGenre;
 import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.user.User;
 import ru.danilov.movieshop.core.entity.user.UserManager;
@@ -47,6 +48,8 @@ public class CatalogController extends BaseController {
             search(request, response);
         } else if (request.getRequestURI().contains("/catalog/showActor")) {
             showActor(request, response);
+        } else if (request.getRequestURI().contains("/catalog/genre")) {
+            genres(request, response);
         } else {
             catalogView(request, response);
         }
@@ -79,6 +82,21 @@ public class CatalogController extends BaseController {
         List<Movie> found = movieManager.search(query);
         mav.putObject("movies", found);
         mav.putObject("query", query);
+        mav.process(request, response);
+    }
+
+    public void genres(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        ModelAndView mav = new ModelAndView("/user.catalog.genre.tiles");
+        String genreString = request.getParameter("genre");
+        if (genreString == null) {
+            ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
+            modelAndView.process(request, response);
+            return;
+        }
+        MovieGenre movieGenre = MovieGenre.valueOf(genreString);
+        List<Movie> found = movieManager.getByGenre(movieGenre);
+        mav.putObject("movies", found);
+        mav.putObject("genre", movieGenre);
         mav.process(request, response);
     }
 

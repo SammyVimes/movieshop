@@ -47,6 +47,10 @@ public class Movie {
     private Currency currency;
 
     @NotNull
+    @Column(name = "genre", nullable = false)
+    @Enumerated(EnumType.STRING)
+    private MovieGenre genre;
+
     @Column(name = "is_popular", nullable = false)
     private boolean isPopular;
 
@@ -94,20 +98,20 @@ public class Movie {
         this.description = description;
     }
 
+    @NotNull
     public Currency getCurrency() {
         return currency;
     }
 
-    public void setCurrency(final Currency currency) {
+    public void setCurrency(@NotNull final Currency currency) {
         this.currency = currency;
     }
 
-    @NotNull
     public boolean isPopular() {
         return isPopular;
     }
 
-    public void setPopular(@NotNull final boolean isPopular) {
+    public void setPopular(final boolean isPopular) {
         this.isPopular = isPopular;
     }
 
@@ -127,6 +131,15 @@ public class Movie {
 
     public void setTrailerUri(@Nullable final String trailerUri) {
         this.trailerUri = trailerUri;
+    }
+
+    @NotNull
+    public MovieGenre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(@NotNull final MovieGenre genre) {
+        this.genre = genre;
     }
 
     public Movie getClone() {
@@ -149,10 +162,7 @@ public class Movie {
 
     @Override
     public boolean equals(final Object obj) {
-        if (!(obj instanceof Movie)) {
-            return false;
-        }
-        return id == ((Movie) obj).getId();
+        return obj instanceof Movie && id == ((Movie) obj).getId();
     }
 
     @Override

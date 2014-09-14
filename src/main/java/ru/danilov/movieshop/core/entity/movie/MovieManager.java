@@ -67,6 +67,10 @@ public class MovieManager {
         return movieDAO.search(query);
     }
 
+    public List<Movie> getByGenre(final MovieGenre genre) {
+        return movieDAO.getByGenre(genre);
+    }
+
     public List<Movie> getAllMovies() {
         return movieDAO.getAllMovies();
     }

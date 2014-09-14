@@ -1,6 +1,5 @@
 package ru.danilov.movieshop.core.entity.movie;
 
-import ru.danilov.movieshop.core.entity.user.User;
 import ru.danilov.movieshop.core.util.HibernateUtil;
 
 import javax.persistence.EntityManager;
@@ -50,6 +49,11 @@ public class MovieDAO {
         List<Movie> list = entityManager.createQuery("SELECT a FROM Movie a WHERE id = :id", Movie.class)
                 .setParameter("id", id).getResultList();
         return list.isEmpty() ? null : list.get(0);
+    }
+
+    public List<Movie> getByGenre(final MovieGenre genre) {
+        return entityManager.createQuery("SELECT a FROM Movie a WHERE genre = :genre", Movie.class)
+                .setParameter("genre", genre).getResultList();
     }
 
     public List<Movie> getAllMovies() {
