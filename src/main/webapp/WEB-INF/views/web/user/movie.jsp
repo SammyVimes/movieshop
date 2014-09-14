@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="m" uri="http://www.danilov.ru/moneytaglib" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <%@ page import="ru.danilov.movieshop.core.entity.movie.Movie" %>
 <%@ page import="ru.danilov.movieshop.web.util.UTF8ResourceBundle" %>
@@ -155,7 +156,7 @@
                                     <a href="${userlink}" class="user-link">${_comment.user.login}</a>
                                 </b>
                             </div>
-                            <div class="width-6">${_comment.date}</div>
+                            <div class="width-6"><fmt:formatDate value="${_comment.date}"/></div>
                         </div>
                         <div class="row row-skip">
                             <div class="width-7">${_comment.comment}</div>

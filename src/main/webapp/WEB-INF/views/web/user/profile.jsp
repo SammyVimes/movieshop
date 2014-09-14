@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: Semyon
@@ -54,7 +55,7 @@
                     <div class="width-3"><b>${sMovie}: <a href="${movieLink}"
                                                           class="movie-link">${comment.movie.title}</a></b>
                     </div>
-                    <div class="width-6">${comment.date}</div>
+                    <div class="width-6"><fmt:formatDate value="${comment.date}"/></div>
                 </div>
                 <div class="row row-skip">
                     <div class="width-7">${comment.comment}</div>
