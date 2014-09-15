@@ -20,17 +20,25 @@
 <div class="container">
 
     <c:set var="changeLangLink"><c:url value="/web/app/main/setLang?lang="/></c:set>
-    <a href="${changeLangLink}FR">French</a>
-    <a href="${changeLangLink}RU">Русский</a>
-    <a href="${changeLangLink}EN">English</a>
+    <div class="row row-skip">
+        <div class="width-12">
+            <a class="btn btn-outline btn-normal" href="${changeLangLink}FR">French</a>
+            <a class="btn btn-outline btn-normal" href="${changeLangLink}RU">Русский</a>
+            <a class="btn btn-outline btn-normal" href="${changeLangLink}EN">English</a>
+        </div>
+    </div>
 
     <style>
         #map {
-            width: 500px;
+            width: 100%;
             height: 500px;
         }
     </style>
-    <div id="map"></div>
+    <div class="container">
+        <h3>Ближайшие к вам кинофестивали</h3>
+
+        <div id="map"></div>
+    </div>
 
     <div class="">
         <%--@elvariable id="movies" type="java.util.List"--%>
@@ -58,38 +66,73 @@
 <script>
     var myMap;
 
-    // Дождёмся загрузки API и готовности DOM.
     ymaps.ready(init);
 
     function init () {
-        // Создание экземпляра карты и его привязка к контейнеру с
-        // заданным id ("map").
         myMap = new ymaps.Map('map', {
-            // При инициализации карты обязательно нужно указать
-            // её центр и коэффициент масштабирования.
-            center: [55.91, 37.73], // Москва
+            center: [55.91, 37.73],
             zoom: 13
         });
 
-        myGeoObject = new ymaps.GeoObject({
-            // Описание геометрии.
-            geometry: {
-                type: "Point",
-                coordinates: [55.91, 37.73]
-            },
-            // Свойства.
-            properties: {
-                // Контент метки.
-                iconContent: 'Welcome to Мытищи',
-                hintContent: 'NOW GO BACK'
+        var festivals = ymaps.geoQuery({
+            type: 'FeatureCollection',
+            features: [
+                {
+                    type: 'Feature',
+                    properties: {
+                        balloonContent: '<b>Кинокиммерия</b>'
+                    },
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [46.636608, 32.621786]
+                    }
+                },
+                {
+                    type: 'Feature',
+                    properties: {
+                        balloonContent: '<b>Отражение</b>'
+                    },
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [55.989587, 37.219891]
+                    }
+                },
+                {
+                    type: 'Feature',
+                    properties: {
+                        balloonContent: '<b>Potential</b>'
+                    },
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [59.926339, 30.376763]
+                    }
+                },
+                {
+                    type: 'Feature',
+                    properties: {
+                        balloonContent: '<b>Ale Kino</b>'
+                    },
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [52.407879, 16.918473]
+                    }
             }
-        }, {
-            // Опции.
-            // Иконка метки будет растягиваться под размер ее содержимого.
-            preset: 'islands#blackStretchyIcon',
-            // Метку можно перемещать.
-            draggable: true
+            ]
+        }).addToMap(myMap);
+
+
+        function findClosestObjects(position) {
+            var festival = festivals.getClosestTo(position);
+            festival.balloon.open();
+            myMap.setCenter(festival.geometry._tk);
+        }
+
+        ymaps.geolocation.get({
+            provider: 'yandex',
+            mapStateAutoApply: true
+        }).then(function (result) {
+            findClosestObjects(result.geoObjects.position);
         });
-        myMap.geoObjects.add(myGeoObject);
+
     }
 </script>
