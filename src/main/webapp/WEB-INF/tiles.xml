@@ -14,6 +14,7 @@
         <put-list-attribute name="jsList">
             <add-attribute value="/js/protoQuery.js"/>
             <add-attribute value="/js/modal.js"/>
+            <add-attribute value="/js/date.js"/>
         </put-list-attribute>
         <put-list-attribute name="cssList">
             <add-attribute value="/css/main.css"/>
@@ -152,6 +153,7 @@
     <definition name="addMovie" template="/WEB-INF/views/web/admin/addMovie.jsp"/>
     <definition name="addActor" template="/WEB-INF/views/web/admin/addActor.jsp"/>
     <definition name="editMovie" template="/WEB-INF/views/web/admin/editMovie.jsp"/>
+    <definition name="secretpage" template="/WEB-INF/views/web/superuser/secretpage.jsp"/>
 
     <definition name="errorNotFound" template="/WEB-INF/views/web/common/error404.jsp"/>
 

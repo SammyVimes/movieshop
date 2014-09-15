@@ -1,5 +1,9 @@
 package ru.danilov.movieshop.web.user;
 
+import org.json.simple.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import ru.danilov.movieshop.core.aspect.HttpLoggable;
 import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
 import ru.danilov.movieshop.core.entity.comment.Comment;
@@ -27,6 +31,8 @@ import java.util.List;
  * Created by Semyon on 07.09.2014.
  */
 public class ShoppingController extends BaseController {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(ShoppingController.class);
 
     private UserManager userManager = ServiceContainer.getService(UserManager.class);
 
@@ -63,6 +69,7 @@ public class ShoppingController extends BaseController {
         }
     }
 
+    @HttpLoggable(variablesToLog = {"comment", "movieId"})
     private void addComment(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String commentString = request.getParameter("comment");
         String movieId = request.getParameter("movieId");
@@ -79,7 +86,10 @@ public class ShoppingController extends BaseController {
         comment.setComment(commentString);
         comment.setDate(new Date());
         commentManager.addComment(comment);
-        response.sendRedirect("/movieshop/web/app/catalog/movie?id=" + movieId);
+        LOGGER.debug("User " + user.getLogin() + " added comment: " + commentString);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("success", true);
+        sendJSONResponse(jsonObject, request, response);
     }
 
     private void ownedMovies(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
@@ -129,6 +139,7 @@ public class ShoppingController extends BaseController {
         modelAndView.process(request, response);
     }
 
+    @HttpLoggable(variablesToLog = "id")
     private void removeMovieFromCart(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String movieIdString = request.getParameter("id");
         if (movieIdString == null || movieIdString.isEmpty()) {
@@ -164,6 +175,7 @@ public class ShoppingController extends BaseController {
         for (int i = 0; i < cart.size(); i++) {
             Movie _movie = cart.get(i);
             if (_movie.getId() == movie.getId()) {
+                LOGGER.debug("User " + user.getLogin() + " removed movie from cart: " + _movie.getTitle());
                 cart.remove(_movie);
             }
         }
@@ -171,6 +183,7 @@ public class ShoppingController extends BaseController {
         response.sendRedirect("/movieshop/web/app/personal/user/shop/cart");
     }
 
+    @HttpLoggable(variablesToLog = "id")
     private void addMovieToCart(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String movieIdString = request.getParameter("id");
         if (movieIdString == null || movieIdString.isEmpty()) {
@@ -211,6 +224,7 @@ public class ShoppingController extends BaseController {
             }
         }
         cart.add(movie);
+        LOGGER.debug("User " + user.getLogin() + " added movie to cart: " + movie.getTitle());
         userManager.update(userSettings);
         response.sendRedirect("/movieshop/web/app/personal/user/shop/cart");
     }
@@ -249,11 +263,13 @@ public class ShoppingController extends BaseController {
             }
             money -= price;
             if (money <= 0) {
+                LOGGER.debug("User " + user.getLogin() + " dont have enough money");
                 ModelAndView modelAndView = new ModelAndView("/error.tiles");
                 modelAndView.putObject("error", "Не достаточно средств");
                 modelAndView.process(request, response);
                 return;
             }
+            LOGGER.debug("User " + user.getLogin() + " bought movie: " + _movie.getTitle());
             movieList.add(_movie);
         }
         userSettings.setMoney(money);

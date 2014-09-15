@@ -135,15 +135,13 @@
             </div>
             <div class="width-12" id="comments">
                 <div class="row row-skip">
-                    <c:set var="addCommentLink"><c:url value="/web/app/personal/user/shop/addComment"/></c:set>
-                    <form action="${addCommentLink}" method="post" class="width-12">
-                        <div class="form-element">
-                            <label for="comment-input"><b>${sNewComment}</b></label>
-                            <textarea class="form-input width-12" id="comment-input" name="comment"></textarea>
-                            <input class="hidden" name="movieId" value="${movie.id}">
-                            <button type="submit" class="btn btn-outline btn-normal width-3">${sSend}</button>
-                        </div>
-                    </form>
+                    <div class="form-element">
+                        <label for="comment-input"><b>${sNewComment}</b></label>
+                        <textarea class="form-input width-12" id="comment-input" name="comment"></textarea>
+                        <input class="hidden" name="movieId" value="${movie.id}">
+                        <button type="button" class="btn btn-outline btn-normal width-3"
+                                id="add-comment">${sSend}</button>
+                    </div>
                 </div>
                 <%--@elvariable id="_comment" type="ru.danilov.movieshop.core.entity.comment.Comment"--%>
                 <c:forEach items="${comments}" var="_comment">
@@ -168,6 +166,22 @@
     </div>
 
 
+</div>
+
+
+<div class="comment hidden" id="template">
+    <div class="row row-skip">
+        <div class="width-2">
+            <b>
+                <c:set var="userlink"><c:url value="/web/app/user/profile/showProfile?id=${user.id}"/></c:set>
+                <a href="${userlink}" class="user-link">${user.login}</a>
+            </b>
+        </div>
+        <div class="width-6 comment-date"></div>
+    </div>
+    <div class="row row-skip">
+        <div class="width-7 comment-text"></div>
+    </div>
 </div>
 
 <script>
@@ -196,5 +210,36 @@
                 $commentsTabBtn.addClass("active");
             }
         });
+
+        var $comments = $({type: "id", value: "comments"});
+
+        function createFromTemplate(text) {
+            var clone = $({type: "id", value: "template"}).clone();
+            clone.find({type: "class", value: "comment-text"}).text(text);
+            var date = new Date();
+            clone.find({type: "class", value: "comment-date"}).text(date.format("dd.mm.yyyy"));
+            clone.removeClass("hidden");
+            $comments.append(clone);
+        }
+
+        function addComment(text) {
+            var request = new AjaxRequest({
+                url: "/movieshop/web/app/personal/user/shop/addComment?movieId=${movie.id}&comment=" + text,
+                method: "post",
+                dataType: "json"
+            }).done(function (data) {
+                        if (data["success"]) {
+                            createFromTemplate(text);
+                        } else {
+                            window.location.href = "/movieshop/web/auth"
+                        }
+                    });
+        }
+
+        $({type: "id", value: "add-comment"}).click(function () {
+            var text = $({type: "id", value: "comment-input"}).val();
+            addComment(text);
+        });
+
     });
 </script>

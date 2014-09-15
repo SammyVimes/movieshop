@@ -7,6 +7,7 @@ import ru.danilov.movieshop.web.base.ModelAndView;
 import ru.danilov.movieshop.web.controller.AuthController;
 import ru.danilov.movieshop.web.controller.BaseController;
 import ru.danilov.movieshop.web.controller.RegisterController;
+import ru.danilov.movieshop.web.controller.SecretPageController;
 import ru.danilov.movieshop.web.user.CatalogController;
 import ru.danilov.movieshop.web.user.MainPageController;
 import ru.danilov.movieshop.web.user.ProfileController;
@@ -42,6 +43,8 @@ public class ApplicationMainServlet extends BaseServlet {
         controllerMap.put("/app/user/profile/", profileController);
         ActorsController actorsController = new ActorsController();
         controllerMap.put("/app/personal/admin/actors/", actorsController);
+        SecretPageController secretPageController = new SecretPageController();
+        controllerMap.put("/secretpage/", secretPageController);
         super.init();
     }
 
