@@ -44,7 +44,7 @@ public class ApplicationMainServlet extends BaseServlet {
         ActorsController actorsController = new ActorsController();
         controllerMap.put("/app/personal/admin/actors/", actorsController);
         SecretPageController secretPageController = new SecretPageController();
-        controllerMap.put("/secretpage/", secretPageController);
+        controllerMap.put("/secretpage", secretPageController);
         super.init();
     }
 

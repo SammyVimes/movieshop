@@ -1,5 +1,8 @@
 package ru.danilov.movieshop.web.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import ru.danilov.movieshop.core.aspect.HttpLoggable;
 import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
 import ru.danilov.movieshop.core.entity.user.User;
@@ -22,6 +25,7 @@ import java.util.Date;
  */
 public class RegisterController extends BaseController {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(RegisterController.class);
 
     private UserManager userManager = ServiceContainer.getService(UserManager.class);
 
@@ -42,6 +46,7 @@ public class RegisterController extends BaseController {
         modelAndView.process(request, response);
     }
 
+    @HttpLoggable(variablesToLog = {"login", "password", "repeat-password"})
     public void register(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
@@ -72,6 +77,7 @@ public class RegisterController extends BaseController {
         HttpSession session = request.getSession();
         authManager.putAuthData(authData);
         session.setAttribute(AttributeNames.AUTH_DATA_KEY, authData.getKey());
+        LOGGER.debug("New user was created: " + user.getLogin());
         response.sendRedirect("/movieshop/web/app/catalog");
     }
 
