@@ -14,9 +14,9 @@ import java.io.PrintWriter;
  */
 public abstract class BaseController {
 
-    public abstract void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException;
+    public abstract void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception;
 
-    public abstract void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException;
+    public abstract void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception;
 
     public void sendJSONResponse(final JSONObject jsonObject, final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");

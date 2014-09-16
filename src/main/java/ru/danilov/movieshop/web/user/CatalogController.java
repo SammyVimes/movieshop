@@ -1,5 +1,7 @@
 package ru.danilov.movieshop.web.user;
 
+import ru.danilov.movieshop.core.aspect.HttpLoggable;
+import ru.danilov.movieshop.core.aspect.RequiredParams;
 import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
 import ru.danilov.movieshop.core.entity.actor.Actor;
@@ -39,7 +41,7 @@ public class CatalogController extends BaseController {
     private ActorManager actorManager = ServiceContainer.getService(ActorManager.class);
 
     @Override
-    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         if (request.getRequestURI().contains("/catalog/popular")) {
             popularMovies(request, response);
         } else if(request.getRequestURI().contains("/catalog/movie")) {
@@ -56,7 +58,7 @@ public class CatalogController extends BaseController {
     }
 
     @Override
-    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
 
     }
 
@@ -100,7 +102,9 @@ public class CatalogController extends BaseController {
         mav.process(request, response);
     }
 
-    public void showMovie(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    @RequiredParams(value = "id", canBeEmpty = {false})
+    @HttpLoggable(variablesToLog = "id")
+    public void showMovie(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String movieIdString = request.getParameter("id");
         Long movieId = Long.valueOf(movieIdString);
         ModelAndView mav = new ModelAndView("/user.catalog.movie.tiles");
@@ -141,7 +145,8 @@ public class CatalogController extends BaseController {
         mav.process(request, response);
     }
 
-    public void showActor(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    @RequiredParams(value = "id", canBeEmpty = {false})
+    public void showActor(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         ModelAndView mav = new ModelAndView("/user.catalog.showActor.tiles");
         String actorIdString = request.getParameter("id");
         Long actorId;

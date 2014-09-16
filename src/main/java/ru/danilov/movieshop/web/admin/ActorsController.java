@@ -21,12 +21,12 @@ public class ActorsController extends BaseController {
     private ActorManager actorManager = ServiceContainer.getService(ActorManager.class);
 
     @Override
-    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         addActorView(request, response);
     }
 
     @Override
-    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         addActorPost(request, response);
     }
 

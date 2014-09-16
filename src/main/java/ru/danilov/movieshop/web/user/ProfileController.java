@@ -36,7 +36,7 @@ public class ProfileController extends BaseController {
     private CommentManager commentManager = ServiceContainer.getService(CommentManager.class);
 
     @Override
-    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String requestURI = request.getRequestURI();
         if (requestURI.contains("showProfile")) {
             profileView(request, response);
@@ -44,7 +44,7 @@ public class ProfileController extends BaseController {
     }
 
     @Override
-    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
 
     }
 

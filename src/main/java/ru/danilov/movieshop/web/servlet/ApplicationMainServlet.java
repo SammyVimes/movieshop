@@ -58,7 +58,13 @@ public class ApplicationMainServlet extends BaseServlet {
         beforeProcess(req, resp);
         BaseController controller = findMatchingController(req.getRequestURI());
         if (controller != null) {
-            controller.handleGetRequest(req, resp);
+            try {
+                controller.handleGetRequest(req, resp);
+            } catch (Exception e) {
+                ModelAndView modelAndView = new ModelAndView("/error.tiles");
+                modelAndView.putObject("error", e.getMessage());
+                modelAndView.process(req, resp);
+            }
         } else {
             ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
             modelAndView.process(req, resp);
@@ -70,7 +76,13 @@ public class ApplicationMainServlet extends BaseServlet {
         beforeProcess(req, resp);
         BaseController controller = findMatchingController(req.getRequestURI());
         if (controller != null) {
-            controller.handlePostRequest(req, resp);
+            try {
+                controller.handlePostRequest(req, resp);
+            } catch (Exception e) {
+                ModelAndView modelAndView = new ModelAndView("/error.tiles");
+                modelAndView.putObject("error", e.getMessage());
+                modelAndView.process(req, resp);
+            }
         } else {
             ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
             modelAndView.process(req, resp);

@@ -34,7 +34,7 @@ public class MoviesController extends BaseController {
     private ActorManager actorManager = ServiceContainer.getService(ActorManager.class);
 
     @Override
-    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         if (request.getRequestURI().contains("search")) {
             searchForMovie(request, response);
         } else if (request.getRequestURI().contains("addMovie")) {
@@ -47,7 +47,7 @@ public class MoviesController extends BaseController {
     }
 
     @Override
-    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String requestURI = request.getRequestURI();
         if (requestURI.contains("addMovie")) {
             addMoviePost(request, response);

@@ -29,7 +29,7 @@ public class AuthController extends BaseController {
     private AuthManager authManager = ServiceContainer.getService(AuthManager.class);
 
     @Override
-    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String url = request.getRequestURI();
         if (url.contains("doAuth")) {
             auth(request, response);
@@ -39,7 +39,7 @@ public class AuthController extends BaseController {
     }
 
     @Override
-    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
 
     }
 

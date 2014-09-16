@@ -43,7 +43,7 @@ public class ShoppingController extends BaseController {
     private CommentManager commentManager = ServiceContainer.getService(CommentManager.class);
 
     @Override
-    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String requestURI = request.getRequestURI();
         if (requestURI.contains("buy")) {
             buyMovies(request, response);
@@ -62,7 +62,7 @@ public class ShoppingController extends BaseController {
     }
 
     @Override
-    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String requestURI = request.getRequestURI();
         if (requestURI.contains("addComment")) {
             addComment(request, response);

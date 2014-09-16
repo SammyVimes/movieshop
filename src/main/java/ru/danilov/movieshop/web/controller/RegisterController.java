@@ -29,15 +29,15 @@ public class RegisterController extends BaseController {
 
     private UserManager userManager = ServiceContainer.getService(UserManager.class);
 
-    private AuthManager authManager= ServiceContainer.getService(AuthManager.class);
+    private AuthManager authManager = ServiceContainer.getService(AuthManager.class);
 
     @Override
-    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         registerView(request, response);
     }
 
     @Override
-    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         register(request, response);
     }
 

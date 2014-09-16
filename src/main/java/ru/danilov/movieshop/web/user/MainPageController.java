@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Locale;
 
 /**
  * Created by Semyon on 06.09.2014.
@@ -23,7 +22,7 @@ public class MainPageController extends BaseController {
     private MovieManager movieManager = ServiceContainer.getService(MovieManager.class);
 
     @Override
-    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         if (request.getRequestURI().contains("logout")) {
             logout(request, response);
         } else if (request.getRequestURI().contains("setLang")) {
@@ -34,7 +33,7 @@ public class MainPageController extends BaseController {
     }
 
     @Override
-    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    public void handlePostRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
 
     }
 
