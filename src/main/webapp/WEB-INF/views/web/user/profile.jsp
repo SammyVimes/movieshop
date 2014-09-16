@@ -24,14 +24,18 @@
     pageContext.setAttribute("sMovie", sMovie);
 %>
 
+<jsp:useBean id="profile" scope="request" class="ru.danilov.movieshop.core.entity.user.User"/>
+
 <div class="jumbotron jumbotron-green hidden-print">
     <div class="container">
-        <h1><i class="fa fa-user"></i>&nbsp; ${sProfile} ${profile.login}</h1>
+        <h1><i class="fa fa-user"></i>&nbsp; ${sProfile}
+            <jsp:getProperty name="profile" property="login"/>
+        </h1>
 
         <p>
             <%--@elvariable id="money" type="java.lang.Double"--%>
             <c:if test="${money ne null}">
-                ${sLeft}: ${money}
+                ${sLeft}: <fmt:formatNumber type="number" value="${money}" maxFractionDigits="2"/>
             </c:if>
         </p>
     </div>

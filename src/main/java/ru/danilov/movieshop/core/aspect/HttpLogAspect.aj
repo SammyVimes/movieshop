@@ -28,7 +28,14 @@ public aspect HttpLogAspect {
         }
         StringBuilder trace = new StringBuilder();
         for (String variableToLog : httpLoggable.variablesToLog()) {
-            trace.append(variableToLog).append(" = [").append(request.getParameter(variableToLog)).append("]; ");
+            String[] values = request.getParameterValues(variableToLog);
+            if (values != null) {
+                trace.append(variableToLog).append(" = [");
+                for (String value : values) {
+                    trace.append(value).append(", ");
+                }
+                trace.append("]; ");
+            }
         }
         LOGGER.trace(trace.toString());
     }

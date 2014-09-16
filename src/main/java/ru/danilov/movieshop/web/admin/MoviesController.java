@@ -4,6 +4,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ru.danilov.movieshop.core.aspect.HttpLoggable;
+import ru.danilov.movieshop.core.aspect.RequiredParams;
 import ru.danilov.movieshop.core.entity.actor.Actor;
 import ru.danilov.movieshop.core.entity.actor.ActorManager;
 import ru.danilov.movieshop.core.entity.movie.Movie;
@@ -99,7 +101,12 @@ public class MoviesController extends BaseController {
         modelAndView.process(request, response);
     }
 
-    public void addMoviePost(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    @HttpLoggable(variablesToLog = {"title", "localizedTitle", "coverURL",
+            "trailerUrl", "price", "popular", "genre", "actor-id", "currency", "description"})
+    @RequiredParams(value = {"title", "localizedTitle", "coverURL",
+            "trailerUrl", "price", "genre", "actor-id", "currency", "description"},
+            canBeEmpty = {false, false, true, true, false, false, true, false, false})
+    public void addMoviePost(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String title = request.getParameter("title");
         String localizedTitle = request.getParameter("localizedTitle");
         String coverURL = request.getParameter("coverURL");
@@ -182,7 +189,12 @@ public class MoviesController extends BaseController {
         response.sendRedirect("/movieshop/web/app/personal/admin/movies/editMovie?id=" + movie.getId());
     }
 
-    public void editMoviePost(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+    @HttpLoggable(variablesToLog = {"id", "title", "localizedTitle", "coverURL",
+            "trailerUrl", "price", "popular", "genre", "actor-id", "currency", "description"})
+    @RequiredParams(value = {"id", "title", "localizedTitle", "coverURL",
+            "trailerUrl", "price", "genre", "actor-id", "currency", "description"},
+            canBeEmpty = {false, false, false, true, true, false, false, true, false, false})
+    public void editMoviePost(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String title = request.getParameter("title");
         String idString = request.getParameter("id");
         String localizedTitle = request.getParameter("localizedTitle");
@@ -217,8 +229,6 @@ public class MoviesController extends BaseController {
         Movie movie = movieManager.getMovieById(id);
         Movie clone = movie.getClone();
         clone.setTitle(title);
-
-        /**/
 
         clone.setDescription(description);
         if (!localizedTitle.isEmpty()) {

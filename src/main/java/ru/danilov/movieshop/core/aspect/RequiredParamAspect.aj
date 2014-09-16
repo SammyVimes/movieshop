@@ -17,16 +17,18 @@ public aspect RequiredParamAspect {
         Class<?> callerClass = thisJoinPoint.getTarget().getClass();
         boolean[] canBeEmpty = requiredParams.canBeEmpty();
         int i = 0;
-        for (String param : requiredParams.value()) {
-            String value = request.getParameter(param);
-            if (value == null) {
-                throw new MissingParameterException("Required parameter '" + param + "' is missing from request");
-            } else {
-                if (canBeEmpty.length > i) {
-                    if (!canBeEmpty[i] && value.isEmpty()) {
-                        throw new MissingParameterException("Required parameter '" + param + "' is empty");
+        for (String paramName : requiredParams.value()) {
+            String[] values = request.getParameterValues(paramName);
+            if (values != null) {
+                for (String value : values) {
+                    if (canBeEmpty.length > i) {
+                        if (!canBeEmpty[i] && value.isEmpty()) {
+                            throw new MissingParameterException("Required parameter '" + paramName + "' is empty");
+                        }
                     }
                 }
+            } else {
+                throw new MissingParameterException("Required parameter '" + paramName + "' is missing from request");
             }
             i++;
         }

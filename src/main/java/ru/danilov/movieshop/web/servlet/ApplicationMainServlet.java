@@ -1,6 +1,7 @@
 package ru.danilov.movieshop.web.servlet;
 
-import ru.danilov.movieshop.core.entity.user.UserManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.danilov.movieshop.web.admin.ActorsController;
 import ru.danilov.movieshop.web.admin.MoviesController;
 import ru.danilov.movieshop.web.base.ModelAndView;
@@ -23,7 +24,7 @@ import java.io.IOException;
  */
 public class ApplicationMainServlet extends BaseServlet {
 
-    private UserManager userManager;
+    private Logger LOGGER = LoggerFactory.getLogger(ApplicationMainServlet.class);
 
     @Override
     public void init() throws ServletException {
@@ -61,11 +62,13 @@ public class ApplicationMainServlet extends BaseServlet {
             try {
                 controller.handleGetRequest(req, resp);
             } catch (Exception e) {
+                LOGGER.error("Failed to handle request: " + e.getMessage());
                 ModelAndView modelAndView = new ModelAndView("/error.tiles");
                 modelAndView.putObject("error", e.getMessage());
                 modelAndView.process(req, resp);
             }
         } else {
+            LOGGER.error("No controller to handle request: " + req.getRequestURI());
             ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
             modelAndView.process(req, resp);
         }
@@ -79,11 +82,13 @@ public class ApplicationMainServlet extends BaseServlet {
             try {
                 controller.handlePostRequest(req, resp);
             } catch (Exception e) {
+                LOGGER.error("Failed to handle request: " + e.getMessage());
                 ModelAndView modelAndView = new ModelAndView("/error.tiles");
                 modelAndView.putObject("error", e.getMessage());
                 modelAndView.process(req, resp);
             }
         } else {
+            LOGGER.error("No controller to handle request: " + req.getRequestURI());
             ModelAndView modelAndView = new ModelAndView("/errorNotFound.tiles");
             modelAndView.process(req, resp);
         }
