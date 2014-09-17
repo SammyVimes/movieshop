@@ -599,10 +599,22 @@ textarea.form-input {
     font-size: 20px;
     cursor: pointer;
     text-align: center;
+    background-color: #68947F;
+    border-radius: 5px 5px 0 0;
+    padding: 15px;
+    color: white;
+    margin-right: 10px;
 }
 
 .tab.active {
-    text-decoration: underline;
+    background-color: #6FAD8F;
+}
+
+.tab-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 15px solid #6FAD8F;
+    padding: 15px;
 }
 
 @media (min-width: 1200px) {

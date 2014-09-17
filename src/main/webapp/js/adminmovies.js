@@ -10,7 +10,8 @@ $(document).ready(function() {
        var query = $({type: "id", value: "search"}).val();
         new AjaxRequest({
             url: "/movieshop/web/app/personal/admin/movies/search?query=" + query,
-            dataType : "json"
+            dataType: "json",
+            contentType: "application/json"
         }).done(function(data) {
            showResults(data["movies"]);
         }).error(function(error) {

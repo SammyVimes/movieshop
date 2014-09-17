@@ -117,50 +117,56 @@
                 </div>
             </div>
         </div>
-        <div class="row row-skip">
-            <div class="width-6 tab" id="actors-tab">${sActors}</div>
-            <div class="width-6 tab active" id="comments-tab">${sComments}</div>
+        <div class="row">
+            <div class="width-5 tab active" id="comments-tab">${sComments}</div>
+            <div class="width-5 tab" id="actors-tab">${sActors}</div>
         </div>
         <div class="row">
-            <div class="width-12 hidden" id="actors">
-                <c:set var="actorShowUrl"><c:url value="/web/app/catalog/showActor?id="/></c:set>
-                <%--@elvariable id="actors" type="java.util.List"--%>
-                <%--@elvariable id="actor" type="ru.danilov.movieshop.core.entity.actor.Actor"--%>
-                <c:forEach items="${actors}" var="actor">
-                    <div class="row">
-                        <a href="${actorShowUrl}${actor.id}" class="underline-link offset-1 width-4"><h4>
-                            <b>${actor.name}</b></h4></a>
+            <div class="row tab-content">
+                <div class="width-12 hidden" id="actors">
+                    <c:set var="actorShowUrl"><c:url value="/web/app/catalog/showActor?id="/></c:set>
+                    <%--@elvariable id="actors" type="java.util.List"--%>
+                    <%--@elvariable id="actor" type="ru.danilov.movieshop.core.entity.actor.Actor"--%>
+                    <c:forEach items="${actors}" var="actor">
+                        <div class="row">
+                            <a href="${actorShowUrl}${actor.id}" class="underline-link offset-1 width-4"><h4>
+                                <b>${actor.name}</b></h4></a>
+                        </div>
+                    </c:forEach>
+                </div>
+                <div class="width-12" id="comments-tab-content">
+                    <div class="row row-skip">
+                        <div class="width-12">
+                            <div class="form-element">
+                                <label for="comment-input"><b>${sNewComment}</b></label>
+                                <textarea class="form-input width-12" id="comment-input" name="comment"></textarea>
+                                <input class="hidden" name="movieId" value="${movie.id}">
+                                <button type="button" class="btn btn-outline btn-normal width-3"
+                                        id="add-comment">${sSend}</button>
+                            </div>
+                        </div>
                     </div>
-                </c:forEach>
-            </div>
-            <div class="width-12" id="comments">
-                <div class="row row-skip">
-                    <div class="form-element">
-                        <label for="comment-input"><b>${sNewComment}</b></label>
-                        <textarea class="form-input width-12" id="comment-input" name="comment"></textarea>
-                        <input class="hidden" name="movieId" value="${movie.id}">
-                        <button type="button" class="btn btn-outline btn-normal width-3"
-                                id="add-comment">${sSend}</button>
+                    <div id="comments">
+                        <%--@elvariable id="_comment" type="ru.danilov.movieshop.core.entity.comment.Comment"--%>
+                        <c:forEach items="${comments}" var="_comment">
+                            <div class="comment">
+                                <div class="row row-skip">
+                                    <div class="width-2">
+                                        <b>
+                                            <c:set var="userlink"><c:url
+                                                    value="/web/app/user/profile/showProfile?id=${_comment.user.id}"/></c:set>
+                                            <a href="${userlink}" class="user-link">${_comment.user.login}</a>
+                                        </b>
+                                    </div>
+                                    <div class="width-6"><fmt:formatDate value="${_comment.date}"/></div>
+                                </div>
+                                <div class="row row-skip">
+                                    <div class="width-7">${_comment.comment}</div>
+                                </div>
+                            </div>
+                        </c:forEach>
                     </div>
                 </div>
-                <%--@elvariable id="_comment" type="ru.danilov.movieshop.core.entity.comment.Comment"--%>
-                <c:forEach items="${comments}" var="_comment">
-                    <div class="comment">
-                        <div class="row row-skip">
-                            <div class="width-2">
-                                <b>
-                                    <c:set var="userlink"><c:url
-                                            value="/web/app/user/profile/showProfile?id=${_comment.user.id}"/></c:set>
-                                    <a href="${userlink}" class="user-link">${_comment.user.login}</a>
-                                </b>
-                            </div>
-                            <div class="width-6"><fmt:formatDate value="${_comment.date}"/></div>
-                        </div>
-                        <div class="row row-skip">
-                            <div class="width-7">${_comment.comment}</div>
-                        </div>
-                    </div>
-                </c:forEach>
             </div>
         </div>
     </div>
@@ -187,21 +193,21 @@
 <script>
     $(document).ready(function () {
         var $actors = $({type: "id", value: "actors"});
-        var $comments = $({type: "id", value: "comments"});
+        var $commentsTabContent = $({type: "id", value: "comments-tab-content"});
         var $actorsTabBtn = $({type: "id", value: "actors-tab"});
         var $commentsTabBtn = $({type: "id", value: "comments-tab"});
         $actorsTabBtn.click(function () {
             $actors.removeClass("hidden");
             $commentsTabBtn.removeClass("active");
-            if (!$comments.hasClass("hidden")) {
-                $comments.addClass("hidden");
+            if (!$commentsTabContent.hasClass("hidden")) {
+                $commentsTabContent.addClass("hidden");
             }
             if (!$actorsTabBtn.hasClass("active")) {
                 $actorsTabBtn.addClass("active");
             }
         });
         $commentsTabBtn.click(function () {
-            $comments.removeClass("hidden");
+            $commentsTabContent.removeClass("hidden");
             $actorsTabBtn.removeClass("active");
             if (!$actors.hasClass("hidden")) {
                 $actors.addClass("hidden");
@@ -219,14 +225,15 @@
             var date = new Date();
             clone.find({type: "class", value: "comment-date"}).text(date.format("dd.mm.yyyy"));
             clone.removeClass("hidden");
-            $comments.append(clone);
+            $comments.appendAsFirst(clone);
         }
 
         function addComment(text) {
             var request = new AjaxRequest({
                 url: "/movieshop/web/app/personal/user/shop/addComment?movieId=${movie.id}&comment=" + text,
                 method: "post",
-                dataType: "json"
+                dataType: "json",
+                contentType: "application/json"
             }).done(function (data) {
                         if (data["success"]) {
                             createFromTemplate(text);

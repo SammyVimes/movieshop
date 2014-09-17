@@ -1,9 +1,12 @@
 package ru.danilov.movieshop.web.filter;
 
+import org.json.simple.JSONObject;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Created by Semyon on 05.09.2014.
@@ -25,6 +28,14 @@ public abstract class BaseFilter implements Filter {
     @Override
     public void destroy() {
 
+    }
+
+    public void sendJSONResponse(final JSONObject jsonObject, final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        PrintWriter out = response.getWriter();
+        out.print(jsonObject.toJSONString());
+        out.flush();
     }
 
 }

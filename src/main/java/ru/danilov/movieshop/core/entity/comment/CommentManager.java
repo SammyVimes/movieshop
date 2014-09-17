@@ -6,6 +6,8 @@ import ru.danilov.movieshop.core.entity.movie.Movie;
 import ru.danilov.movieshop.core.entity.user.User;
 import ru.danilov.movieshop.web.util.ServiceContainer;
 
+import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,9 +27,24 @@ public class CommentManager {
         }
     }
 
+    private Comparator<Comment> comparator = new Comparator<Comment>() {
+        @Override
+        public int compare(final Comment o1, final Comment o2) {
+            Date firstDate = o1.getDate();
+            Date secondDate = o2.getDate();
+            if (firstDate.after(secondDate)) {
+                return -1;
+            } else {
+                return 1;
+            }
+        }
+    };
+
     public List<Comment> getCommentsForMovie(final Movie movie) {
         try {
-            return commentDAO.getAllCommentsForMovie(movie);
+            List<Comment> comments = commentDAO.getAllCommentsForMovie(movie);
+            comments.sort(comparator);
+            return comments;
         } catch (Exception e) {
             LOGGER.trace("Failed to get comments for movie: " + e.getMessage());
         }
