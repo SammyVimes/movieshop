@@ -35,6 +35,10 @@ public class UserManager {
         userDAO.persist(user);
     }
 
+    public void updateUser(final User user) throws UserManagerException {
+        userDAO.update(user);
+    }
+
     public User getUserById(final Long id) {
         return userDAO.getById(id);
     }

@@ -147,21 +147,29 @@
                         </div>
                     </div>
                     <div id="comments">
+                        <c:set var="avatarUri"><c:url value="/content/?filePath="/></c:set>
                         <%--@elvariable id="_comment" type="ru.danilov.movieshop.core.entity.comment.Comment"--%>
                         <c:forEach items="${comments}" var="_comment">
                             <div class="comment">
-                                <div class="row row-skip">
-                                    <div class="width-2">
-                                        <b>
-                                            <c:set var="userlink"><c:url
-                                                    value="/web/app/user/profile/showProfile?id=${_comment.user.id}"/></c:set>
-                                            <a href="${userlink}" class="user-link">${_comment.user.login}</a>
-                                        </b>
+                                <div class="row">
+                                    <div class="width-1">
+                                        <img class="avatar" src="${avatarUri}${_comment.user.avatarURL}">
                                     </div>
-                                    <div class="width-6"><fmt:formatDate value="${_comment.date}"/></div>
-                                </div>
-                                <div class="row row-skip">
-                                    <div class="width-7">${_comment.comment}</div>
+                                    <div class="width-9">
+                                        <div class="row">
+                                            <div class="width-2">
+                                                <b>
+                                                    <c:set var="userlink"><c:url
+                                                            value="/web/app/user/profile/showProfile?id=${_comment.user.id}"/></c:set>
+                                                    <a href="${userlink}" class="user-link">${_comment.user.login}</a>
+                                                </b>
+                                            </div>
+                                            <div class="width-6"><fmt:formatDate value="${_comment.date}"/></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="width-7">${_comment.comment}</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </c:forEach>
@@ -176,17 +184,25 @@
 
 
 <div class="comment hidden" id="template">
-    <div class="row row-skip">
-        <div class="width-2">
-            <b>
-                <c:set var="userlink"><c:url value="/web/app/user/profile/showProfile?id=${user.id}"/></c:set>
-                <a href="${userlink}" class="user-link">${user.login}</a>
-            </b>
+    <div class="row">
+        <div class="width-1">
+            <img class="avatar" src="${avatarUri}${user.avatarURL}">
         </div>
-        <div class="width-6 comment-date"></div>
-    </div>
-    <div class="row row-skip">
-        <div class="width-7 comment-text"></div>
+        <div class="width-9">
+            <div class="row">
+                <div class="width-2">
+                    <b>
+                        <c:set var="userlink"><c:url
+                                value="/web/app/user/profile/showProfile?id=${user.id}"/></c:set>
+                        <a href="${userlink}" class="user-link">${user.login}</a>
+                    </b>
+                </div>
+                <div class="width-6 comment-date"></div>
+            </div>
+            <div class="row">
+                <div class="width-7 comment-text"></div>
+            </div>
+        </div>
     </div>
 </div>
 

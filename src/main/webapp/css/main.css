@@ -651,3 +651,14 @@ textarea.form-input {
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
+.comment .avatar {
+    margin-top: 0px;
+}
+
+.avatar {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 3px;
+    border: 2px solid rgb(213, 213, 214);
+}

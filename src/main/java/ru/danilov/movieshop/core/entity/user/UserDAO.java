@@ -34,4 +34,12 @@ public class UserDAO {
                 .setParameter("id", id).getResultList();
         return list.isEmpty() ? null : list.get(0);
     }
+
+    public User update(final User user) {
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        User _user = entityManager.merge(user);
+        transaction.commit();
+        return _user;
+    }
 }

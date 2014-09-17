@@ -140,6 +140,7 @@ public class ProfileController extends BaseController {
                     File f = new File(contentManager.getImageBaseFolder() + "\\", fileName);
                     fi.write(f);
                     thisUser.setAvatarURL(fileName);
+                    userManager.updateUser(thisUser);
                 } catch (Exception e) {
                     LOGGER.error("Failed to upload file: " + e.getMessage());
                 }

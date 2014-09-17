@@ -29,12 +29,6 @@
     </div>
 </div>
 
-<c:set var="formAction"><c:url value="/web/app/user/profile/uploadAvatar"/></c:set>
-<form action="${formAction}" method="POST" enctype="multipart/form-data">
-    <input type="file" name="avatar" id="avatar">
-    <button type="submit" class="btn btn-outline btn-normal">Загрузить аватар</button>
-</form>
-
 <%--@elvariable id="user" type="ru.danilov.movieshop.core.entity.user.User"--%>
 <div class="container">
     <div class="row">
@@ -42,9 +36,18 @@
             <c:set var="avatarUri"><c:url value="/content/?filePath="/></c:set>
             <img class="avatar" src="${avatarUri}${profile.avatarURL}">
         </div>
-        <div class="width-3">
-        </div>
     </div>
+    <c:if test="${money ne null}">
+        <div class="row">
+            <div class="width-12">
+                <c:set var="formAction"><c:url value="/web/app/user/profile/uploadAvatar"/></c:set>
+                <form action="${formAction}" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="avatar" id="avatar">
+                    <button type="submit" class="btn btn-outline btn-normal">Загрузить аватар</button>
+                </form>
+            </div>
+        </div>
+    </c:if>
     <div class="row">
         <%--@elvariable id="comment" type="ru.danilov.movieshop.core.entity.comment.Comment"--%>
         <c:forEach items="${comments}" var="comment">
