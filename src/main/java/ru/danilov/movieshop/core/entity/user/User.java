@@ -1,6 +1,7 @@
 package ru.danilov.movieshop.core.entity.user;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.persistence.*;
 
@@ -18,6 +19,10 @@ public class User {
     @NotNull
     @Column(name = "login", unique = true, nullable = false)
     private String login;
+
+    @Nullable
+    @Column(name = "avatar_url", nullable = true)
+    private String avatarURL;
 
     @NotNull
     @Column(name = "password_hash", unique = false, nullable = false)
@@ -61,6 +66,15 @@ public class User {
 
     public void setUserRole(@NotNull final UserRole userRole) {
         this.userRole = userRole;
+    }
+
+    @Nullable
+    public String getAvatarURL() {
+        return avatarURL;
+    }
+
+    public void setAvatarURL(@Nullable final String avatarURL) {
+        this.avatarURL = avatarURL;
     }
 
 }

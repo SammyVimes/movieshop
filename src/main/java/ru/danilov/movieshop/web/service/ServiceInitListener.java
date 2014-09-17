@@ -10,6 +10,7 @@ import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.user.UserDAO;
 import ru.danilov.movieshop.core.entity.user.UserManager;
 import ru.danilov.movieshop.core.entity.user.UserSettingsDAO;
+import ru.danilov.movieshop.core.util.ContentManager;
 import ru.danilov.movieshop.web.util.ServiceContainer;
 
 import javax.servlet.ServletContextEvent;
@@ -42,6 +43,12 @@ public class ServiceInitListener implements ServletContextListener {
         ServiceContainer.putService(commentManager);
         ActorManager actorManager = new ActorManager();
         ServiceContainer.putService(actorManager);
+
+        String contentFolder = servletContextEvent.getServletContext().getInitParameter("contentFolder");
+        ContentManager contentManager = new ContentManager();
+        contentManager.setImageBaseFolder(contentFolder);
+        ServiceContainer.putService(contentManager);
+
     }
 
     @Override

@@ -31,12 +31,16 @@ public class ContentServlet extends BaseServlet {
 
     @Override
     protected void doGet(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
-        String filePath = contentFolder + "\\" + request.getParameter("filePath");
+        String filePathParam = request.getParameter("filePath");
+        if (filePathParam == null || filePathParam.isEmpty()) {
+            return;
+        }
+        String filePath = contentFolder + "\\" + filePathParam;
         Path path = Paths.get(filePath);
         File file = new File(filePath);
-        int length   = 0;
+        int length = 0;
         ServletOutputStream outStream = response.getOutputStream();
-        ServletContext context  = getServletConfig().getServletContext();
+        ServletContext context = getServletConfig().getServletContext();
         String mimetype = context.getMimeType(filePath);
 
         if (mimetype == null) {
@@ -50,7 +54,7 @@ public class ContentServlet extends BaseServlet {
         DataInputStream in = new DataInputStream(new FileInputStream(file));
 
         while ((in != null) && ((length = in.read(byteBuffer)) != -1)) {
-            outStream.write(byteBuffer,0,length);
+            outStream.write(byteBuffer, 0, length);
         }
 
         in.close();

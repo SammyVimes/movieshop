@@ -11,6 +11,11 @@
         <session-timeout>20</session-timeout>
     </session-config>
 
+    <context-param>
+        <param-name>contentFolder</param-name>
+        <param-value>C:\Users\Semyon\Pictures\content</param-value>
+    </context-param>
+
     <security-constraint>
         <web-resource-collection>
             <web-resource-name></web-resource-name>

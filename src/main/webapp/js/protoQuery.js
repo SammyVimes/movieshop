@@ -27,9 +27,6 @@ function AjaxRequest(opts) {
         method = "GET";
     }
 
-    if (contentType) {
-        xmlhttp.setRequestHeader('Content-Type', contentType)
-    }
     if (data) {
         xmlhttp.setRequestHeader("Content-length", data.length);
     }
@@ -39,6 +36,10 @@ function AjaxRequest(opts) {
     var promise = new ProtoPromise(function (resolve, reject) {
 
         xmlhttp.open(method.toUpperCase(), url, true);
+
+        if (contentType) {
+            xmlhttp.setRequestHeader('Content-Type', contentType)
+        }
 
         xmlhttp.onload = function () {
             // Этот кусок вызовется даже при 404
@@ -163,39 +164,39 @@ function ProtoPromise(fn) {
  */
 var $ = function () {
 
-    function hasClass(ele,cls) {
-        return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+    function hasClass(ele, cls) {
+        return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
     }
 
-    function addClass(o, c){
+    function addClass(o, c) {
         var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
         if (re.test(o.className)) return
         o.className = (o.className + " " + c).replace(/\s+/g, " ").replace(/(^ | $)/g, "")
     }
 
 
-    function removeClass(ele,cls) {
-        if (hasClass(ele,cls)) {
-            var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
-            ele.className=ele.className.replace(reg,' ');
+    function removeClass(ele, cls) {
+        if (hasClass(ele, cls)) {
+            var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+            ele.className = ele.className.replace(reg, ' ');
         }
     }
 
-    function r(f){
-        document.readyState !== "complete" ? setTimeout(r, 9, f):f()
+    function r(f) {
+        document.readyState !== "complete" ? setTimeout(r, 9, f) : f()
     }
 
     function isNode(o) {
         return (
-            typeof Node === "object" ? o instanceof Node :
-                o && typeof o === "object" && typeof o.nodeType === "number" && typeof o.nodeName === "string"
+                typeof Node === "object" ? o instanceof Node :
+            o && typeof o === "object" && typeof o.nodeType === "number" && typeof o.nodeName === "string"
             );
     }
 
     function isElement(o) {
         return (
-            typeof HTMLElement === "object" ? o instanceof HTMLElement : //DOM2
-                o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName === "string"
+                typeof HTMLElement === "object" ? o instanceof HTMLElement : //DOM2
+            o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName === "string"
             );
     }
 
@@ -270,18 +271,18 @@ var $ = function () {
 
         $this.find = function (selector) {
             var found = $();
-            $this.each(function(el) {
+            $this.each(function (el) {
                 found.join($(selector, el));
             });
             return found;
         };
 
-        $this.addElement = function(el) {
+        $this.addElement = function (el) {
             elements.push(el);
         };
 
-        $this.join = function(pQ) {
-            pQ.each(function(e) {
+        $this.join = function (pQ) {
+            pQ.each(function (e) {
                 elements.push(e);
             });
         };
@@ -310,77 +311,77 @@ var $ = function () {
             return null;
         };
 
-        $this.ready = function(fn) {
+        $this.ready = function (fn) {
             r(fn);
         };
 
-        $this.empty = function() {
-            $this.each(function(element) {
+        $this.empty = function () {
+            $this.each(function (element) {
                 while (element.firstChild) {
                     element.removeChild(element.firstChild);
                 }
             });
         };
 
-        $this.removeClass = function(className) {
-            $this.each(function(element) {
+        $this.removeClass = function (className) {
+            $this.each(function (element) {
                 while (hasClass(element, className)) {
                     removeClass(element, className);
                 }
             });
         };
 
-        $this.addClass = function(className) {
-            $this.each(function(element) {
+        $this.addClass = function (className) {
+            $this.each(function (element) {
                 if (!hasClass(element, className)) {
                     element.className += " " + className;
                 }
             });
         };
 
-        $this.clone = function(deep) {
+        $this.clone = function (deep) {
             if (deep == undefined) {
-                deep =  true;
+                deep = true;
             }
             if (elements[0]) {
-               return $(elements[0].cloneNode(deep));
+                return $(elements[0].cloneNode(deep));
             }
             return $();
         };
 
-        $this.removeAttr = function(attr) {
-            $this.each(function(e) {
+        $this.removeAttr = function (attr) {
+            $this.each(function (e) {
                 e[attr] = "";
                 e.attributes[attr] = "";
                 e.setAttribute(attr, "");
             });
         };
 
-        $this.attr = function(attr, value) {
+        $this.attr = function (attr, value) {
             if (value) {
-              $this.each(function(e) {
-                  e[attr] = value;
-                  e.attributes[attr] = value;
-                  e.setAttribute(attr, value);
-              });
+                $this.each(function (e) {
+                    e[attr] = value;
+                    e.attributes[attr] = value;
+                    e.setAttribute(attr, value);
+                });
             } else {
                 return elements[0] ? elements[0][attr] : null;
             }
         };
 
-        $this.text = function(text) {
-            $this.each(function(el) {
+        $this.text = function (text) {
+            $this.each(function (el) {
                 el.innerHTML = text;
             })
         };
 
-        $this.hasClass = function(className) {
+        $this.hasClass = function (className) {
             return elements[0] ? hasClass(elements[0], className) : false;
         };
 
-        $this.append = function(pQ) {
-            $this.each(function(el) {
-                pQ.each(function(elToAppend) {
+        $this.append = function (pQ) {
+            $this.each(function (el) {
+                pQ.each(function (elToAppend) {
                     el.appendChild(elToAppend);
                 });
             });
