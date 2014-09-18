@@ -200,9 +200,8 @@ public class MoviesController extends BaseController {
     }
 
     @HttpLoggable(variablesToLog = {"id", "title", "localizedTitle", "coverURL", "price", "popular", "genre", "actor-id", "currency", "description"})
-    @RequiredParams(value = {"id", "title", "localizedTitle", "coverURL",
-            "trailerUrl", "price", "genre", "actor-id", "currency", "description"},
-            canBeEmpty = {false, false, false, true, false, false, true, false, false})
+    @RequiredParams(value = {"id", "title", "localizedTitle", "coverURL", "price", "genre", "actor-id", "currency", "description"},
+            canBeEmpty = {false, false, false, true, false, true, false, false})
     public void editMoviePost(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String title = request.getParameter("title");
         String idString = request.getParameter("id");

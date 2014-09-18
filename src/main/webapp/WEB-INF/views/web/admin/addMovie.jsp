@@ -206,15 +206,12 @@
             modal.open();
         });
 
-        $({type: "class", value: "actor"}).click(function () {
+        $({type: "class", value: "actor"}).each(function (e) {
+            $(e).click(function () {
+                var selected = false;
+                var view = null;
 
-            var selected = false;
-            var view = null;
-
-            return function () {
-                var $this = $(this);
-
-                function select() {
+                function select($this) {
                     $this.addClass("selected");
                     var actorId = $this.find({type: "class", value: "actor-id"}).val();
                     var actorName = $this.find({type: "class", value: "actor-name"}).val();
@@ -226,20 +223,21 @@
                     selected = true;
                 }
 
-                function deselect() {
+                function deselect($this) {
                     $this.removeClass("selected");
                     selected = false;
                     view.removeSelf();
                 }
 
-                if (!selected) {
-                    select();
-                } else {
-                    deselect();
+                return function () {
+                    var $this = $(this);
+                    if (!selected) {
+                        select($this);
+                    } else {
+                        deselect($this);
+                    }
                 }
-
-            }
-
-        }());
+            }());
+        });
     });
 </script>

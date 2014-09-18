@@ -146,6 +146,7 @@ public class ProfileController extends BaseController {
                 }
             }
         }
+        response.sendRedirect("/movieshop/web/app/user/profile/showProfile?id=" + thisUser.getId());
     }
 
     private String generateUserAvatarFilename(final User user) {
