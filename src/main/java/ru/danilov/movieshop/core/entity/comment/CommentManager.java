@@ -6,6 +6,7 @@ import ru.danilov.movieshop.core.entity.movie.Movie;
 import ru.danilov.movieshop.core.entity.user.User;
 import ru.danilov.movieshop.web.util.ServiceContainer;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
@@ -43,7 +44,7 @@ public class CommentManager {
     public List<Comment> getCommentsForMovie(final Movie movie) {
         try {
             List<Comment> comments = commentDAO.getAllCommentsForMovie(movie);
-            comments.sort(comparator);
+            Collections.sort(comments, comparator);
             return comments;
         } catch (Exception e) {
             LOGGER.trace("Failed to get comments for movie: " + e.getMessage());

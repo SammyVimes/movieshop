@@ -22,7 +22,7 @@ public class Comment {
     @Column(name = "comment", columnDefinition = "TEXT")
     private String comment;
 
-    @ManyToOne(optional = true, cascade = CascadeType.ALL)
+    @ManyToOne(optional = true)
     private User user;
 
     @ManyToOne(optional = false)

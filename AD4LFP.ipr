@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AjcSettings">
-    <option name="ajcPath" value="$MAVEN_REPOSITORY$/org/aspectj/aspectjtools/1.8.1/aspectjtools-1.8.1.jar" />
+    <option name="ajcPath" value="C:\Users\Семён\.m2\repository\org\aspectj\aspectjtools\1.7.4\aspectjtools-1.7.4.jar" />
     <option name="explicitAspectPath" value="true" />
     <option name="delegateToJavac" value="true" />
   </component>
@@ -514,7 +514,7 @@
       <module fileurl="file://$PROJECT_DIR$/MOVIESHOP.iml" filepath="$PROJECT_DIR$/MOVIESHOP.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnBranchConfigurationManager">

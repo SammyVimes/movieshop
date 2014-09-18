@@ -104,8 +104,8 @@ public class MoviesController extends BaseController {
     @HttpLoggable(variablesToLog = {"title", "localizedTitle", "coverURL",
             "trailerUrl", "price", "popular", "genre", "actor-id", "currency", "description"})
     @RequiredParams(value = {"title", "localizedTitle", "coverURL",
-            "trailerUrl", "price", "genre", "actor-id", "currency", "description"},
-            canBeEmpty = {false, false, true, true, false, false, true, false, false})
+            "price", "genre", "actor-id", "currency", "description"},
+            canBeEmpty = {false, false, false, true, false, true, false, false})
     public void addMoviePost(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String title = request.getParameter("title");
         String localizedTitle = request.getParameter("localizedTitle");
@@ -189,11 +189,10 @@ public class MoviesController extends BaseController {
         response.sendRedirect("/movieshop/web/app/personal/admin/movies/editMovie?id=" + movie.getId());
     }
 
-    @HttpLoggable(variablesToLog = {"id", "title", "localizedTitle", "coverURL",
-            "trailerUrl", "price", "popular", "genre", "actor-id", "currency", "description"})
+    @HttpLoggable(variablesToLog = {"id", "title", "localizedTitle", "coverURL", "price", "popular", "genre", "actor-id", "currency", "description"})
     @RequiredParams(value = {"id", "title", "localizedTitle", "coverURL",
             "trailerUrl", "price", "genre", "actor-id", "currency", "description"},
-            canBeEmpty = {false, false, false, true, true, false, false, true, false, false})
+            canBeEmpty = {false, false, false, true, false, false, true, false, false})
     public void editMoviePost(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         String title = request.getParameter("title");
         String idString = request.getParameter("id");
