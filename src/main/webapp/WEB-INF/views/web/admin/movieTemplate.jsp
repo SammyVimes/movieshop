@@ -31,6 +31,7 @@
     <div class="width-3 sm-width-3">
         <c:set var="editLink"><c:url value="/web/app/personal/admin/movies/editMovie?id="/></c:set>
         <a class="btn btn-outline btn-normal edit-link" href="${editLink}">${sEdit}</a>
-        <a href="" class="btn btn-outline btn-red">${sDelete}</a>
+
+        <div class="btn btn-outline btn-red btn-delete">${sDelete}</div>
     </div>
 </div>

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="i18n french">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AD4LFP.ipr" afterPath="$PROJECT_DIR$/AD4LFP.ipr" />
+    <list default="true" readonly="true" id="90968d4a-e513-45c2-a33a-d2ca70e9af87" name="Default" comment="finita">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AD4LFP.iws" afterPath="$PROJECT_DIR$/AD4LFP.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettingsDAO.java" afterPath="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettingsDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/adminmovies.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/adminmovies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/movieTemplate.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/movieTemplate.jsp" />
     </list>
     <ignored path="AD4LFP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,69 +75,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProfileController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ProfileController.java">
+      <file leaf-file-name="ApplicationMainServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1307" max-vertical-offset="2720">
-              <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="794" max-vertical-offset="1462">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/profile.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="227" max-vertical-offset="1241">
-              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movie.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7692308" vertical-offset="3056" max-vertical-offset="4641">
-              <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-              <folding>
-                <marker date="1410989030605" expanded="true" signature="9478:11803" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="9794:10145" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="9947:10018" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="10070:10135" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="10190:10531" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="10341:10400" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="10454:10521" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="10638:11008" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="11044:11617" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="11088:11326" placeholder="{&quot;method&quot;: &quot;post&quot;...}" />
-                <marker date="1410989030605" expanded="true" signature="11349:11605" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="11396:11477" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="11483:11583" placeholder="{...}" />
-                <marker date="1410989030605" expanded="true" signature="11683:11794" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="986">
-              <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceInitListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1105">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -141,48 +88,94 @@
       <file leaf-file-name="RequiredParamAspect.aj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/aspect/RequiredParamAspect.aj">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="697">
+            <state vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="697">
               <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoviesController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MoviesController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2712" max-vertical-offset="5219">
-              <caret line="189" column="5" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.33118972" vertical-offset="5575" max-vertical-offset="5933">
+              <caret line="360" column="0" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="MovieManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2070" max-vertical-offset="2635">
-              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1002" max-vertical-offset="1360">
+              <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+              <folding>
+                <element signature="e#2863#2864#0" expanded="true" />
+                <element signature="e#2901#2902#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="356" max-vertical-offset="1224">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java">
+      <file leaf-file-name="movieTemplate.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/movieTemplate.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="952">
-              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state vertical-scroll-proportion="-8.307693" vertical-offset="345" max-vertical-offset="697">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java">
+      <file leaf-file-name="adminmovies.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adminmovies.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33039647" vertical-offset="996" max-vertical-offset="4454">
-              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1020">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="747" max-vertical-offset="1088">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding>
+                <element signature="e#2253#2254#0" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserSettingsDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettingsDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="553" max-vertical-offset="1037">
+              <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="901">
+              <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -209,13 +202,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieGenre.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/sidebar-tile.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/genre.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/AuthController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/movieTemplate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties" />
@@ -227,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/superuser/auth.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/SecretPageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/date.js" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/cart.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/main.jsp" />
@@ -240,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/aspect/HttpLogAspect.aj" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/aspect/RequiredParamAspect.aj" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/common/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/adminmovies.js" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/BaseFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/filter/AuthFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/movie.css" />
@@ -252,14 +239,20 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ProfileController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/profile.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettingsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/movieTemplate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/adminmovies.js" />
       </list>
     </option>
   </component>
@@ -398,6 +391,152 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -764,10 +903,6 @@
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -890,6 +1025,98 @@
               <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="danilov" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD4LFP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ru" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="danilov" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="movieshop" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actor" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1006,7 +1233,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/hibernate-c3p0-3.6.6.Final.jar!/" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Shopp&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.user.ShoppingController&#10;Comm&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java&#10;web&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/webapp/WEB-INF/web.xml&#10;Serv&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java&#10;Commen&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java&#10;Comme&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java&#10;Profi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ProfileController.java&#10;CommentMa&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java&#10;User&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/user/User.java&#10;main.cs&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;Def&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/org/apache/commons/io/output/DeferredFileOutputStream.class&#10;DeferredF&#9;PSI&#9;JAVA://org.apache.commons.io.output.DeferredFileOutputStream&#10;pom.x&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml&#10;mo&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/movie.jsp&#10;pro&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/profile.jsp&#10;movie.css&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/movie.css&#10;main.css&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;movi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp&#10;ModelAn&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.base.ModelAndView&#10;Req&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/aspect/RequiredParamAspect.aj&#10;LogA&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/aspect/HttpLogAspect.aj&#10;MovieC&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java&#10;auth&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/common/auth.jsp&#10;Cata&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java&#10;cart&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/cart.jsp&#10;AuthCon&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.controller.AuthController&#10;AuthCOn&#9;RUN_CONFIGURATION&#9;AuthController&#10;AuthM&#9;PSI&#9;JAVA://ru.danilov.movieshop.core.auth.AuthManager&#10;movie&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/movie.jsp&#10;Ever&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.filter.EveryRequestFilter&#10;AuthF&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.filter.AuthFilter&#10;App&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java&#10;A&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp&#10;ActorC&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/admin/ActorsController.java&#10;Actor&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/actor/Actor.java&#10;CatalogCo&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.user.CatalogController&#10;Mov&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;Movie&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java&#10;Init&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.service.ServiceInitListener&#10;MovieCon&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.admin.MoviesController&#10;Shop&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java&#10;Shoppi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java&#10;ResourceB&#9;PSI&#9;JAVA://java.util.ResourceBundle&#10;main&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;pop&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/popular.jsp&#10;sear&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/search.jsp&#10;Base&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/servlet/BaseServlet.java&#10;&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;items&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/items.css&#10;ite&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/items.css" />
+    <property name="SearchEverywhereHistoryKey" value="Req&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/java/ru/danilov/movieshop/core/aspect/RequiredParamAspect.aj&#10;Servlet&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java&#10;UserMa&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java&#10;CommentM&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java&#10;CommentDA&#9;PSI&#9;JAVA://ru.danilov.movieshop.core.entity.comment.CommentDAO&#10;MovieMana&#9;PSI&#9;JAVA://ru.danilov.movieshop.core.entity.movie.MovieManager&#10;Shopp&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.user.ShoppingController&#10;Comm&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java&#10;web&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/webapp/WEB-INF/web.xml&#10;Serv&#9;FILE&#9;file://C:/Users/Семён/IdeaProjects/movieshop/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java&#10;Commen&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java&#10;Comme&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java&#10;Profi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ProfileController.java&#10;CommentMa&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java&#10;User&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/user/User.java&#10;main.cs&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;Def&#9;FILE&#9;jar://C:/Users/Semyon/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar!/org/apache/commons/io/output/DeferredFileOutputStream.class&#10;DeferredF&#9;PSI&#9;JAVA://org.apache.commons.io.output.DeferredFileOutputStream&#10;pom.x&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/pom.xml&#10;mo&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/movie.jsp&#10;pro&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/profile.jsp&#10;movie.css&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/movie.css&#10;main.css&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;movi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp&#10;ModelAn&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.base.ModelAndView&#10;LogA&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/aspect/HttpLogAspect.aj&#10;MovieC&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java&#10;auth&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/common/auth.jsp&#10;Cata&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java&#10;cart&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/cart.jsp&#10;AuthCon&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.controller.AuthController&#10;AuthCOn&#9;RUN_CONFIGURATION&#9;AuthController&#10;AuthM&#9;PSI&#9;JAVA://ru.danilov.movieshop.core.auth.AuthManager&#10;movie&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/movie.jsp&#10;Ever&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.filter.EveryRequestFilter&#10;AuthF&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.filter.AuthFilter&#10;App&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java&#10;A&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/common/header-tile.jsp&#10;ActorC&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/admin/ActorsController.java&#10;Actor&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/actor/Actor.java&#10;CatalogCo&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.user.CatalogController&#10;Mov&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/core/entity/movie/Movie.java&#10;Movie&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java&#10;Init&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.service.ServiceInitListener&#10;MovieCon&#9;PSI&#9;JAVA://ru.danilov.movieshop.web.admin.MoviesController&#10;Shop&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java&#10;Shoppi&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java&#10;ResourceB&#9;PSI&#9;JAVA://java.util.ResourceBundle&#10;main&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/css/main.css&#10;pop&#9;FILE&#9;file://F:/javaProjects/MOVIESHOP/src/main/webapp/WEB-INF/views/web/user/popular.jsp" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
@@ -1567,7 +1794,7 @@
       <workItem from="1410885204516" duration="58000" />
       <workItem from="1410893631397" duration="7437000" />
       <workItem from="1410975309146" duration="12104000" />
-      <workItem from="1410989086439" duration="3402000" />
+      <workItem from="1410989086439" duration="7896000" />
     </task>
     <task id="LOCAL-00001" summary="Create Project">
       <created>1399384250122</created>
@@ -1685,11 +1912,15 @@
       <created>1410985301000</created>
       <updated>1410985301000</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="finita">
+      <created>1411031754870</created>
+      <updated>1411031754870</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261637000" />
+    <option name="totallyTimeSpent" value="266131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1704,9 +1935,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49019608" sideWeight="0.49921343" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39379084" sideWeight="0.49848944" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39914164" sideWeight="0.5007866" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27941176" sideWeight="0.5007553" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1802,22 +2033,15 @@
     <MESSAGE value="iasd" />
     <MESSAGE value="various css and js fixes" />
     <MESSAGE value="file uploading" />
-    <option name="LAST_COMMIT_MESSAGE" value="file uploading" />
+    <MESSAGE value="finita" />
+    <option name="LAST_COMMIT_MESSAGE" value="finita" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="142" />
+      <option name="time" value="148" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1825,106 +2049,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3056" max-vertical-offset="4641">
-          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding>
-            <marker date="1410989030605" expanded="true" signature="9478:11803" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="9794:10145" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="9947:10018" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10070:10135" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10190:10531" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10341:10400" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10454:10521" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10638:11008" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11044:11617" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11088:11326" placeholder="{&quot;method&quot;: &quot;post&quot;...}" />
-            <marker date="1410989030605" expanded="true" signature="11349:11605" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11396:11477" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11483:11583" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11683:11794" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="1173">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="952">
-          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1462">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sofitlabs/emptyproj/utils/MySQL5UTF8InnoDBDialect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.230769" vertical-offset="380" max-vertical-offset="2431">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/aspect/HttpLoggable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/superuser/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39115044" vertical-offset="0" max-vertical-offset="565">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/res_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45936397" vertical-offset="182" max-vertical-offset="748">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/MissingParameterException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/ActorsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="918">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/aspect/RequiredParams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
@@ -1936,6 +2060,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.0" vertical-offset="2307" max-vertical-offset="2873">
           <caret line="146" column="76" selection-start-line="146" selection-start-column="76" selection-end-line="146" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1968,32 +2093,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="2550">
-          <caret line="159" column="57" selection-start-line="159" selection-start-column="57" selection-end-line="159" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/search.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="986">
           <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7058823" vertical-offset="15" max-vertical-offset="1411">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adminmovies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="765">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -2023,13 +2126,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/protoQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.68" vertical-offset="397" max-vertical-offset="7191">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2303,22 +2399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1462">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1020">
-          <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="269" max-vertical-offset="782">
@@ -2351,14 +2431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="986">
-          <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/service/ServiceInitListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1105">
@@ -2369,42 +2441,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/aspect/RequiredParamAspect.aj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="697">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/user/movie.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7692308" vertical-offset="3056" max-vertical-offset="4641">
           <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
           <folding>
-            <marker date="1410989030605" expanded="true" signature="9478:11803" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="9794:10145" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="9947:10018" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10070:10135" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10190:10531" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10341:10400" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10454:10521" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="10638:11008" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11044:11617" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11088:11326" placeholder="{&quot;method&quot;: &quot;post&quot;...}" />
-            <marker date="1410989030605" expanded="true" signature="11349:11605" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11396:11477" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11483:11583" placeholder="{...}" />
-            <marker date="1410989030605" expanded="true" signature="11683:11794" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{&quot;method&quot;: &quot;post&quot;...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1410989030605" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2712" max-vertical-offset="5219">
-          <caret line="189" column="5" selection-start-line="189" selection-start-column="5" selection-end-line="189" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2426,8 +2482,177 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/ShoppingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33039647" vertical-offset="996" max-vertical-offset="4454">
-          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+        <state vertical-scroll-proportion="-4.72" vertical-offset="715" max-vertical-offset="4471">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/ActorsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/controller/RegisterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/user/CatalogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2550">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/actor/ActorManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/actor/ActorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="350" max-vertical-offset="782">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="277" max-vertical-offset="952">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/moviesList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="19.807692" vertical-offset="1059" max-vertical-offset="1411">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="730" max-vertical-offset="1054">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="e#2010#2011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="747" max-vertical-offset="1088">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#2253#2254#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1002" max-vertical-offset="1360">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+          <folding>
+            <element signature="e#2863#2864#0" expanded="true" />
+            <element signature="e#2901#2902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/movie/MovieDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="356" max-vertical-offset="1224">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/user/UserSettingsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="553" max-vertical-offset="1037">
+          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/entity/comment/CommentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="901">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/protoQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="6828" max-vertical-offset="7191">
+          <caret line="408" column="14" selection-start-line="408" selection-start-column="14" selection-end-line="408" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web/admin/movieTemplate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.307693" vertical-offset="345" max-vertical-offset="697">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/core/aspect/RequiredParamAspect.aj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="697">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/servlet/ApplicationMainServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="794" max-vertical-offset="1462">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/adminmovies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1020">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/danilov/movieshop/web/admin/MoviesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33118972" vertical-offset="5575" max-vertical-offset="5933">
+          <caret line="360" column="0" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,6 +1,9 @@
 package ru.danilov.movieshop.core.entity.user;
 
+import ru.danilov.movieshop.core.entity.movie.Movie;
 import ru.danilov.movieshop.web.util.ServiceContainer;
+
+import java.util.List;
 
 /**
  * Created by Semyon on 05.09.2014.
@@ -57,6 +60,14 @@ public class UserManager {
 
     public UserSettings getUserSettings(final User user) {
         return userSettingsDAO.getUserSettings(user);
+    }
+
+    public List<UserSettings> getUserSettingsForMovie(final Movie movie) {
+        return userSettingsDAO.getSettingsForMovie(movie);
+    }
+
+    public void removeSettings(final UserSettings userSettings) {
+        userSettingsDAO.remove(userSettings);
     }
 
 }

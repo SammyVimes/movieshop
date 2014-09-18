@@ -4,6 +4,7 @@ import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.danilov.movieshop.core.aspect.HttpLoggable;
+import ru.danilov.movieshop.core.aspect.RequiredParams;
 import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
 import ru.danilov.movieshop.core.entity.comment.Comment;
@@ -70,6 +71,7 @@ public class ShoppingController extends BaseController {
     }
 
     @HttpLoggable(variablesToLog = {"comment", "movieId"})
+    @RequiredParams(value = {"movieId", "comment"}, canBeEmpty = {false, false})
     private void addComment(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String commentString = request.getParameter("comment");
         String movieId = request.getParameter("movieId");

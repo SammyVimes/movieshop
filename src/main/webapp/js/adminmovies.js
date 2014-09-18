@@ -30,6 +30,21 @@ $(document).ready(function() {
             searchCover.attr("src", searchCover.attr("src") + movie.coverUri);
             clone.find({type: "class", value: "title"}).text(movie.title);
             var $editLink = clone.find({type: "class", value: "edit-link"});
+            var $deleteLink = clone.find({type: "class", value: "btn-delete"});
+            $deleteLink.click(function ($deleteLink, movie, clone) {
+                return function () {
+                    var url = "/movieshop/web/app/personal/admin/movies/deleteMovie?id=" + movie.id;
+                    new AjaxRequest({
+                        url: url,
+                        dataType: "json",
+                        contentType: "application/json"
+                    }).done(function (data) {
+                            clone.removeSelf();
+                        }).error(function (error) {
+                            alert(error);
+                        });
+                }
+            }($deleteLink, movie, clone));
             var oldVal = $editLink.attr("href");
             $editLink.attr("href", oldVal + movie.id);
             $searchResults.append(clone);

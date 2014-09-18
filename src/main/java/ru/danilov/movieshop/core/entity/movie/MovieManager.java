@@ -87,4 +87,7 @@ public class MovieManager {
         return movieDAO.getPopularMovies();
     }
 
+    public void remove(final Movie movie) {
+        movieDAO.remove(movie);
+    }
 }

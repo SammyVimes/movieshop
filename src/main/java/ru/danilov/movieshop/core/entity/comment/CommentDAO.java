@@ -40,4 +40,15 @@ public class CommentDAO {
         return entityManager.createQuery("SELECT a FROM Comment a WHERE movie = :movie", Comment.class).setParameter("movie", movie).getResultList();
     }
 
+    public void remove(final Comment comment) {
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        if (!entityManager.contains(comment)) {
+            entityManager.remove(update(comment));
+        } else {
+            entityManager.remove(comment);
+        }
+        transaction.commit();
+    }
+
 }

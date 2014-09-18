@@ -8,10 +8,14 @@ import ru.danilov.movieshop.core.aspect.HttpLoggable;
 import ru.danilov.movieshop.core.aspect.RequiredParams;
 import ru.danilov.movieshop.core.entity.actor.Actor;
 import ru.danilov.movieshop.core.entity.actor.ActorManager;
+import ru.danilov.movieshop.core.entity.comment.Comment;
+import ru.danilov.movieshop.core.entity.comment.CommentManager;
 import ru.danilov.movieshop.core.entity.movie.Movie;
 import ru.danilov.movieshop.core.entity.movie.MovieGenre;
 import ru.danilov.movieshop.core.entity.movie.MovieManager;
 import ru.danilov.movieshop.core.entity.movie.MovieManagerException;
+import ru.danilov.movieshop.core.entity.user.UserManager;
+import ru.danilov.movieshop.core.entity.user.UserSettings;
 import ru.danilov.movieshop.core.money.Currency;
 import ru.danilov.movieshop.web.base.ModelAndView;
 import ru.danilov.movieshop.web.controller.BaseController;
@@ -35,6 +39,10 @@ public class MoviesController extends BaseController {
 
     private ActorManager actorManager = ServiceContainer.getService(ActorManager.class);
 
+    private UserManager userManager = ServiceContainer.getService(UserManager.class);
+
+    private CommentManager commentManager = ServiceContainer.getService(CommentManager.class);
+
     @Override
     public void handleGetRequest(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
         if (request.getRequestURI().contains("search")) {
@@ -43,6 +51,8 @@ public class MoviesController extends BaseController {
             addMovieGetView(request, response);
         } else if (request.getRequestURI().contains("editMovie")) {
             editMovieGetView(request, response);
+        } else if (request.getRequestURI().contains("deleteMovie")) {
+            deleteMovie(request, response);
         } else {
             mainView(request, response);
         }
@@ -318,6 +328,42 @@ public class MoviesController extends BaseController {
             modelAndView.putObject("error", e.getMessage());
         }
         modelAndView.process(request, response);
+    }
+
+    @RequiredParams(value = "id", canBeEmpty = false)
+    private void deleteMovie(final HttpServletRequest request, final HttpServletResponse response) throws Exception {
+        String idString = request.getParameter("id");
+        Long id = null;
+        try {
+            id = Long.valueOf(idString);
+        } catch (NumberFormatException e) {
+            LOGGER.error("Id is not a long number");
+        }
+        JSONObject jsonObject = new JSONObject();
+        try {
+            Movie movie = movieManager.getMovieById(id);
+            List<UserSettings> settings = userManager.getUserSettingsForMovie(movie);
+            List<Comment> comments = commentManager.getCommentsForMovie(movie);
+            List<Actor> actors = actorManager.getAllActorsOfMovie(movie);
+            for (Comment comment : comments) {
+                commentManager.remove(comment);
+            }
+            for (UserSettings _settings : settings) {
+                _settings.getCart().remove(movie);
+                _settings.getMovies().remove(movie);
+                userManager.update(_settings);
+            }
+            for (Actor actor : actors) {
+                actor.getMovies().remove(movie);
+                actorManager.updateActor(actor);
+            }
+            movieManager.remove(movie);
+            jsonObject.put("success", true);
+        } catch (Exception e) {
+            jsonObject.put("success", false);
+            jsonObject.put("error", "Failed to delete: " + e.getMessage());
+        }
+        sendJSONResponse(jsonObject, request, response);
     }
 
 }

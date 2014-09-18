@@ -61,4 +61,8 @@ public class CommentManager {
         return null;
     }
 
+    public void remove(final Comment comment) {
+        commentDAO.remove(comment);
+    }
+
 }
