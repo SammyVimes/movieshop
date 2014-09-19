@@ -88,7 +88,7 @@ public class ShoppingController extends BaseController {
         comment.setComment(commentString);
         comment.setDate(new Date());
         commentManager.addComment(comment);
-        LOGGER.debug("User " + user.getLogin() + " added comment: " + commentString);
+        LOGGER.trace("User " + user.getLogin() + " added comment: " + commentString);
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("success", true);
         sendJSONResponse(jsonObject, request, response);
@@ -177,7 +177,7 @@ public class ShoppingController extends BaseController {
         for (int i = 0; i < cart.size(); i++) {
             Movie _movie = cart.get(i);
             if (_movie.getId() == movie.getId()) {
-                LOGGER.debug("User " + user.getLogin() + " removed movie from cart: " + _movie.getTitle());
+                LOGGER.trace("User " + user.getLogin() + " removed movie from cart: " + _movie.getTitle());
                 cart.remove(_movie);
             }
         }
@@ -226,7 +226,7 @@ public class ShoppingController extends BaseController {
             }
         }
         cart.add(movie);
-        LOGGER.debug("User " + user.getLogin() + " added movie to cart: " + movie.getTitle());
+        LOGGER.trace("User " + user.getLogin() + " added movie to cart: " + movie.getTitle());
         userManager.update(userSettings);
         response.sendRedirect("/movieshop/web/app/personal/user/shop/cart");
     }
@@ -265,13 +265,13 @@ public class ShoppingController extends BaseController {
             }
             money -= price;
             if (money <= 0) {
-                LOGGER.debug("User " + user.getLogin() + " dont have enough money");
+                LOGGER.trace("User " + user.getLogin() + " dont have enough money");
                 ModelAndView modelAndView = new ModelAndView("/error.tiles");
                 modelAndView.putObject("error", "Не достаточно средств");
                 modelAndView.process(request, response);
                 return;
             }
-            LOGGER.debug("User " + user.getLogin() + " bought movie: " + _movie.getTitle());
+            LOGGER.trace("User " + user.getLogin() + " bought movie: " + _movie.getTitle());
             movieList.add(_movie);
         }
         userSettings.setMoney(money);

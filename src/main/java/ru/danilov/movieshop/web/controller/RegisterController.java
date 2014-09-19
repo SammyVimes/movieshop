@@ -77,7 +77,7 @@ public class RegisterController extends BaseController {
         HttpSession session = request.getSession();
         authManager.putAuthData(authData);
         session.setAttribute(AttributeNames.AUTH_DATA_KEY, authData.getKey());
-        LOGGER.debug("New user was created: " + user.getLogin());
+        LOGGER.trace("New user was created: " + user.getLogin());
         response.sendRedirect("/movieshop/web/app/catalog");
     }
 

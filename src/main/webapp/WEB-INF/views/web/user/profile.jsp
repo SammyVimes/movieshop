@@ -10,6 +10,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
+<%--@elvariable id="locale" type="java.util.Locale"--%>
+<fmt:setLocale value="${locale}"/>
 <fmt:setBundle basename="ru.danilov.res"/>
 
 <jsp:useBean id="profile" scope="request" class="ru.danilov.movieshop.core.entity.user.User"/>

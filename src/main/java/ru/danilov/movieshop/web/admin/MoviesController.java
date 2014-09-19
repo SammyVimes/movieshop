@@ -192,7 +192,7 @@ public class MoviesController extends BaseController {
                         modelAndView.process(request, response);
                     }
                 } catch (NumberFormatException e) {
-                    LOGGER.debug("Bad actor id: " + e.getMessage());
+                    LOGGER.trace("Bad actor id: " + e.getMessage());
                 }
             }
         }
@@ -277,7 +277,7 @@ public class MoviesController extends BaseController {
                         modelAndView.process(request, response);
                     }
                 } catch (NumberFormatException e) {
-                    LOGGER.debug("Bad actor id: " + e.getMessage());
+                    LOGGER.trace("Bad actor id: " + e.getMessage());
                 }
             }
             try {

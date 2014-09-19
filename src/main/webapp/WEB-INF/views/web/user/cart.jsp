@@ -10,7 +10,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-
+<%--@elvariable id="locale" type="java.util.Locale"--%>
+<fmt:setLocale value="${locale}"/>
 <fmt:setBundle basename="ru.danilov.res"/>
 
 <div class="jumbotron jumbotron-green hidden-print">
@@ -33,11 +34,11 @@
     <div class="" style="padding-top: 20px;">
         <%--@elvariable id="movies" type="java.util.List"--%>
         <%--@elvariable id="movie" type="ru.danilov.movieshop.core.entity.movie.Movie"--%>
-            <c:set var="fullPrice" value="0"/>
+        <c:set var="fullPrice" value="0"/>
         <c:forEach items="${movies}" var="movie">
 
             <c:set var="movieUrl"><c:url value="/web/app/catalog/movie?id=${movie.id}"/></c:set>
-            <div class="row row-skip card" >
+            <div class="row row-skip card">
                 <div class="width-2">
                     <c:set var="coverUri"><c:url value="/content/?filePath="/></c:set>
                     <a href="${movieUrl}"><img class="search-cover" src="${coverUri}${movie.coverUri}"></a>
@@ -64,15 +65,15 @@
             </div>
 
         </c:forEach>
-            <div class="row row-skip">
-                <div class="width-12">
-                    <div class="price"><fmt:message key="s_full_price"/>: ${fullPrice} руб.</div>
-                </div>
+        <div class="row row-skip">
+            <div class="width-12">
+                <div class="price"><fmt:message key="s_full_price"/>: ${fullPrice} руб.</div>
             </div>
-            <c:if test="${not isEmpty}">
+        </div>
+        <c:if test="${not isEmpty}">
             <c:set var="movieLink"><c:url value="/web/app/personal/user/shop/buy"/></c:set>
-                <a href="${movieLink}" class="btn btn-block btn-outline btn-success"><fmt:message key="s_buy"/></a>
-            </c:if>
+            <a href="${movieLink}" class="btn btn-block btn-outline btn-success"><fmt:message key="s_buy"/></a>
+        </c:if>
 
     </div>
 
