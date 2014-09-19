@@ -8,11 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
+<%--@elvariable id="locale" type="java.util.Locale"--%>
+<fmt:setLocale value="${locale}"/>
+<fmt:setBundle basename="ru.danilov.res"/>
 <head>
     <tiles:useAttribute id="title" name="title" classname="java.lang.String"/>
-    <title>${title}</title>
+    <title><fmt:message key="${title}"/></title>
 
     <c:set var="cssBaseUrl">${pageContext.request.contextPath}/css/</c:set>
     <link rel="stylesheet" href="${cssBaseUrl}items.css" type="text/css">

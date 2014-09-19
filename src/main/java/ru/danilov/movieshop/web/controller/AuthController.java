@@ -1,5 +1,7 @@
 package ru.danilov.movieshop.web.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.danilov.movieshop.core.aspect.HttpLoggable;
 import ru.danilov.movieshop.core.auth.AuthData;
 import ru.danilov.movieshop.core.auth.AuthManager;
@@ -23,6 +25,8 @@ import java.util.Date;
  * Created by Semyon on 05.09.2014.
  */
 public class AuthController extends BaseController {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(AuthController.class);
 
     private UserManager userManager = ServiceContainer.getService(UserManager.class);
 
@@ -65,17 +69,20 @@ public class AuthController extends BaseController {
                 Cookie cookie = new Cookie(AttributeNames.AUTH_DATA_KEY, authData.getKey());
                 cookie.setMaxAge(600000 * 4);
                 response.addCookie(cookie);
+                LOGGER.trace("Successfully authorized user: " + login);
                 if (user.getUserRole() == UserRole.ADMIN) {
                     response.sendRedirect("/movieshop/web/app/personal/admin/movies");
                 } else {
                     response.sendRedirect("/movieshop/web/app/main");
                 }
             } else {
+                LOGGER.error("Password didnt match");
                 ModelAndView modelAndView = new ModelAndView("/auth.tiles");
                 modelAndView.putObject("error", "Неверный пароль");
                 modelAndView.process(request, response);
             }
         } else {
+            LOGGER.error("There is no such user: " + login);
             ModelAndView modelAndView = new ModelAndView("/auth.tiles");
             modelAndView.putObject("error", "Пользователь с таким ником не найден");
             modelAndView.process(request, response);

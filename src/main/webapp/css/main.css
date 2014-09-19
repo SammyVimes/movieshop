@@ -554,6 +554,15 @@ textarea.form-input {
     }
 }
 
+@media (max-width: 992px) {
+    .sm-width-1, .sm-width-2, .sm-width-3,
+    .sm-width-4, .sm-width-5, .sm-width-6,
+    .sm-width-7, .sm-width-8, .sm-width-9,
+    .sm-width-10, .sm-width-11, .sm-width-12 {
+        float: left;
+    }
+}
+
 :before, :after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

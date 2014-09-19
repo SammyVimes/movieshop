@@ -10,17 +10,19 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
+<%--@elvariable id="locale" type="java.util.Locale"--%>
+<fmt:setLocale value="${locale}"/>
+<fmt:setBundle basename="ru.danilov.res"/>
 <head>
     <c:set var="cssBaseUrl">${pageContext.request.contextPath}/css/</c:set>
     <link rel="stylesheet" href="${cssBaseUrl}main.css" type="text/css">
     <link rel="stylesheet" href="${cssBaseUrl}login.css" type="text/css">
     <link rel="stylesheet" href="${cssBaseUrl}panels.css" type="text/css">
-    <title>Авторизация</title>
+    <title><fmt:message key="t_auth"/></title>
 </head>
 
 <body>
 <div class="container">
-    <fmt:setBundle basename="ru.danilov.res"/>
     <div class="offset-3 login-panel width-4">
         <h3><fmt:message key="s_auth"/></h3>
         <%--@elvariable id="error" type="java.lang.String"--%>

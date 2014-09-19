@@ -118,8 +118,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="width-5 tab active" id="comments-tab">${sComments}</div>
-            <div class="width-5 tab" id="actors-tab">${sActors}</div>
+            <div class="width-5 sm-width-5 tab active" id="comments-tab">${sComments}</div>
+            <div class="width-5 sm-width-5 tab" id="actors-tab">${sActors}</div>
         </div>
         <div class="row">
             <div class="row tab-content">
@@ -152,19 +152,20 @@
                         <c:forEach items="${comments}" var="_comment">
                             <div class="comment">
                                 <div class="row">
-                                    <div class="width-1">
+                                    <div class="width-1 sm-width-2">
                                         <img class="avatar" src="${avatarUri}${_comment.user.avatarURL}">
                                     </div>
-                                    <div class="width-9">
+                                    <div class="width-9 sm-width-8">
                                         <div class="row">
-                                            <div class="width-2">
+                                            <div class="width-2 sm-width-2">
                                                 <b>
                                                     <c:set var="userlink"><c:url
                                                             value="/web/app/user/profile/showProfile?id=${_comment.user.id}"/></c:set>
                                                     <a href="${userlink}" class="user-link">${_comment.user.login}</a>
                                                 </b>
                                             </div>
-                                            <div class="width-6"><fmt:formatDate value="${_comment.date}"/></div>
+                                            <div class="width-6 sm-width-6"><fmt:formatDate
+                                                    value="${_comment.date}"/></div>
                                         </div>
                                         <div class="row">
                                             <div class="width-7">${_comment.comment}</div>
@@ -185,19 +186,19 @@
 
 <div class="comment hidden" id="template">
     <div class="row">
-        <div class="width-1">
+        <div class="width-1 sm-width-2">
             <img class="avatar" src="${avatarUri}${user.avatarURL}">
         </div>
-        <div class="width-9">
+        <div class="width-9 sm-width-8">
             <div class="row">
-                <div class="width-2">
+                <div class="width-2 sm-width-2">
                     <b>
                         <c:set var="userlink"><c:url
                                 value="/web/app/user/profile/showProfile?id=${user.id}"/></c:set>
                         <a href="${userlink}" class="user-link">${user.login}</a>
                     </b>
                 </div>
-                <div class="width-6 comment-date"></div>
+                <div class="width-6 comment-date sm-width-6"></div>
             </div>
             <div class="row">
                 <div class="width-7 comment-text"></div>

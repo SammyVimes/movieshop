@@ -236,6 +236,11 @@
 <script>
     $(document).ready(function () {
 
+        var genre = '${movie.genre}';
+        var options = $({type: "id", value: "genre"}).find({type: "tag", value: "option"});
+        var genreOption = options.find({type: "attr", value: {attr: "value", value: genre}});
+        genreOption.attr("selected", "selected");
+
         var createTemplate = function () {
             var actors = $({type: "id", value: "actors"});
             return function (name, id) {

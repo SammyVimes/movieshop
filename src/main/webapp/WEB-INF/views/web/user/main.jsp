@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: Semyon
@@ -9,6 +10,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<%--@elvariable id="locale" type="java.util.Locale"--%>
+<fmt:setLocale value="${locale}"/>
+<fmt:setBundle basename="ru.danilov.res"/>
 
 <div class="jumbotron jumbotron-ad hidden-print">
     <div class="container">
@@ -35,7 +40,7 @@
         }
     </style>
     <div class="container">
-        <h3>Ближайшие к вам кинофестивали</h3>
+        <h3><fmt:message key="t_festivals"/></h3>
 
         <div id="map"></div>
     </div>

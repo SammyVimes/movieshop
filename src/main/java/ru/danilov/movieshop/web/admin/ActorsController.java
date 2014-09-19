@@ -1,5 +1,8 @@
 package ru.danilov.movieshop.web.admin;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import ru.danilov.movieshop.core.aspect.RequiredParams;
 import ru.danilov.movieshop.core.entity.actor.Actor;
 import ru.danilov.movieshop.core.entity.actor.ActorManager;
 import ru.danilov.movieshop.core.entity.movie.Movie;
@@ -18,6 +21,8 @@ import java.util.LinkedList;
  */
 public class ActorsController extends BaseController {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(ActorsController.class);
+
     private ActorManager actorManager = ServiceContainer.getService(ActorManager.class);
 
     @Override
@@ -35,6 +40,7 @@ public class ActorsController extends BaseController {
         modelAndView.process(request, response);
     }
 
+    @RequiredParams(value = "name", canBeEmpty = false)
     private void addActorPost(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         String isMale = request.getParameter("sex");
@@ -49,6 +55,7 @@ public class ActorsController extends BaseController {
         try {
             actorManager.createActor(actor);
         } catch (Exception e) {
+            LOGGER.error("Failed to add ator: " + e.getMessage());
             ModelAndView modelAndView = new ModelAndView("/admin.addActor.tiles");
             modelAndView.putObject("error", "Ошибка: " + e.getMessage());
             modelAndView.process(request, response);

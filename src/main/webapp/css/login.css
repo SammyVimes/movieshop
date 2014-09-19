@@ -1,3 +1,8 @@
 .login-panel {
-    margin-top: 25%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+    margin-top: 12%;
 }
