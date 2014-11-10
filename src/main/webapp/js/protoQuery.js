@@ -155,7 +155,6 @@ function ProtoPromise(fn) {
                 resolve(onFinishListener(data));
             }
             onFinish = function(data) {
-                alert(1);
                 resolve(onFinishListener(data));
             };
         });
