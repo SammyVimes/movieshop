@@ -102,32 +102,32 @@ function ProtoPromise(fn) {
     var onError = null;
 
 
-    function commitFinish(_data) {
+    this.commitFinish = function commitFinish(_data) {
         data = _data;
         if (onFinish) {
             onFinish(_data);
         }
-    }
+    };
 
-    function commitSuccess(data) {
+    this.commitSuccess = function commitSuccess(data) {
         finished = true;
         if (onSuccess) {
             onSuccess(data);
         }
-        commitFinish(data);
-    }
+        $this.commitFinish(data);
+    };
 
-    function commitError(_error) {
+    this.commitError = function commitError(_error) {
         finished = true;
         error = true;
         if (onError) {
             onError(_error);
         }
-        commitFinish(_error);
-    }
+        $this.commitFinish(_error);
+    };
 
     setTimeout(function () {
-        fn(commitSuccess, commitError);
+        fn($this.commitSuccess, $this.commitError);
     }, 0);
 
     this.success = function (onSuccessListener) {
@@ -149,12 +149,17 @@ function ProtoPromise(fn) {
     };
 
     this.then = function (onFinishListener) {
-        if (finished) {
-            onFinishListener(data);
-            return $this;
-        }
-        onFinish = onFinishListener;
-        return $this;
+        var cb = null;
+        var p = new ProtoPromise(function(resolve) {
+            if (finished) {
+                resolve(onFinishListener(data));
+            }
+            onFinish = function(data) {
+                alert(1);
+                resolve(onFinishListener(data));
+            };
+        });
+        return p;
     };
 
     return $this;
